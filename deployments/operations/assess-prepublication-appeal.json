@@ -1,0 +1,8 @@
+{
+  "operation_id": "assess-prepublication-appeal",
+  "transaction_hash": "0x7d9e6ac87198258f2b8d9162569029cb348fcd2e63188cb50ddb5a0263406d7e",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

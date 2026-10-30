@@ -1,0 +1,8 @@
+{
+  "operation_id": "probe-public-adverse",
+  "transaction_hash": "0x52882b61544ed9d53312698bf0bca55d93b56248433ebefcf8d1515fb4a190a3",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4"
+}

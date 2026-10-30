@@ -1,0 +1,8 @@
+{
+  "operation_id": "probe-public-copied",
+  "transaction_hash": "0x8b6316792b746aa1488df3c7c43e495508c26f49d8db847fbf5c3d392add2917",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": false,
+  "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4"
+}

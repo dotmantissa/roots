@@ -1,0 +1,8 @@
+{
+  "operation_id": "open-deadline",
+  "transaction_hash": "0xe652db3aefdd27858042cbc943cef6b600d7ac4132db55b9f3e23f24ee6dba5b",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

@@ -1,0 +1,8 @@
+{
+  "operation_id": "expire-deadline",
+  "transaction_hash": "0x45be9fa36e71f2f639c497d1dd95f8074fc1c8c9c065a449d67a6d4ad6014521",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

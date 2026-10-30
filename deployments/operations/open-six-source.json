@@ -1,0 +1,8 @@
+{
+  "operation_id": "open-six-source",
+  "transaction_hash": "0x44f0a0cc34c1767609efb15380ebf59343599c71dae884e4f536b713a1e43ff2",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

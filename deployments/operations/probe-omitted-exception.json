@@ -1,0 +1,8 @@
+{
+  "operation_id": "probe-omitted-exception",
+  "transaction_hash": "0x5c846fa88eb9f613121db3e09d07ad163c5a9f44c5c73356ed58509114d02217",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": false,
+  "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4"
+}

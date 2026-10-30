@@ -1,0 +1,41 @@
+{
+  "six_source_pairs": 15,
+  "subset_checks": 64,
+  "selected_before_appeal": [
+    0,
+    3,
+    4,
+    5
+  ],
+  "fourteen_pair_seal_refused": true,
+  "appeal_before_publication_freezes_entire_matrix": true,
+  "oversized_request_refused": true,
+  "deadline_uses_transaction_time": true,
+  "expired_status": "TIMEOUT",
+  "sources": [
+    {
+      "publisher_id": "controlled_wire0",
+      "revision": 1
+    },
+    {
+      "publisher_id": "controlled_wire1",
+      "revision": 1
+    },
+    {
+      "publisher_id": "controlled_wire2",
+      "revision": 1
+    },
+    {
+      "publisher_id": "controlled_measurement0",
+      "revision": 1
+    },
+    {
+      "publisher_id": "controlled_measurement1",
+      "revision": 1
+    },
+    {
+      "publisher_id": "controlled_measurement2",
+      "revision": 1
+    }
+  ]
+}

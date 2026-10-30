@@ -1,0 +1,8 @@
+{
+  "operation_id": "open-prepublication-appeal",
+  "transaction_hash": "0x50a522ba18fc532d268f3a11465a731243284a39de0562a6591b3f01a5d241a9",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

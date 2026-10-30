@@ -1,0 +1,8 @@
+{
+  "operation_id": "probe-wrong-verdict",
+  "transaction_hash": "0x8a88e608b5c0e922923f25fd1248a06fecba882e180887c1b372df1b53fe7a5b",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": false,
+  "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4"
+}

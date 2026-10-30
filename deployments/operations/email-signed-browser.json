@@ -1,0 +1,8 @@
+{
+  "operation_id": "email-signed-browser",
+  "transaction_hash": "0xf16dd99a51784e682eba938b39d10bd1d4f346ea4d0d00452820e0df75ec5aa7",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

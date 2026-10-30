@@ -1,0 +1,8 @@
+{
+  "operation_id": "probe-forged-span",
+  "transaction_hash": "0x545aeb9edc3607795a36de87f49628c6de276f4170af3f863a222b35a9966b3a",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": false,
+  "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4"
+}

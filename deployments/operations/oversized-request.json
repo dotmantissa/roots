@@ -1,0 +1,8 @@
+{
+  "operation_id": "oversized-request",
+  "transaction_hash": "0x2759716354ceff582c4a4032f7cb8362c3dc1197ad4e32a71d077595cf07a346",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": false,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

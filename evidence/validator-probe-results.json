@@ -1,0 +1,161 @@
+{
+  "public-positive": {
+    "accepted": true,
+    "decision": {
+      "coverage": true,
+      "relation": "INDEPENDENT",
+      "rule_id": "R_INDEPENDENT_PROCESS",
+      "scope": "editorial_or_measurement_origin",
+      "unresolved": false,
+      "witnesses": [
+        {
+          "end": 1056,
+          "quote_hash": "4a8b0107eb27fe5e6104477c8bbc340161a6c1b7d564980b736dafe35fe58b41",
+          "record_id": "NASA",
+          "source_hash": "4a8b0107eb27fe5e6104477c8bbc340161a6c1b7d564980b736dafe35fe58b41",
+          "span_id": "complete",
+          "start": 0
+        },
+        {
+          "end": 4381,
+          "quote_hash": "21ab5c07f30b13a451ad18d084c24b831c9508d93b02da3df0417dea665882c6",
+          "record_id": "NASA_Worldview",
+          "source_hash": "21ab5c07f30b13a451ad18d084c24b831c9508d93b02da3df0417dea665882c6",
+          "span_id": "complete",
+          "start": 0
+        },
+        {
+          "end": 1246,
+          "quote_hash": "79b0a1c6155be42b9bee570846d6bc2ab0835c4b207ba9cc747e81528ee55c65",
+          "record_id": "NOAA",
+          "source_hash": "79b0a1c6155be42b9bee570846d6bc2ab0835c4b207ba9cc747e81528ee55c65",
+          "span_id": "complete",
+          "start": 0
+        },
+        {
+          "end": 5343,
+          "quote_hash": "728362809cbea7ea6c13a1b269a5bafbdc5daa5d311031b4c78c5284ba36cd2b",
+          "record_id": "NOAA_workflow",
+          "source_hash": "728362809cbea7ea6c13a1b269a5bafbdc5daa5d311031b4c78c5284ba36cd2b",
+          "span_id": "complete",
+          "start": 0
+        }
+      ]
+    },
+    "transaction_hash": "0xf89ceefe0b827d9a66a23e45afc8c25398a231bbace7456f406c437007f4b5c2",
+    "network_result": "MAJORITY_AGREE",
+    "validator_votes": {
+      "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+      "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+      "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+      "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+      "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+    },
+    "elapsed_seconds": 52.336,
+    "packet_bytes": 12026,
+    "max_records": 4,
+    "prompt_token_upper_bound": 20218
+  },
+  "public-copied": {
+    "accepted": false,
+    "decision": null,
+    "transaction_hash": "0x8b6316792b746aa1488df3c7c43e495508c26f49d8db847fbf5c3d392add2917",
+    "network_result": "MAJORITY_DISAGREE",
+    "validator_votes": {
+      "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+      "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+      "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "disagree",
+      "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "disagree",
+      "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "disagree"
+    },
+    "elapsed_seconds": 4.157,
+    "packet_bytes": 10874,
+    "max_records": 4,
+    "prompt_token_upper_bound": 19066
+  },
+  "wrong-verdict": {
+    "accepted": false,
+    "decision": null,
+    "transaction_hash": "0x8a88e608b5c0e922923f25fd1248a06fecba882e180887c1b372df1b53fe7a5b",
+    "network_result": "MAJORITY_DISAGREE",
+    "validator_votes": {
+      "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+      "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "disagree",
+      "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+      "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "disagree",
+      "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "disagree"
+    },
+    "elapsed_seconds": 186.575,
+    "packet_bytes": 1382,
+    "max_records": 4,
+    "prompt_token_upper_bound": 9574
+  },
+  "omitted-exception": {
+    "accepted": false,
+    "decision": null,
+    "transaction_hash": "0x5c846fa88eb9f613121db3e09d07ad163c5a9f44c5c73356ed58509114d02217",
+    "network_result": "MAJORITY_DISAGREE",
+    "validator_votes": {
+      "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+      "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "disagree",
+      "0x5e84e17266a193077728229751aC8A1dD24be146": "disagree",
+      "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "disagree",
+      "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+    },
+    "elapsed_seconds": 136.348,
+    "packet_bytes": 1382,
+    "max_records": 4,
+    "prompt_token_upper_bound": 9574
+  },
+  "forged-span": {
+    "accepted": false,
+    "decision": null,
+    "transaction_hash": "0x545aeb9edc3607795a36de87f49628c6de276f4170af3f863a222b35a9966b3a",
+    "network_result": "MAJORITY_DISAGREE",
+    "validator_votes": {
+      "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "disagree",
+      "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "disagree",
+      "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "disagree",
+      "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+    },
+    "elapsed_seconds": 108.782,
+    "packet_bytes": 1382,
+    "max_records": 4,
+    "prompt_token_upper_bound": 9574
+  },
+  "injection": {
+    "accepted": false,
+    "decision": null,
+    "transaction_hash": "0xe25e5c45ff7de10233703d8ebeefdee86d7de5bd666510b1920b8f942cb11b9b",
+    "network_result": "MAJORITY_DISAGREE",
+    "validator_votes": {
+      "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "disagree",
+      "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+      "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+      "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "disagree",
+      "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "disagree"
+    },
+    "elapsed_seconds": 135.549,
+    "packet_bytes": 1270,
+    "max_records": 4,
+    "prompt_token_upper_bound": 9462
+  },
+  "source-change": {
+    "accepted": false,
+    "decision": null,
+    "transaction_hash": "0x517d976e6600439d14a08b756bed87db293d66bb0e59b74d8271d3d18e973f09",
+    "network_result": "MAJORITY_AGREE",
+    "validator_votes": {
+      "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+      "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+      "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+      "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+      "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+    },
+    "elapsed_seconds": 73.827,
+    "packet_bytes": 1382,
+    "max_records": 4,
+    "prompt_token_upper_bound": 9574
+  }
+}

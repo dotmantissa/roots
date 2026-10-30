@@ -1,0 +1,8 @@
+{
+  "operation_id": "assess-six-1-4",
+  "transaction_hash": "0x64c5b50d6c35249a9d75de5a9f5c264fb6951e970ad7e070ed1ba67a8f85c1a1",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

@@ -1,0 +1,8 @@
+{
+  "operation_id": "seal-complete-six-source",
+  "transaction_hash": "0x1ea45fccd95683dfcce36abb3a0fac3d2d3355d9fdf893993d46143fa0f03b0c",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

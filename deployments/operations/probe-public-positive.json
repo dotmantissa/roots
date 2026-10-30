@@ -1,0 +1,8 @@
+{
+  "operation_id": "probe-public-positive",
+  "transaction_hash": "0xf89ceefe0b827d9a66a23e45afc8c25398a231bbace7456f406c437007f4b5c2",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4"
+}

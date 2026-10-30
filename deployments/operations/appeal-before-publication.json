@@ -1,0 +1,8 @@
+{
+  "operation_id": "appeal-before-publication",
+  "transaction_hash": "0x46829e2b9ec17663cb7844cdeb87ba36a6fe0296837244b72ad5e58bec498b07",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

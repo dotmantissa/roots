@@ -1,0 +1,88 @@
+{
+  "runner": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "network": "studionet",
+  "chain_id": 61999,
+  "enforced_limits": {
+    "record_bytes": 49152,
+    "packet_bytes": 16384,
+    "prompt_utf8_bytes_and_conservative_tokens": 24576,
+    "records_per_assessment": 4,
+    "source_count": 6,
+    "pairs_per_batch": 15,
+    "subset_checks_max": 64,
+    "application_retry_max": 3
+  },
+  "measurements": [
+    {
+      "case": "probe-input-wrong-verdict",
+      "records": 4,
+      "record_max_bytes": 385,
+      "packet_bytes": 1382,
+      "decoded_characters": 1382,
+      "prompt_utf8_bytes": 4952,
+      "conservative_prompt_token_upper_bound": 4952,
+      "substantive_model_calls_per_participant": 1
+    },
+    {
+      "case": "probe-input-public-adverse",
+      "records": 4,
+      "record_max_bytes": 4381,
+      "packet_bytes": 7801,
+      "decoded_characters": 7797,
+      "prompt_utf8_bytes": 11539,
+      "conservative_prompt_token_upper_bound": 11539,
+      "substantive_model_calls_per_participant": 1
+    },
+    {
+      "case": "probe-input-public-positive",
+      "records": 4,
+      "record_max_bytes": 5343,
+      "packet_bytes": 12026,
+      "decoded_characters": 12022,
+      "prompt_utf8_bytes": 15774,
+      "conservative_prompt_token_upper_bound": 15774,
+      "substantive_model_calls_per_participant": 1
+    },
+    {
+      "case": "probe-input-injection",
+      "records": 4,
+      "record_max_bytes": 385,
+      "packet_bytes": 1270,
+      "decoded_characters": 1270,
+      "prompt_utf8_bytes": 4846,
+      "conservative_prompt_token_upper_bound": 4846,
+      "substantive_model_calls_per_participant": 1
+    },
+    {
+      "case": "probe-input-public-copied",
+      "records": 4,
+      "record_max_bytes": 4381,
+      "packet_bytes": 10874,
+      "decoded_characters": 10866,
+      "prompt_utf8_bytes": 14710,
+      "conservative_prompt_token_upper_bound": 14710,
+      "substantive_model_calls_per_participant": 1
+    },
+    {
+      "case": "probe-input-forged-span",
+      "records": 4,
+      "record_max_bytes": 385,
+      "packet_bytes": 1382,
+      "decoded_characters": 1382,
+      "prompt_utf8_bytes": 4952,
+      "conservative_prompt_token_upper_bound": 4952,
+      "substantive_model_calls_per_participant": 1
+    },
+    {
+      "case": "probe-input-omitted-exception",
+      "records": 4,
+      "record_max_bytes": 385,
+      "packet_bytes": 1382,
+      "decoded_characters": 1382,
+      "prompt_utf8_bytes": 4952,
+      "conservative_prompt_token_upper_bound": 4952,
+      "substantive_model_calls_per_participant": 1
+    }
+  ],
+  "telemetry_limit": "Studio receipts do not expose GenVM CPU, memory or billed model token telemetry. These are measured source and exact prompt sizes, not fabricated VM profiles."
+}

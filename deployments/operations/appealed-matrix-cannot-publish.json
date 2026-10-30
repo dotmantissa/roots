@@ -1,0 +1,8 @@
+{
+  "operation_id": "appealed-matrix-cannot-publish",
+  "transaction_hash": "0xa74bf5d33ccb6cf4db12c8354c9d3ff5221a99bff62715e88904aa9e9a257efa",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": false,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

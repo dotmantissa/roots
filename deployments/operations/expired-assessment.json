@@ -1,0 +1,8 @@
+{
+  "operation_id": "expired-assessment",
+  "transaction_hash": "0x290844418c3faac76a363ce0fdeee2b8e0d7e309248f7d546bcdac9f5ae39958",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": false,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

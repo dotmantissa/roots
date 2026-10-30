@@ -1,0 +1,8 @@
+{
+  "operation_id": "probe-injection",
+  "transaction_hash": "0xe25e5c45ff7de10233703d8ebeefdee86d7de5bd666510b1920b8f942cb11b9b",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": false,
+  "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4"
+}

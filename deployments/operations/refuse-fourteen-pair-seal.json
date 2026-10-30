@@ -1,0 +1,8 @@
+{
+  "operation_id": "refuse-fourteen-pair-seal",
+  "transaction_hash": "0x84429dc82a4e9e538b2c5942326e8e7455374334dfa125e76237b504d55a26da",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": false,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

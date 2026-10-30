@@ -1,0 +1,43 @@
+{
+  "classification": "Authentic email principal registration using an authored public test disclosure",
+  "publisher_id": "controlled_email_workflow_specimen",
+  "operations": [
+    {
+      "path": "/api/operations",
+      "http_status": 200,
+      "operation_id": "be0aa43c-990b-4f84-912d-82dbdb86a85f"
+    },
+    {
+      "path": "/api/operations/be0aa43c-990b-4f84-912d-82dbdb86a85f/broadcast",
+      "http_status": 200,
+      "transaction_hash": "0xaa5adfccb27b861909b0c6598d0fd7bd9edf6b9d36a1224fd570f39d746fa9cc"
+    }
+  ],
+  "network": "studionet",
+  "finalized": true,
+  "publisher": {
+    "evidence": {
+      "authority": "controlled_email_workflow_specimen",
+      "byte_hash": "4ccec920c0b05d60bd873bd87ba84e0ea92c286bb80cad4f576bce81858def67",
+      "byte_length": 362,
+      "capture_url": "https://roots-mauve-delta.vercel.app/api/captures/4ccec920c0b05d60bd873bd87ba84e0ea92c286bb80cad4f576bce81858def67",
+      "channel": "public",
+      "record_id": "controlled_email_workflow_specimen-ownership-2",
+      "revision": 2,
+      "scope": "Public ownership and editorial affiliation",
+      "spans": [
+        {
+          "end": 362,
+          "quote_hash": "4ccec920c0b05d60bd873bd87ba84e0ea92c286bb80cad4f576bce81858def67",
+          "span_id": "complete",
+          "start": 0
+        }
+      ],
+      "url": "https://way-reuters-isaac-baths.trycloudflare.com/email-flow-owner-v2.txt"
+    },
+    "principal": "0x06dbBb48045c703f8869816F10Bc2ae1c43D455D",
+    "publisher_id": "controlled_email_workflow_specimen",
+    "revision": 2,
+    "status": "ACTIVE"
+  }
+}

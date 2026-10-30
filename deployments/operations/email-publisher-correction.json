@@ -1,0 +1,8 @@
+{
+  "operation_id": "email-publisher-correction",
+  "transaction_hash": "0x47fb60f861d63f4e61b91d98c9fdf13d8ebb40b6cb826e89d0a078096e15b58b",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x85f4F1716E2fC991864A4eb2857e3D5fF255eaAB"
+}
