@@ -98,4 +98,4 @@ Email authenticated POST `/api/captures` accepts record_id, authority, URL, scop
 
 Email authenticated POST `/api/operations` accepts operation_id, signer_address, contract, method and bounded primitive args. The embedded Privy account must belong to the verified email identity. POST `/api/operations/:id/broadcast` accepts signed_transaction, verifies its exact consensus and application bindings, journals before broadcast and returns transaction_hash. GET `/api/operations` lists the current identity’s latest fifty operation statuses.
 
-Bearer headers contain a verified Privy identity token. No private key enters these API bodies. Server secrets are read from deployment environment settings and never returned by public configuration.
+Bearer headers contain a verified Privy access token. The server retrieves the authenticated user’s current email and embedded account bindings. No private key enters these API bodies. Server secrets are read from deployment environment settings and never returned by public configuration.

@@ -1,6 +1,6 @@
-import {sql} from './db';
+import {sql} from './db.js';
 import {keccak256} from 'viem';
-import {networkClient} from '../../../packages/sdk/src/client';
+import {networkClient} from '../../../packages/sdk/src/client.js';
 export async function reconcile(){
  const lost=await sql`SELECT operation_id,signed_transaction FROM roots_operations WHERE transaction_hash IS NULL AND signed_transaction IS NOT NULL AND status='PENDING' LIMIT 8`;
  for(const row of lost){const hash=keccak256(row.signed_transaction);try{await networkClient().getTransaction({hash:hash as Parameters<ReturnType<typeof networkClient>["getTransaction"]>[0]["hash"]});await sql`UPDATE roots_operations SET transaction_hash=${hash},status='BROADCAST',updated_at=now() WHERE operation_id=${row.operation_id}`;}catch{try{const sent=await networkClient().sendRawTransaction({serializedTransaction:row.signed_transaction});await sql`UPDATE roots_operations SET transaction_hash=${sent},status='BROADCAST',updated_at=now() WHERE operation_id=${row.operation_id}`;}catch{console.error('Broadcast recovery remains pending for operation',row.operation_id);}}}
@@ -12,5 +12,21 @@ export async function reconcile(){
    await sql`UPDATE roots_operations SET status=${state},execution_success=${success},updated_at=now() WHERE operation_id=${row.operation_id}`;
    if(state==='FINALIZED'){const raw=receipt as unknown as {consensus_data?:{votes?:Record<string,string>}};const disagreements=Object.values(raw.consensus_data?.votes||{}).filter(x=>x.toLowerCase()==='disagree').length;const relation=row.method==='assess_pair'?`${row.args[0]}:${row.args[2]}:${row.args[3]}`:row.operation_id;const generation=row.method==='assess_pair'?Number(row.args[1]):0;await sql`INSERT INTO roots_metrics(operation_id,relation_key,generation,disagreement_count,receipt) VALUES(${row.operation_id},${relation},${generation},${disagreements},${JSON.stringify(receipt)}::jsonb) ON CONFLICT(operation_id) DO NOTHING`;}
   }catch{console.error('Receipt pending for operation',row.operation_id);}
+ }
+ const callbacks=await sql`SELECT operation_id,args,contract_address FROM roots_operations WHERE method='deliver_certificate' AND status='FINALIZED' AND execution_success=true AND (delivery_status IS NULL OR delivery_status='AWAITING_DELIVERY') ORDER BY created_at LIMIT 4`;
+ for(const row of callbacks){
+  try{
+   const client=networkClient();const delivery=await client.readContract({address:row.contract_address,functionName:'get_delivery',args:[row.args[0]]}) as {acknowledgement:null|{certificate_id:string}};
+   if(delivery.acknowledgement?.certificate_id===row.args[1]){await sql`UPDATE roots_operations SET delivery_status='DELIVERED',updated_at=now() WHERE operation_id=${row.operation_id}`;continue;}
+   const metrics=await sql`SELECT receipt FROM roots_metrics WHERE operation_id=${row.operation_id}`;
+   const children=(metrics[0]?.receipt as {triggered_transactions?:string[]}|undefined)?.triggered_transactions||[];
+   let failed=false;
+   for(const hash of children.slice(0,1)){
+    const child=await client.request({method:'eth_getTransactionByHash',params:[hash as `0x${string}`]}) as unknown as {status:number|string;result_name?:string;consensus_data?:{leader_receipt?:{mode:string;execution_result:string}[]}};
+    const leader=child.consensus_data?.leader_receipt?.find(x=>x.mode==='leader');
+    if((child.status===7||child.status==='FINALIZED')&&leader&&(child.result_name!=='MAJORITY_AGREE'||leader.execution_result!=='SUCCESS'))failed=true;
+   }
+   await sql`UPDATE roots_operations SET delivery_status=${failed?'DELIVERY_FAILED':'AWAITING_DELIVERY'},updated_at=now() WHERE operation_id=${row.operation_id}`;
+  }catch{console.error('Delivery acknowledgement pending for operation',row.operation_id);}
  }
 }

@@ -1,6 +1,6 @@
 import {createClient} from 'genlayer-js';
 import {studionet} from 'genlayer-js/chains';
-import {RequestSchema,ManifestSchema,ConfigurationSchema,canonical,sha256,type Deployment,type RecordCommitment,type Configuration,type Batch} from './schema';
+import {RequestSchema,ManifestSchema,ConfigurationSchema,canonical,sha256,type Deployment,type RecordCommitment,type Configuration,type Batch} from './schema.js';
 export type SignerConfig=Pick<NonNullable<Parameters<typeof createClient>[0]>,'account'|'provider'>;
 export class RootsClient {
  private client:ReturnType<typeof createClient>;

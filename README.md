@@ -14,7 +14,7 @@ The interface includes a custom branching root mark, an editorial layout, light 
 
 ## Run locally
 
-Use Node 22 or newer and Python 3.14. Copy `.env.example` to `.env`, fill in the private server settings and the public Privy application identifier, then run:
+Use Node 22 and Python 3.14. Copy `.env.example` to `.env`, fill in the private server settings and the public Privy application identifier, then run:
 
 ```sh
 npm run setup
@@ -49,7 +49,7 @@ npm run build
 npm run test:browser
 ```
 
-Python tests execute the real contract source with GenLayer direct storage. They also explicitly invoke captured validator callbacks with wrong decisions, omitted rules and forged spans. Browser tests use the live local API and public contract records. Network evidence is kept separately because hosted Studio runs use real validators and have rate limits.
+Tests generate an ephemeral signing identity and need no production wallet credentials. Python tests execute the real contract source with GenLayer direct storage. They also explicitly invoke captured validator callbacks with wrong decisions, omitted rules and forged spans. Browser tests use the live local API and public contract records. Network evidence is kept separately because hosted Studio runs use real validators and have rate limits.
 
 The controlled Studio scenario is run with `npm run integration:studio`. Its authored fixture documents must be served from the public origin recorded with the run. `scripts/studio_probes.py` exercises independent public sources and malicious leader proposals. These fixtures are labelled controlled validation records; they are not real incidents or adoption claims.
 

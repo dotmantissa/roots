@@ -1,6 +1,6 @@
-import {sql} from './db';
-import {readPage} from '../../../packages/sdk/src/client';
-import type {Deployment} from '../../../packages/sdk/src/schema';
+import {sql} from './db.js';
+import {readPage} from '../../../packages/sdk/src/client.js';
+import type {Deployment} from '../../../packages/sdk/src/schema.js';
 export const feeds=[['source_registry','publishers','list_records'],['source_registry','policies','list_records'],['relation_docket','batches','list_batches'],['relation_docket','history','list_history'],['certificate_hub','certificates','list_certificates']] as const;
 export async function indexRecords(deployment:Deployment,rebuild=false){
  if(rebuild)await sql.transaction([sql`DELETE FROM roots_records`,sql`DELETE FROM roots_checkpoints`]);

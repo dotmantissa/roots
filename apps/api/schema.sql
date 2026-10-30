@@ -23,6 +23,7 @@ CREATE TABLE IF NOT EXISTS roots_operations (
  updated_at timestamptz NOT NULL DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS roots_operations_user ON roots_operations(user_id,created_at DESC);
+ALTER TABLE roots_operations ADD COLUMN IF NOT EXISTS delivery_status text;
 CREATE TABLE IF NOT EXISTS roots_records (
  contract_address text NOT NULL,
  record_kind text NOT NULL,

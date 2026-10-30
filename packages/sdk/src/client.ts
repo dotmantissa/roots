@@ -1,6 +1,6 @@
 import {createClient} from 'genlayer-js';
 import {studionet} from 'genlayer-js/chains';
-import {BatchSchema,PolicySchema,PublisherSchema,type Deployment,type Batch} from './schema';
+import {BatchSchema,PolicySchema,PublisherSchema,type Deployment,type Batch} from './schema.js';
 export const networkClient=()=>createClient({chain:studionet});
 export async function readPage(deployment:Deployment,contract:keyof Deployment['contracts'],method:string,args:unknown[]):Promise<{total:number;items:unknown[]}>{
  const address=deployment.contracts[contract]?.address;if(!address)throw Error('Contract deployment is unavailable');
