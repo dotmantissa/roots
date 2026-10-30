@@ -14,45 +14,31 @@ load_dotenv()
 class BoundedProvider(GenLayerProvider):
     """Keep an unavailable RPC from hanging an integration process indefinitely."""
     def make_request(self, method, params):
-        response = requests.post(self.url, json={
+        payload = {
             'jsonrpc': '2.0', 'id': int(time.time() * 1000),
-            'method': method, 'params': params}, timeout=30)
-        response.raise_for_status()
-        result = response.json()
-        self._raise_on_error(result, method)
-        return result
-
-class QuotaClient:
-    """Resume explicit RPC quota refusals without replacing a signed operation.
-
-    Other transport failures still propagate: their broadcast outcome may be
-    ambiguous and must not trigger a fresh transaction.
-    """
-    def __init__(self, inner):
-        self.inner = inner
-
-    def __getattr__(self, name):
-        method = getattr(self.inner, name)
-        if not callable(method):
-            return method
-        def invoke(*args, **kwargs):
-            for attempt in range(81):
-                try:
-                    return method(*args, **kwargs)
-                except Exception as error:
-                    if '-32029' not in str(error) or attempt == 80:
-                        raise
-                    print(name, 'hourly Studio quota reached; retrying in 60 seconds', flush=True)
-                    time.sleep(60)
-        return invoke
+            'method': method, 'params': params}
+        for attempt in range(81):
+            try:
+                response = requests.post(self.url, json=payload, timeout=30)
+                response.raise_for_status()
+                result = response.json()
+                self._raise_on_error(result, method)
+                return result
+            except Exception as error:
+                quota = '-32029' in str(error) or (
+                    isinstance(error, requests.exceptions.HTTPError)
+                    and error.response is not None and error.response.status_code == 429)
+                if not quota or attempt == 80:
+                    raise
+                print(method, 'Studio quota reached; retrying exact RPC in 60 seconds', flush=True)
+                time.sleep(60)
 
 def client(key='DEPLOYER_PRIVATE_KEY'):
     inner = GenLayerClient(studionet, Account.from_key(os.environ[key]))
     inner.provider = BoundedProvider(studionet.rpc_urls['default']['http'][0])
     inner.w3.provider = inner.provider
-    wrapped = QuotaClient(inner)
-    wrapped.initialize_consensus_smart_contract()
-    return wrapped
+    inner.initialize_consensus_smart_contract()
+    return inner
 
 def atomic(path,value):
     path=Path(path);path.parent.mkdir(parents=True,exist_ok=True)
@@ -87,13 +73,7 @@ def operation(c,operation_id,send,expected_success=True):
                 signed_hash='0x'+keccak(bytes.fromhex(params[0][2:])).hex()
                 atomic(path,{'operation_id':operation_id,'transaction_hash':signed_hash,
                     'network':'studionet','status':'SIGNED','broadcast_params':params})
-                # An explicit quota refusal can retry these same bytes safely.
-                for attempt in range(81):
-                    try:return request(method,params)
-                    except Exception as error:
-                        if '-32029' not in str(error) or attempt==80:raise
-                        print(operation_id,'signed broadcast quota reached; retrying in 60 seconds',flush=True)
-                        time.sleep(60)
+                return request(method,params)
             return request(method,params)
         c.provider.make_request=journal_request
         try:h=str(send())

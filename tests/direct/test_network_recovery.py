@@ -4,7 +4,7 @@ from pathlib import Path
 from types import SimpleNamespace
 import pytest
 from eth_utils import keccak
-from scripts.network import operation
+from scripts.network import operation, BoundedProvider
 
 
 @pytest.mark.parametrize('accepted_before_disconnect', [False, True])
@@ -64,3 +64,22 @@ def test_modified_signed_journal_is_refused_before_rpc(tmp_path, monkeypatch):
                                'status': 'SIGNED', 'broadcast_params': ['0x012345']}))
     with pytest.raises(RuntimeError, match='signed journal hash mismatch'):
         operation(SimpleNamespace(), 'modified', lambda: None)
+
+
+def test_http_quota_retries_the_exact_rpc_without_resigning(monkeypatch):
+    import requests
+    calls = []
+
+    def post(url, *, json, timeout):
+        calls.append(json)
+        response = requests.Response()
+        response.status_code = 429 if len(calls) == 1 else 200
+        response._content = b'{"jsonrpc":"2.0","result":"accepted"}'
+        return response
+
+    monkeypatch.setattr('scripts.network.requests.post', post)
+    monkeypatch.setattr('scripts.network.time.sleep', lambda seconds: None)
+    result = BoundedProvider('https://example.test').make_request(
+        'eth_sendRawTransaction', ['0x012345'])
+    assert result['result'] == 'accepted'
+    assert len(calls) == 2 and calls[0] == calls[1]
