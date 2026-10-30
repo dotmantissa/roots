@@ -1,0 +1,11 @@
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import {PrivyProvider} from '@privy-io/react-auth';
+import '@fontsource/space-grotesk/400.css';
+import '@fontsource/space-grotesk/500.css';
+import '@fontsource/space-grotesk/600.css';
+import '@fontsource/roboto-slab/400.css';
+import '@fontsource/roboto-slab/500.css';
+import {App} from './App';
+import './styles.css';
+createRoot(document.getElementById('root')!).render(<React.StrictMode><PrivyProvider appId={import.meta.env.VITE_PRIVY_APP_ID} config={{loginMethods:['email'],appearance:{accentColor:'#313567',theme:'light',logo:'/roots.svg',showWalletLoginFirst:false},embeddedWallets:{ethereum:{createOnLogin:'users-without-wallets'}}}}><App/></PrivyProvider></React.StrictMode>);

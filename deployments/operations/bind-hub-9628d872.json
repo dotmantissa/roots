@@ -1,0 +1,8 @@
+{
+  "operation_id": "bind-hub-9628d872",
+  "transaction_hash": "0x2a0e3d0ff00a29b136c65043324819c998187df75c0342e2e093b027cb5e213e",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

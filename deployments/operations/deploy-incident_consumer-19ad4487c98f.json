@@ -1,0 +1,8 @@
+{
+  "operation_id": "deploy-incident_consumer-19ad4487c98f",
+  "transaction_hash": "0x84f0d8ad14fa7881c99309b39d7712a7f2d6852c9137455c23df81382ccdf97d",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x0d67aa9fd5384A4953785c8019d27b964b949025"
+}

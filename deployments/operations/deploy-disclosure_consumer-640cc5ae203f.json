@@ -1,0 +1,8 @@
+{
+  "operation_id": "deploy-disclosure_consumer-640cc5ae203f",
+  "transaction_hash": "0xff3cc7334bf23ad645a6240d9c0cbbd97761d5665ea1beca0f127435c12ce45f",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x44988FeBB4C0125b800e0f20A21d344613010fA0"
+}

@@ -1,0 +1,8 @@
+{
+  "operation_id": "deploy-source_registry-5f0e1417edd0",
+  "transaction_hash": "0x3c1121262ac0df3b1070747951cb233fb2d6f1d13e5ec35aeed48e0560922337",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x85f4F1716E2fC991864A4eb2857e3D5fF255eaAB"
+}

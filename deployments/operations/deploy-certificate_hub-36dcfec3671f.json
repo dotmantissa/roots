@@ -1,0 +1,8 @@
+{
+  "operation_id": "deploy-certificate_hub-36dcfec3671f",
+  "transaction_hash": "0x191ab8d404125754674437dd2280b90ed3c3ce422a98a739f8514897eca0e3a6",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

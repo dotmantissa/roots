@@ -1,0 +1,8 @@
+{
+  "operation_id": "deploy-relation_docket-f0256beaecc2",
+  "transaction_hash": "0xdb0094198340ed6fcebec6f3adc4220331ef8ec8fc24aadab572cb010dc66831",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

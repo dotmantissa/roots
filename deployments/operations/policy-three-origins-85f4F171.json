@@ -1,0 +1,8 @@
+{
+  "operation_id": "policy-three-origins-85f4F171",
+  "transaction_hash": "0xca592e279eb7a2c019d54397b8a5efe9d1ecd12a7f1bfda70b72661f8d8eccb7",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x85f4F1716E2fC991864A4eb2857e3D5fF255eaAB"
+}

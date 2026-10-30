@@ -1,0 +1,8 @@
+{
+  "operation_id": "deploy-validator-probe-e55f0e323307",
+  "transaction_hash": "0x48be9ee09f550c49e44d7c0a100f6af7e3654203d16e1ec8b119ecd76aea4a2a",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4"
+}
