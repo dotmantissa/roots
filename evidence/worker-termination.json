@@ -1,0 +1,12 @@
+{
+  "classification": "Actual process termination after authentic signed Studio broadcast",
+  "crash_exit_code": 86,
+  "journal_before_recovery": "PENDING with signed bytes and no hash",
+  "recovered": {
+    "operation_id": "controlled-worker-termination",
+    "transaction_hash": "0xe319a0b4ae225f0dab1244cf45d502021bfcc5e434f96bb945f26ea2ad1acb5b",
+    "status": "FINALIZED",
+    "execution_success": false
+  },
+  "consumer_result": "Refused copied source admission"
+}

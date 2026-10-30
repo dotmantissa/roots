@@ -9,16 +9,16 @@
   "scripts": {
     "dev": "concurrently -n api,web \"tsx watch apps/api/src/index.ts\" \"vite --config apps/web/vite.config.ts\"",
     "build": "tsc --noEmit && vite build --config apps/web/vite.config.ts",
-    "lint": "eslint apps packages && python3 scripts/lint_contracts.py",
-    "test": "tsx --test tests/node/*.test.ts && python3 scripts/test_contracts.py",
+    "lint": "eslint apps packages && bash scripts/python.sh scripts/lint_contracts.py",
+    "test": "tsx --test tests/node/*.test.ts && bash scripts/python.sh scripts/test_contracts.py",
     "test:browser": "playwright test",
-    "contracts:build": "python3 scripts/build_contracts.py",
+    "contracts:build": "bash scripts/python.sh scripts/build_contracts.py",
     "db:migrate": "tsx apps/api/src/migrate.ts",
     "index:rebuild": "tsx apps/api/src/worker.ts --rebuild",
     "worker": "tsx apps/api/src/worker.ts",
     "setup": "bash scripts/setup.sh",
-    "deploy:contracts": "python3 scripts/deploy.py",
-    "integration:studio": "python3 scripts/studio_scenario.py"
+    "deploy:contracts": "bash scripts/python.sh scripts/deploy.py",
+    "integration:studio": "bash scripts/python.sh scripts/studio_scenario.py"
   },
   "keywords": [],
   "author": "",

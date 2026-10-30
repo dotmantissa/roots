@@ -70,3 +70,15 @@ def test_correction_and_deadline(docket,direct_vm,refs,monkeypatch):
     monkeypatch.setitem(m.gl.message_raw,'datetime','2100-01-01T00:00:00+00:00')
     c.expire_batch('batch1')
     assert c.get_batch('batch1')['status']=='TIMEOUT'
+
+def test_source_and_complete_packet_limits_fail_before_evaluation(docket,direct_vm):
+    c,m=docket
+    too_large=manifest(2)[0]['publication'];too_large['byte_length']=49153
+    with direct_vm.expect_revert('Invalid integer'):
+        m.record(too_large)
+    b=c.get_batch('batch1')
+    b['manifest'][0]['publication']['byte_length']=16384
+    c.batches['batch1']=m.canon(b)
+    with direct_vm.expect_revert('Complete packet exceeds budget'):
+        c.assess_pair('batch1',1,0,1)
+    assert c.get_batch('batch1')['pairs']=={}

@@ -22,6 +22,8 @@ npm run db:migrate
 npm run dev
 ```
 
+Setup creates a local Python environment. The project commands use it automatically.
+
 Open http://localhost:5173. The API listens on port 3911. The committed deployment manifest connects this workspace to GenLayer Studio. Do not reuse the application owner keys for another deployment.
 
 For continuous indexing and receipt reconciliation, run `npm run worker` in a separate process. `npm run index:rebuild` rebuilds the database projection from contract records. The database is a cache and broadcast journal, not the certificate authority.
@@ -60,3 +62,5 @@ The source policy SDK is in `packages/sdk/src`. It exports schemas, canonical ha
 An application starts by approving a locked batch configuration. It waits for authenticated finalized delivery, checks the certificate again at action time, and records its operation acknowledgement. An indexer or sponsor can schedule transactions, but cannot bypass that boundary.
 
 Roots begins with two integrations and three useful measurements: certificate reuse, duplicate origin detections and validator disagreement per relation. Certificate creation and monitoring are bounded services. Payment collection is not part of this Studio deployment.
+
+The [verification record](docs/verification.md) distinguishes live network evidence from authored fixtures and records the remaining dependency and telemetry limits.
