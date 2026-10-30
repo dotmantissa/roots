@@ -1,0 +1,62 @@
+{
+  "name": "roots",
+  "version": "0.1.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web \"tsx watch apps/api/src/index.ts\" \"vite --config apps/web/vite.config.ts\"",
+    "build": "tsc --noEmit && vite build --config apps/web/vite.config.ts",
+    "lint": "eslint apps packages && python3 scripts/lint_contracts.py",
+    "test": "tsx --test tests/node/*.test.ts && python3 -m pytest tests/direct tests/validator -q",
+    "test:browser": "playwright test",
+    "contracts:build": "python3 scripts/build_contracts.py",
+    "db:migrate": "tsx apps/api/src/migrate.ts",
+    "index:rebuild": "tsx apps/api/src/worker.ts --rebuild",
+    "worker": "tsx apps/api/src/worker.ts",
+    "setup": "bash scripts/setup.sh",
+    "deploy:contracts": "python3 scripts/deploy.py",
+    "integration:studio": "python3 scripts/studio_scenario.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Independent Evidence Federation",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@fastify/cors": "11.1.0",
+    "@fastify/rate-limit": "10.3.0",
+    "@fontsource/roboto-slab": "5.2.8",
+    "@fontsource/space-grotesk": "5.2.10",
+    "@neondatabase/serverless": "1.2.0",
+    "@privy-io/node": "0.37.0",
+    "@privy-io/react-auth": "3.51.0",
+    "dotenv": "17.2.3",
+    "fastify": "5.6.2",
+    "genlayer-js": "1.1.8",
+    "lucide-react": "0.548.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "22.18.12",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "4.7.0",
+    "concurrently": "9.2.1",
+    "eslint": "9.39.0",
+    "eslint-plugin-react-hooks": "7.0.1",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.2",
+    "vite": "6.4.1"
+  }
+}

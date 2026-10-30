@@ -1,0 +1,16 @@
+node_modules/
+.venv/
+.env
+.env.*
+!.env.example
+dist/
+coverage/
+__pycache__/
+.pytest_cache/
+.gltest_cache/
+.runtime/
+playwright-report/
+test-results/
+*.log
+artifacts/
+.runtime-*.json
