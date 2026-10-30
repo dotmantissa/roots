@@ -8,6 +8,7 @@ attrs==25.4.0
 bitarray==3.11.0
 certifi==2026.1.4
 chardet==5.2.0
+charset-normalizer==3.5.2
 ckzg==2.1.8
 click==8.1.8
 colorama==0.4.6

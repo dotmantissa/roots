@@ -7,7 +7,7 @@ import {studionet} from 'genlayer-js/chains';
 import {verifySignedOperation} from '../../apps/api/src/journal';
 test('signed envelope authenticates signer, contract, method and exact args',async()=>{
  const account=privateKeyToAccount(generatePrivateKey());const contract='0x1111111111111111111111111111111111111111';const args=['batch',1,0,1];
- const payload=abi.transactions.serialize([abi.calldata.encode(abi.calldata.makeCalldataObject('assess_pair',args)),false]);
+ const payload=abi.transactions.serialize([abi.calldata.encode(abi.calldata.makeCalldataObject('assess_pair',args,undefined)),false]);
  const data=encodeFunctionData({abi:studionet.consensusMainContract!.abi,functionName:'addTransaction',args:[account.address,contract,5n,3n,payload]});
  const raw=await account.signTransaction({chainId:61999,nonce:0,to:studionet.consensusMainContract!.address,value:0n,gas:200000n,gasPrice:0n,data});
  const expected={signer_address:account.address,contract_address:contract,method:'assess_pair',args};

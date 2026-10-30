@@ -10,7 +10,7 @@
     "dev": "concurrently -n api,web \"tsx watch apps/api/src/index.ts\" \"vite --config apps/web/vite.config.ts\"",
     "build": "tsc --noEmit && vite build --config apps/web/vite.config.ts",
     "lint": "eslint apps packages && python3 scripts/lint_contracts.py",
-    "test": "tsx --test tests/node/*.test.ts && python3 -m pytest tests/direct tests/validator -q",
+    "test": "tsx --test tests/node/*.test.ts && python3 scripts/test_contracts.py",
     "test:browser": "playwright test",
     "contracts:build": "python3 scripts/build_contracts.py",
     "db:migrate": "tsx apps/api/src/migrate.ts",
@@ -27,7 +27,7 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=22.0.0"
+    "node": "22.x"
   },
   "dependencies": {
     "@fastify/cors": "11.1.0",

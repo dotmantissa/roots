@@ -61,3 +61,28 @@ def test_consumers_exact_boundary_duplicates_and_correction(file,action,direct_d
     c.configure('config2',json.dumps(config))
     with direct_vm.expect_revert('awaiting'):
         getattr(c,action)('fresh','batch1','a'*64,'b'*64)
+
+@pytest.mark.parametrize('file,action',[('incident_consumer','admit_incident'),('disclosure_consumer','admit_disclosure')])
+def test_new_receipt_rejects_reordered_and_unresolved_use(file,action,direct_deploy,direct_vm,direct_owner,direct_bob,refs):
+    c=direct_deploy(f'contracts/{file}.py',addr(direct_bob),addr(direct_owner));m=module_of(c)
+    cert=certificate(direct_owner,str(m.gl.message.contract_address))
+    config={k:cert[k] for k in ['request_id','policy_id','policy_revision','subject_id','subject_digest','manifest_digest','consumer','consequence_digest','generation','deadline']}
+    direct_vm.sender=direct_bob
+    with direct_vm.expect_revert('Consumer owner'):
+        c.configure('unauthorized',json.dumps(config))
+    direct_vm.sender=direct_owner
+    c.configure('first-config',json.dumps(config))
+    refs(m,SimpleNamespace(is_active=lambda *a:True,get_certificate=lambda *a:cert))
+    first=dict(cert,operation_id='first-delivery',configuration_digest=m.digest(config))
+    direct_vm.sender=direct_bob;c.receive_certificate(json.dumps(first))
+    direct_vm.sender=direct_owner
+    config=dict(config,generation=2);c.configure('second-config',json.dumps(config))
+    cert=dict(cert,generation=2,certificate_id='batch1:2',status='UNRESOLVED',unresolved=True)
+    second=dict(cert,operation_id='second-delivery',configuration_digest=m.digest(config))
+    direct_vm.sender=direct_bob;c.receive_certificate(json.dumps(second));c.receive_certificate(json.dumps(second))
+    with direct_vm.expect_revert('configuration mismatch'):
+        c.receive_certificate(json.dumps(first))
+    state=c.get_state('batch1');assert state['last_generation']==2 and state['receipt']['operation_id']=='second-delivery'
+    direct_vm.sender=direct_owner
+    with direct_vm.expect_revert('Three certified'):
+        getattr(c,action)('unresolved-use','batch1','a'*64,'b'*64)
