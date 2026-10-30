@@ -1,0 +1,8 @@
+{
+  "operation_id": "restore-fixture-controlled_wire1",
+  "transaction_hash": "0xde48f78293e89239bc4024f8c2da0d070b027e0e376c39f4f61966cfc2d1e265",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x85f4F1716E2fC991864A4eb2857e3D5fF255eaAB"
+}

@@ -1,0 +1,8 @@
+{
+  "operation_id": "register-controlled_wire1",
+  "transaction_hash": "0x9d77a19c9ff9a7bb624258165d2fc92357a5063d11ac6ff2d3176e9393d5f5fa",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x85f4F1716E2fC991864A4eb2857e3D5fF255eaAB"
+}

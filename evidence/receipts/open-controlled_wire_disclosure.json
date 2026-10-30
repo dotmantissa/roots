@@ -1,0 +1,1095 @@
+{
+  "hash": "0xa32701878f477462882c354e8bab13ef7fd7728451012a49edc72ea642abac86",
+  "from_address": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53",
+  "to_address": "0x96DEB6C0156627F82CEd070D47C61881839A770f",
+  "data": {
+    "calldata": {
+      "readable": "{\"args\":[\"{\\\"consequence_digest\\\":\\\"ab3228304ab44b2ab1698cab4d4ea0519f8e63308a14f52f349635cf552c03aa\\\",\\\"consumer\\\":\\\"0x44988FeBB4C0125b800e0f20A21d344613010fA0\\\",\\\"deadline\\\":\\\"2026-11-06T00:00:00+00:00\\\",\\\"generation\\\":1,\\\"manifest_digest\\\":\\\"86bff0303f7c60772bbf25ca98601835eb25ef7fd6f760139116fcb3d7629e12\\\",\\\"owner\\\":\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\",\\\"parties\\\":[\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\"],\\\"policy_id\\\":\\\"three_origins\\\",\\\"policy_revision\\\":1,\\\"request_id\\\":\\\"controlled_wire_disclosure\\\",\\\"subject_digest\\\":\\\"359383c49934d088bd4048665755b7c63abd0964827a99ce4048008864c2409d\\\",\\\"subject_id\\\":\\\"Controlled wire reporting for disclosure\\\"}\",\"[{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_wire0_owner\\\",\\\"byte_hash\\\":\\\"adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96\\\",\\\"byte_length\\\":306,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire0_owner\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":306,\\\"quote_hash\\\":\\\"adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner0.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_wire0\\\",\\\"byte_hash\\\":\\\"f1ba2fed490e6b83972871d9b81ea0ac52e4a786fde1ea45d2efd77cb4bf762c\\\",\\\"byte_length\\\":385,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire0\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":385,\\\"quote_hash\\\":\\\"f1ba2fed490e6b83972871d9b81ea0ac52e4a786fde1ea45d2efd77cb4bf762c\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire0.txt\\\"},\\\"publisher_id\\\":\\\"controlled_wire0\\\",\\\"publisher_revision\\\":1},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_wire1_owner\\\",\\\"byte_hash\\\":\\\"89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f\\\",\\\"byte_length\\\":306,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire1_owner\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":306,\\\"quote_hash\\\":\\\"89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner1.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_wire1\\\",\\\"byte_hash\\\":\\\"540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803\\\",\\\"byte_length\\\":385,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire1\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":385,\\\"quote_hash\\\":\\\"540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire1.txt\\\"},\\\"publisher_id\\\":\\\"controlled_wire1\\\",\\\"publisher_revision\\\":1},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_wire2_owner\\\",\\\"byte_hash\\\":\\\"d724bdd53c98c84b9f4644740c630e2ad81d08d5ccfe53b160e0b919764043a4\\\",\\\"byte_length\\\":306,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire2_owner\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":306,\\\"quote_hash\\\":\\\"d724bdd53c98c84b9f4644740c630e2ad81d08d5ccfe53b160e0b919764043a4\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner2.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_wire2\\\",\\\"byte_hash\\\":\\\"016fa28fb235e959841584fb27592a4804fa73059710c21fd2a86ca06cdc6113\\\",\\\"byte_length\\\":385,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire2\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":385,\\\"quote_hash\\\":\\\"016fa28fb235e959841584fb27592a4804fa73059710c21fd2a86ca06cdc6113\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire2.txt\\\"},\\\"publisher_id\\\":\\\"controlled_wire2\\\",\\\"publisher_revision\\\":1}]\"],\"method\":\"open_batch\"}"
+    }
+  },
+  "value": 0,
+  "type": 2,
+  "status": 7,
+  "result": 6,
+  "consensus_data": {
+    "votes": {
+      "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+      "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+      "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+      "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+    },
+    "leader_receipt": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "leader",
+        "vote": null,
+        "node_config": {
+          "stake": 100,
+          "address": "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9",
+          "primary_model": {
+            "model": "policy:prd-minimax",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "minimax-m3"
+                    ],
+                    [
+                      "family_eq",
+                      "minimax-m2.7"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "minimax-m3"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "minimax-m2.7"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+          },
+          "secondary_model": {
+            "model": "openai/gpt-5.4",
+            "config": {
+              "models": [
+                "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        },
+        "calldata": {
+          "readable": "{\"args\":[\"{\\\"consequence_digest\\\":\\\"ab3228304ab44b2ab1698cab4d4ea0519f8e63308a14f52f349635cf552c03aa\\\",\\\"consumer\\\":\\\"0x44988FeBB4C0125b800e0f20A21d344613010fA0\\\",\\\"deadline\\\":\\\"2026-11-06T00:00:00+00:00\\\",\\\"generation\\\":1,\\\"manifest_digest\\\":\\\"86bff0303f7c60772bbf25ca98601835eb25ef7fd6f760139116fcb3d7629e12\\\",\\\"owner\\\":\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\",\\\"parties\\\":[\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\"],\\\"policy_id\\\":\\\"three_origins\\\",\\\"policy_revision\\\":1,\\\"request_id\\\":\\\"controlled_wire_disclosure\\\",\\\"subject_digest\\\":\\\"359383c49934d088bd4048665755b7c63abd0964827a99ce4048008864c2409d\\\",\\\"subject_id\\\":\\\"Controlled wire reporting for disclosure\\\"}\",\"[{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_wire0_owner\\\",\\\"byte_hash\\\":\\\"adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96\\\",\\\"byte_length\\\":306,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire0_owner\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":306,\\\"quote_hash\\\":\\\"adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner0.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_wire0\\\",\\\"byte_hash\\\":\\\"f1ba2fed490e6b83972871d9b81ea0ac52e4a786fde1ea45d2efd77cb4bf762c\\\",\\\"byte_length\\\":385,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire0\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":385,\\\"quote_hash\\\":\\\"f1ba2fed490e6b83972871d9b81ea0ac52e4a786fde1ea45d2efd77cb4bf762c\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire0.txt\\\"},\\\"publisher_id\\\":\\\"controlled_wire0\\\",\\\"publisher_revision\\\":1},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_wire1_owner\\\",\\\"byte_hash\\\":\\\"89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f\\\",\\\"byte_length\\\":306,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire1_owner\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":306,\\\"quote_hash\\\":\\\"89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner1.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_wire1\\\",\\\"byte_hash\\\":\\\"540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803\\\",\\\"byte_length\\\":385,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire1\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":385,\\\"quote_hash\\\":\\\"540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire1.txt\\\"},\\\"publisher_id\\\":\\\"controlled_wire1\\\",\\\"publisher_revision\\\":1},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_wire2_owner\\\",\\\"byte_hash\\\":\\\"d724bdd53c98c84b9f4644740c630e2ad81d08d5ccfe53b160e0b919764043a4\\\",\\\"byte_length\\\":306,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire2_owner\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":306,\\\"quote_hash\\\":\\\"d724bdd53c98c84b9f4644740c630e2ad81d08d5ccfe53b160e0b919764043a4\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner2.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_wire2\\\",\\\"byte_hash\\\":\\\"016fa28fb235e959841584fb27592a4804fa73059710c21fd2a86ca06cdc6113\\\",\\\"byte_length\\\":385,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire2\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":385,\\\"quote_hash\\\":\\\"016fa28fb235e959841584fb27592a4804fa73059710c21fd2a86ca06cdc6113\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire2.txt\\\"},\\\"publisher_id\\\":\\\"controlled_wire2\\\",\\\"publisher_revision\\\":1}]\"],\"method\":\"open_batch\"}"
+        },
+        "eq_outputs": {},
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "node_config": {
+          "stake": 100,
+          "address": "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9",
+          "primary_model": {
+            "model": "policy:prd-minimax",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "minimax-m3"
+                    ],
+                    [
+                      "family_eq",
+                      "minimax-m2.7"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "minimax-m3"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "minimax-m2.7"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+          },
+          "secondary_model": {
+            "model": "openai/gpt-5.4",
+            "config": {
+              "models": [
+                "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        },
+        "calldata": {
+          "readable": "{\"args\":[\"{\\\"consequence_digest\\\":\\\"ab3228304ab44b2ab1698cab4d4ea0519f8e63308a14f52f349635cf552c03aa\\\",\\\"consumer\\\":\\\"0x44988FeBB4C0125b800e0f20A21d344613010fA0\\\",\\\"deadline\\\":\\\"2026-11-06T00:00:00+00:00\\\",\\\"generation\\\":1,\\\"manifest_digest\\\":\\\"86bff0303f7c60772bbf25ca98601835eb25ef7fd6f760139116fcb3d7629e12\\\",\\\"owner\\\":\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\",\\\"parties\\\":[\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\"],\\\"policy_id\\\":\\\"three_origins\\\",\\\"policy_revision\\\":1,\\\"request_id\\\":\\\"controlled_wire_disclosure\\\",\\\"subject_digest\\\":\\\"359383c49934d088bd4048665755b7c63abd0964827a99ce4048008864c2409d\\\",\\\"subject_id\\\":\\\"Controlled wire reporting for disclosure\\\"}\",\"[{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_wire0_owner\\\",\\\"byte_hash\\\":\\\"adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96\\\",\\\"byte_length\\\":306,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire0_owner\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":306,\\\"quote_hash\\\":\\\"adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner0.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_wire0\\\",\\\"byte_hash\\\":\\\"f1ba2fed490e6b83972871d9b81ea0ac52e4a786fde1ea45d2efd77cb4bf762c\\\",\\\"byte_length\\\":385,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire0\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":385,\\\"quote_hash\\\":\\\"f1ba2fed490e6b83972871d9b81ea0ac52e4a786fde1ea45d2efd77cb4bf762c\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire0.txt\\\"},\\\"publisher_id\\\":\\\"controlled_wire0\\\",\\\"publisher_revision\\\":1},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_wire1_owner\\\",\\\"byte_hash\\\":\\\"89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f\\\",\\\"byte_length\\\":306,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire1_owner\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":306,\\\"quote_hash\\\":\\\"89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner1.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_wire1\\\",\\\"byte_hash\\\":\\\"540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803\\\",\\\"byte_length\\\":385,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire1\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":385,\\\"quote_hash\\\":\\\"540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire1.txt\\\"},\\\"publisher_id\\\":\\\"controlled_wire1\\\",\\\"publisher_revision\\\":1},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_wire2_owner\\\",\\\"byte_hash\\\":\\\"d724bdd53c98c84b9f4644740c630e2ad81d08d5ccfe53b160e0b919764043a4\\\",\\\"byte_length\\\":306,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire2_owner\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":306,\\\"quote_hash\\\":\\\"d724bdd53c98c84b9f4644740c630e2ad81d08d5ccfe53b160e0b919764043a4\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire-owner2.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_wire2\\\",\\\"byte_hash\\\":\\\"016fa28fb235e959841584fb27592a4804fa73059710c21fd2a86ca06cdc6113\\\",\\\"byte_length\\\":385,\\\"capture_url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_wire2\\\",\\\"revision\\\":1,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":385,\\\"quote_hash\\\":\\\"016fa28fb235e959841584fb27592a4804fa73059710c21fd2a86ca06cdc6113\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://way-reuters-isaac-baths.trycloudflare.com/wire2.txt\\\"},\\\"publisher_id\\\":\\\"controlled_wire2\\\",\\\"publisher_revision\\\":1}]\"],\"method\":\"open_batch\"}"
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      }
+    ],
+    "validators": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "node_config": {
+          "stake": 100,
+          "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+          "primary_model": {
+            "model": "openai/gpt-5.4",
+            "config": {
+              "models": [
+                "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            },
+            "fallback_validator": "0x045291B293B9D68969c18B6637A8258038cf787A"
+          },
+          "secondary_model": {
+            "model": "policy:prd-gpt-5-4",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-oss-120b"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "address": "0x045291B293B9D68969c18B6637A8258038cf787A",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            }
+          }
+        }
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle",
+        "node_config": {
+          "id": 5732,
+          "model": "policy:prd-grok",
+          "stake": 100,
+          "config": {
+            "policy_ir": [
+              "policy",
+              [
+                "and",
+                [
+                  "meets_req"
+                ],
+                [
+                  "not",
+                  [
+                    "is",
+                    "disabled"
+                  ]
+                ],
+                [
+                  "cmp",
+                  "success_rate",
+                  "ge",
+                  0.2
+                ],
+                [
+                  "or",
+                  [
+                    "family_eq",
+                    "grok-4.3"
+                  ],
+                  [
+                    "family_eq",
+                    "gpt-5.4"
+                  ],
+                  [
+                    "family_eq",
+                    "gemini-3-flash-preview"
+                  ]
+                ]
+              ],
+              [
+                "add",
+                [
+                  "scale",
+                  100,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "grok-4.3"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  10,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  1,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.25,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "price_in"
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.45,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "price_out"
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.2,
+                  [
+                    "field",
+                    "success_rate"
+                  ]
+                ],
+                [
+                  "scale",
+                  0.1,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "latency_ms"
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "argmax"
+              ],
+              [
+                "id"
+              ],
+              [
+                "always",
+                {
+                  "action": "next_candidate"
+                }
+              ]
+            ],
+            "timeout_ms": 22000,
+            "first_token_timeout_ms": 7000
+          },
+          "plugin": "openai-compatible",
+          "address": "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc",
+          "provider": "llm-router",
+          "plugin_config": {
+            "api_url": "https://router.ygr.ai",
+            "api_key_env_var": "LLM_ROUTER_API_KEY"
+          },
+          "fallback_validator": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4"
+        }
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle",
+        "node_config": {
+          "id": 5742,
+          "model": "google/gemini-3-flash-preview",
+          "stake": 100,
+          "config": {
+            "models": [
+              "google/gemini-3-flash-preview",
+              "openai/gpt-5.4",
+              "anthropic/claude-sonnet-4.6"
+            ]
+          },
+          "plugin": "openai-compatible",
+          "address": "0x63d72fE364368491E62a42B9C73c317Ce1ca8434",
+          "provider": "openrouter",
+          "plugin_config": {
+            "api_url": "https://openrouter.ai/api",
+            "api_key_env_var": "OPENROUTERAPIKEY"
+          },
+          "fallback_validator": "0x336458747913FE397be82c4F0926ACeB3ab13618"
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "node_config": {
+          "stake": 100,
+          "address": "0x045291B293B9D68969c18B6637A8258038cf787A",
+          "primary_model": {
+            "model": "policy:prd-gpt-5-4",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-oss-120b"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x63d72fE364368491E62a42B9C73c317Ce1ca8434"
+          },
+          "secondary_model": {
+            "model": "google/gemini-3-flash-preview",
+            "config": {
+              "models": [
+                "google/gemini-3-flash-preview",
+                "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x63d72fE364368491E62a42B9C73c317Ce1ca8434",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "gaslimit": 2838,
+  "nonce": 2838,
+  "created_at": "2026-10-30T10:01:21.081894+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "origin_address": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53",
+  "triggered_on": null,
+  "appeal_validators_timeout": false,
+  "sim_config": {
+    "signed_rollup_transaction": "0xf911cb820b16808307a12094000000000000000000000000000000000000000080b9116427241a99000000000000000000000000bc1399c55538ec034d4da550c03c34ae0c357f5300000000000000000000000096deb6c0156627f82ced070d47c61881839a770f0000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000001097f91094b910901604617267731584277b22636f6e73657175656e63655f646967657374223a2261623332323833303461623434623261623136393863616234643465613035313966386536333330386131346635326633343936333563663535326330336161222c22636f6e73756d6572223a22307834343938384665424234433031323562383030653066323041323164333434363133303130664130222c22646561646c696e65223a22323032362d31312d30365430303a30303a30302b30303a3030222c2267656e65726174696f6e223a312c226d616e69666573745f646967657374223a2238366266663033303366376336303737326262663235636139383630313833356562323565663766643666373630313339313136666362336437363239653132222c226f776e6572223a22307842433133393963353535333865433033346434446135353043303363333441653043333537663533222c2270617274696573223a5b22307842433133393963353535333865433033346434446135353043303363333441653043333537663533225d2c22706f6c6963795f6964223a2274687265655f6f726967696e73222c22706f6c6963795f7265766973696f6e223a312c22726571756573745f6964223a22636f6e74726f6c6c65645f776972655f646973636c6f73757265222c227375626a6563745f646967657374223a2233353933383363343939333464303838626434303438363635373535623763363361626430393634383237613939636534303438303038383634633234303964222c227375626a6563745f6964223a22436f6e74726f6c6c65642077697265207265706f7274696e6720666f7220646973636c6f73757265227d94e0015b7b226f776e657273686970223a7b22617574686f72697479223a22636f6e74726f6c6c65645f77697265305f6f776e6572222c22627974655f68617368223a2261646362666436313566666138656666633133383666646365666666616132353633663662396133303364313534396263623433643130346666663236633936222c22627974655f6c656e677468223a3330362c22636170747572655f75726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f776972652d6f776e6572302e747874222c226368616e6e656c223a227075626c6963222c227265636f72645f6964223a22636f6e74726f6c6c65645f77697265305f6f776e6572222c227265766973696f6e223a312c2273636f7065223a224f726967696e616c207265706f7274696e67206f72206d6561737572656d656e7420616e64207075626c696320656469746f7269616c20636f6e74726f6c222c227370616e73223a5b7b22656e64223a3330362c2271756f74655f68617368223a2261646362666436313566666138656666633133383666646365666666616132353633663662396133303364313534396263623433643130346666663236633936222c227370616e5f6964223a22636f6d706c657465222c227374617274223a307d5d2c2275726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f776972652d6f776e6572302e747874227d2c227075626c69636174696f6e223a7b22617574686f72697479223a22636f6e74726f6c6c65645f7769726530222c22627974655f68617368223a2266316261326665643439306536623833393732383731643962383165613061633532653461373836666465316561343564326566643737636234626637363263222c22627974655f6c656e677468223a3338352c22636170747572655f75726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f77697265302e747874222c226368616e6e656c223a227075626c6963222c227265636f72645f6964223a22636f6e74726f6c6c65645f7769726530222c227265766973696f6e223a312c2273636f7065223a224f726967696e616c207265706f7274696e67206f72206d6561737572656d656e7420616e64207075626c696320656469746f7269616c20636f6e74726f6c222c227370616e73223a5b7b22656e64223a3338352c2271756f74655f68617368223a2266316261326665643439306536623833393732383731643962383165613061633532653461373836666465316561343564326566643737636234626637363263222c227370616e5f6964223a22636f6d706c657465222c227374617274223a307d5d2c2275726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f77697265302e747874227d2c227075626c69736865725f6964223a22636f6e74726f6c6c65645f7769726530222c227075626c69736865725f7265766973696f6e223a317d2c7b226f776e657273686970223a7b22617574686f72697479223a22636f6e74726f6c6c65645f77697265315f6f776e6572222c22627974655f68617368223a2238396439333661616539373565353165373437656539323062383563656232323564316665616363303433623562626334303134613866636339366334373766222c22627974655f6c656e677468223a3330362c22636170747572655f75726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f776972652d6f776e6572312e747874222c226368616e6e656c223a227075626c6963222c227265636f72645f6964223a22636f6e74726f6c6c65645f77697265315f6f776e6572222c227265766973696f6e223a312c2273636f7065223a224f726967696e616c207265706f7274696e67206f72206d6561737572656d656e7420616e64207075626c696320656469746f7269616c20636f6e74726f6c222c227370616e73223a5b7b22656e64223a3330362c2271756f74655f68617368223a2238396439333661616539373565353165373437656539323062383563656232323564316665616363303433623562626334303134613866636339366334373766222c227370616e5f6964223a22636f6d706c657465222c227374617274223a307d5d2c2275726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f776972652d6f776e6572312e747874227d2c227075626c69636174696f6e223a7b22617574686f72697479223a22636f6e74726f6c6c65645f7769726531222c22627974655f68617368223a2235343063386566623861356232343832643261356564363964636161333163626332333766356261336533383531663339303536636438376236343661383033222c22627974655f6c656e677468223a3338352c22636170747572655f75726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f77697265312e747874222c226368616e6e656c223a227075626c6963222c227265636f72645f6964223a22636f6e74726f6c6c65645f7769726531222c227265766973696f6e223a312c2273636f7065223a224f726967696e616c207265706f7274696e67206f72206d6561737572656d656e7420616e64207075626c696320656469746f7269616c20636f6e74726f6c222c227370616e73223a5b7b22656e64223a3338352c2271756f74655f68617368223a2235343063386566623861356232343832643261356564363964636161333163626332333766356261336533383531663339303536636438376236343661383033222c227370616e5f6964223a22636f6d706c657465222c227374617274223a307d5d2c2275726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f77697265312e747874227d2c227075626c69736865725f6964223a22636f6e74726f6c6c65645f7769726531222c227075626c69736865725f7265766973696f6e223a317d2c7b226f776e657273686970223a7b22617574686f72697479223a22636f6e74726f6c6c65645f77697265325f6f776e6572222c22627974655f68617368223a2264373234626464353363393863383462396634363434373430633633306532616438316430386435636366653533623136306530623931393736343034336134222c22627974655f6c656e677468223a3330362c22636170747572655f75726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f776972652d6f776e6572322e747874222c226368616e6e656c223a227075626c6963222c227265636f72645f6964223a22636f6e74726f6c6c65645f77697265325f6f776e6572222c227265766973696f6e223a312c2273636f7065223a224f726967696e616c207265706f7274696e67206f72206d6561737572656d656e7420616e64207075626c696320656469746f7269616c20636f6e74726f6c222c227370616e73223a5b7b22656e64223a3330362c2271756f74655f68617368223a2264373234626464353363393863383462396634363434373430633633306532616438316430386435636366653533623136306530623931393736343034336134222c227370616e5f6964223a22636f6d706c657465222c227374617274223a307d5d2c2275726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f776972652d6f776e6572322e747874227d2c227075626c69636174696f6e223a7b22617574686f72697479223a22636f6e74726f6c6c65645f7769726532222c22627974655f68617368223a2230313666613238666232333565393539383431353834666232373539326134383034666137333035393731306332316664326138366361303663646336313133222c22627974655f6c656e677468223a3338352c22636170747572655f75726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f77697265322e747874222c226368616e6e656c223a227075626c6963222c227265636f72645f6964223a22636f6e74726f6c6c65645f7769726532222c227265766973696f6e223a312c2273636f7065223a224f726967696e616c207265706f7274696e67206f72206d6561737572656d656e7420616e64207075626c696320656469746f7269616c20636f6e74726f6c222c227370616e73223a5b7b22656e64223a3338352c2271756f74655f68617368223a2230313666613238666232333565393539383431353834666232373539326134383034666137333035393731306332316664326138366361303663646336313133222c227370616e5f6964223a22636f6d706c657465222c227374617274223a307d5d2c2275726c223a2268747470733a2f2f7761792d726575746572732d69736161632d62617468732e747279636c6f7564666c6172652e636f6d2f77697265322e747874227d2c227075626c69736865725f6964223a22636f6e74726f6c6c65645f7769726532222c227075626c69736865725f7265766973696f6e223a317d5d066d6574686f64546f70656e5f6261746368800000000000000000008301e481a0c4428dac10de9aafb11fbcde80b2cf4abb0a1bf8eb0e83b4544e6870a3648b21a04cec9f70245bc055ce0bb4647ff1136befec5f1b9cf37e53672032db78cad631"
+  },
+  "value_credited": false,
+  "sender": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53",
+  "recipient": "0x96DEB6C0156627F82CEd070D47C61881839A770f",
+  "tx_id": "0xa32701878f477462882c354e8bab13ef7fd7728451012a49edc72ea642abac86",
+  "activator": "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9",
+  "last_leader": "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9",
+  "result_name": "MAJORITY_AGREE",
+  "num_of_rounds": "1",
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "3",
+    "result": 6,
+    "round_validators": [
+      "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9",
+      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+      "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc",
+      "0x63d72fE364368491E62a42B9C73c317Ce1ca8434",
+      "0x045291B293B9D68969c18B6637A8258038cf787A"
+    ],
+    "validator_votes_hash": [
+      "0x4dee67f54a764930704e60c479256255696b0dbac7d674401b84dc24020126c0",
+      "0x483ce033790f4b1dd625e17b195d30c6c2c8b6f0ae996c4e3f0f1ffc22700cc1",
+      "0x5e1857e94884915a99b78d644aa95e3d7295787ab02fb8df9e48c0471c502289",
+      "0x5a11ca7edcc30f31c13b191b540d51cc675f177f6ceedc0547d00ff5a3e696f9",
+      "0x6e2debd030240e0f989377ace3ca03332b5eaba3245bda9f77e442a652033caf"
+    ],
+    "validator_votes": [
+      1,
+      1,
+      5,
+      5,
+      1
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "IDLE",
+      "IDLE",
+      "AGREE"
+    ]
+  },
+  "status_name": "FINALIZED"
+}

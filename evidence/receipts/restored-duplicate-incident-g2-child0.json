@@ -1,0 +1,1100 @@
+{
+  "hash": "0xc5d49cdf9a85f5870f543238412fa59a957cd6805ed566c35e216a20d528cde0",
+  "from_address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407",
+  "to_address": "0x0d67aa9fd5384A4953785c8019d27b964b949025",
+  "data": {
+    "calldata": "FgRhcmdzDaTLBXsiYXR0ZW1wdHMiOnsiMDoxIjoxLCIwOjIiOjEsIjE6MiI6MX0sImJhdGNoX2RpZ2VzdCI6ImZkMDI4MGJiMmVlMjk3MzY2MjE1ZTRmMTEzNjYxZDQyZWQ2Y2Y4ZDdhYTc1Zjk5NjkwYzQ5YmU5MWM2MDU1ZWYiLCJjZXJ0aWZpY2F0ZV9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnRfaW5jaWRlbnQ6MiIsImNvbmZpZ3VyYXRpb25fZGlnZXN0IjoiMjcxYWQ1YmNmOTk2ZjRlOGUyMDE4OTQzYWQ0MGFlZTY5NmJmMzJlMmJlNDY0M2M5NzZhNGYxMTM0ZmZmZTY2ZSIsImNvbnNlcXVlbmNlX2RpZ2VzdCI6ImFiMzIyODMwNGFiNDRiMmFiMTY5OGNhYjRkNGVhMDUxOWY4ZTYzMzA4YTE0ZjUyZjM0OTYzNWNmNTUyYzAzYWEiLCJjb25zdW1lciI6IjB4MGQ2N2FhOWZkNTM4NEE0OTUzNzg1YzgwMTlkMjdiOTY0Yjk0OTAyNSIsImNvdmVyYWdlIjp0cnVlLCJkZWFkbGluZSI6IjIwMjYtMTEtMDZUMDA6MDA6MDArMDA6MDAiLCJnZW5lcmF0aW9uIjoyLCJtYW5pZmVzdCI6W3sib3duZXJzaGlwIjp7ImF1dGhvcml0eSI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQwX293bmVyIiwiYnl0ZV9oYXNoIjoiZTA5NzQyYTdlNDY0MTY5OGI4NTUzYTI1YTRkMTZlNDkxNzQ0YjY4ODZhYWJhZmEzZWQyM2FiYTg1M2YwNDAyYiIsImJ5dGVfbGVuZ3RoIjo1MDUsImNhcHR1cmVfdXJsIjoiaHR0cHM6Ly9yb290cy1tYXV2ZS1kZWx0YS52ZXJjZWwuYXBwL3ZhbGlkYXRpb24vbWVhc3VyZW1lbnQtb3duZXIwLnR4dCIsImNoYW5uZWwiOiJwdWJsaWMiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MF9vd25lciIsInJldmlzaW9uIjoyLCJzY29wZSI6Ik9yaWdpbmFsIHJlcG9ydGluZyBvciBtZWFzdXJlbWVudCBhbmQgcHVibGljIGVkaXRvcmlhbCBjb250cm9sIiwic3BhbnMiOlt7ImVuZCI6NTA1LCJxdW90ZV9oYXNoIjoiZTA5NzQyYTdlNDY0MTY5OGI4NTUzYTI1YTRkMTZlNDkxNzQ0YjY4ODZhYWJhZmEzZWQyM2FiYTg1M2YwNDAyYiIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfV0sInVybCI6Imh0dHBzOi8vcm9vdHMtbWF1dmUtZGVsdGEudmVyY2VsLmFwcC92YWxpZGF0aW9uL21lYXN1cmVtZW50LW93bmVyMC50eHQifSwicHVibGljYXRpb24iOnsiYXV0aG9yaXR5IjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDAiLCJieXRlX2hhc2giOiJhM2U4ODM1ZjJlOGUxYTg0ODlkYzUyODU0MDYyMGIzNjdjMmVjNjYyMmMwMjY5NTg2NWZkMWM4YzJkZjcwOGUzIiwiYnl0ZV9sZW5ndGgiOjUyMywiY2FwdHVyZV91cmwiOiJodHRwczovL3Jvb3RzLW1hdXZlLWRlbHRhLnZlcmNlbC5hcHAvdmFsaWRhdGlvbi9tZWFzdXJlbWVudDAudHh0IiwiY2hhbm5lbCI6InB1YmxpYyIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQwIiwicmV2aXNpb24iOjIsInNjb3BlIjoiT3JpZ2luYWwgcmVwb3J0aW5nIG9yIG1lYXN1cmVtZW50IGFuZCBwdWJsaWMgZWRpdG9yaWFsIGNvbnRyb2wiLCJzcGFucyI6W3siZW5kIjo1MjMsInF1b3RlX2hhc2giOiJhM2U4ODM1ZjJlOGUxYTg0ODlkYzUyODU0MDYyMGIzNjdjMmVjNjYyMmMwMjY5NTg2NWZkMWM4YzJkZjcwOGUzIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9XSwidXJsIjoiaHR0cHM6Ly9yb290cy1tYXV2ZS1kZWx0YS52ZXJjZWwuYXBwL3ZhbGlkYXRpb24vbWVhc3VyZW1lbnQwLnR4dCJ9LCJwdWJsaXNoZXJfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MCIsInB1Ymxpc2hlcl9yZXZpc2lvbiI6Mn0seyJvd25lcnNoaXAiOnsiYXV0aG9yaXR5IjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDFfb3duZXIiLCJieXRlX2hhc2giOiJkZTBiNDVjZmJiNDgzNmU0YzU5MmY3YWI4ZjFhZWQzMGYyMDY2ODZhOTkzMDVmZjQ2Y2JmMjU4N2U0NzE3NjhlIiwiYnl0ZV9sZW5ndGgiOjUwMCwiY2FwdHVyZV91cmwiOiJodHRwczovL3Jvb3RzLW1hdXZlLWRlbHRhLnZlcmNlbC5hcHAvdmFsaWRhdGlvbi9tZWFzdXJlbWVudC1vd25lcjEudHh0IiwiY2hhbm5lbCI6InB1YmxpYyIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQxX293bmVyIiwicmV2aXNpb24iOjIsInNjb3BlIjoiT3JpZ2luYWwgcmVwb3J0aW5nIG9yIG1lYXN1cmVtZW50IGFuZCBwdWJsaWMgZWRpdG9yaWFsIGNvbnRyb2wiLCJzcGFucyI6W3siZW5kIjo1MDAsInF1b3RlX2hhc2giOiJkZTBiNDVjZmJiNDgzNmU0YzU5MmY3YWI4ZjFhZWQzMGYyMDY2ODZhOTkzMDVmZjQ2Y2JmMjU4N2U0NzE3NjhlIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9XSwidXJsIjoiaHR0cHM6Ly9yb290cy1tYXV2ZS1kZWx0YS52ZXJjZWwuYXBwL3ZhbGlkYXRpb24vbWVhc3VyZW1lbnQtb3duZXIxLnR4dCJ9LCJwdWJsaWNhdGlvbiI6eyJhdXRob3JpdHkiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MSIsImJ5dGVfaGFzaCI6IjE0ZDBiNDRmNzJjZDk0MjViMzAwYjJiMWIwZTgyOWU5ZjI1MjdkM2U5NDQ0YjE2NzNkZGY4MDA5MTBlMDY5NDEiLCJieXRlX2xlbmd0aCI6NTE4LCJjYXB0dXJlX3VybCI6Imh0dHBzOi8vcm9vdHMtbWF1dmUtZGVsdGEudmVyY2VsLmFwcC92YWxpZGF0aW9uL21lYXN1cmVtZW50MS50eHQiLCJjaGFubmVsIjoicHVibGljIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDEiLCJyZXZpc2lvbiI6Miwic2NvcGUiOiJPcmlnaW5hbCByZXBvcnRpbmcgb3IgbWVhc3VyZW1lbnQgYW5kIHB1YmxpYyBlZGl0b3JpYWwgY29udHJvbCIsInNwYW5zIjpbeyJlbmQiOjUxOCwicXVvdGVfaGFzaCI6IjE0ZDBiNDRmNzJjZDk0MjViMzAwYjJiMWIwZTgyOWU5ZjI1MjdkM2U5NDQ0YjE2NzNkZGY4MDA5MTBlMDY5NDEiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH1dLCJ1cmwiOiJodHRwczovL3Jvb3RzLW1hdXZlLWRlbHRhLnZlcmNlbC5hcHAvdmFsaWRhdGlvbi9tZWFzdXJlbWVudDEudHh0In0sInB1Ymxpc2hlcl9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQxIiwicHVibGlzaGVyX3JldmlzaW9uIjoyfSx7Im93bmVyc2hpcCI6eyJhdXRob3JpdHkiOiJjb250cm9sbGVkX21lYXN1cmVtZW50Ml9vd25lciIsImJ5dGVfaGFzaCI6ImI0MDUxYmMyYTE0OTg0NDkzNzExNTRiMzc3ZTA4NTQ2MzQzZWRjMjU2NDRlNDQ5ODE3ODY3NzVjMmIyMGRhNWUiLCJieXRlX2xlbmd0aCI6NTAyLCJjYXB0dXJlX3VybCI6Imh0dHBzOi8vcm9vdHMtbWF1dmUtZGVsdGEudmVyY2VsLmFwcC92YWxpZGF0aW9uL21lYXN1cmVtZW50LW93bmVyMi50eHQiLCJjaGFubmVsIjoicHVibGljIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDJfb3duZXIiLCJyZXZpc2lvbiI6Miwic2NvcGUiOiJPcmlnaW5hbCByZXBvcnRpbmcgb3IgbWVhc3VyZW1lbnQgYW5kIHB1YmxpYyBlZGl0b3JpYWwgY29udHJvbCIsInNwYW5zIjpbeyJlbmQiOjUwMiwicXVvdGVfaGFzaCI6ImI0MDUxYmMyYTE0OTg0NDkzNzExNTRiMzc3ZTA4NTQ2MzQzZWRjMjU2NDRlNDQ5ODE3ODY3NzVjMmIyMGRhNWUiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH1dLCJ1cmwiOiJodHRwczovL3Jvb3RzLW1hdXZlLWRlbHRhLnZlcmNlbC5hcHAvdmFsaWRhdGlvbi9tZWFzdXJlbWVudC1vd25lcjIudHh0In0sInB1YmxpY2F0aW9uIjp7ImF1dGhvcml0eSI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQyIiwiYnl0ZV9oYXNoIjoiMWZjNDkxZjhjNDNlNDk5MWM0YmYxYWY3MzA4OWE4MDEwYWNmOGMzODNjM2IwZjJmN2Y4NTQzMjAzYzAxMDE1MiIsImJ5dGVfbGVuZ3RoIjo1MjAsImNhcHR1cmVfdXJsIjoiaHR0cHM6Ly9yb290cy1tYXV2ZS1kZWx0YS52ZXJjZWwuYXBwL3ZhbGlkYXRpb24vbWVhc3VyZW1lbnQyLnR4dCIsImNoYW5uZWwiOiJwdWJsaWMiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MiIsInJldmlzaW9uIjoyLCJzY29wZSI6Ik9yaWdpbmFsIHJlcG9ydGluZyBvciBtZWFzdXJlbWVudCBhbmQgcHVibGljIGVkaXRvcmlhbCBjb250cm9sIiwic3BhbnMiOlt7ImVuZCI6NTIwLCJxdW90ZV9oYXNoIjoiMWZjNDkxZjhjNDNlNDk5MWM0YmYxYWY3MzA4OWE4MDEwYWNmOGMzODNjM2IwZjJmN2Y4NTQzMjAzYzAxMDE1MiIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfV0sInVybCI6Imh0dHBzOi8vcm9vdHMtbWF1dmUtZGVsdGEudmVyY2VsLmFwcC92YWxpZGF0aW9uL21lYXN1cmVtZW50Mi50eHQifSwicHVibGlzaGVyX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDIiLCJwdWJsaXNoZXJfcmV2aXNpb24iOjJ9XSwibWFuaWZlc3RfZGlnZXN0IjoiNGI3OGUyNDZlODljYzZiYWZjOWQ0OWEyZmNlYWQ5ODdhZGEzODVlYTQxODRjZTMxN2MyMDU2OGVjMWZmZDQ2YSIsIm5vbl9tZXJnZV93aXRuZXNzZXMiOlt7InBhaXIiOiIwOjEiLCJ3aXRuZXNzZXMiOlt7ImVuZCI6NTIzLCJxdW90ZV9oYXNoIjoiYTNlODgzNWYyZThlMWE4NDg5ZGM1Mjg1NDA2MjBiMzY3YzJlYzY2MjJjMDI2OTU4NjVmZDFjOGMyZGY3MDhlMyIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQwIiwic291cmNlX2hhc2giOiJhM2U4ODM1ZjJlOGUxYTg0ODlkYzUyODU0MDYyMGIzNjdjMmVjNjYyMmMwMjY5NTg2NWZkMWM4YzJkZjcwOGUzIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9LHsiZW5kIjo1MDUsInF1b3RlX2hhc2giOiJlMDk3NDJhN2U0NjQxNjk4Yjg1NTNhMjVhNGQxNmU0OTE3NDRiNjg4NmFhYmFmYTNlZDIzYWJhODUzZjA0MDJiIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDBfb3duZXIiLCJzb3VyY2VfaGFzaCI6ImUwOTc0MmE3ZTQ2NDE2OThiODU1M2EyNWE0ZDE2ZTQ5MTc0NGI2ODg2YWFiYWZhM2VkMjNhYmE4NTNmMDQwMmIiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH0seyJlbmQiOjUxOCwicXVvdGVfaGFzaCI6IjE0ZDBiNDRmNzJjZDk0MjViMzAwYjJiMWIwZTgyOWU5ZjI1MjdkM2U5NDQ0YjE2NzNkZGY4MDA5MTBlMDY5NDEiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MSIsInNvdXJjZV9oYXNoIjoiMTRkMGI0NGY3MmNkOTQyNWIzMDBiMmIxYjBlODI5ZTlmMjUyN2QzZTk0NDRiMTY3M2RkZjgwMDkxMGUwNjk0MSIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfSx7ImVuZCI6NTAwLCJxdW90ZV9oYXNoIjoiZGUwYjQ1Y2ZiYjQ4MzZlNGM1OTJmN2FiOGYxYWVkMzBmMjA2Njg2YTk5MzA1ZmY0NmNiZjI1ODdlNDcxNzY4ZSIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQxX293bmVyIiwic291cmNlX2hhc2giOiJkZTBiNDVjZmJiNDgzNmU0YzU5MmY3YWI4ZjFhZWQzMGYyMDY2ODZhOTkzMDVmZjQ2Y2JmMjU4N2U0NzE3NjhlIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9XX0seyJwYWlyIjoiMDoyIiwid2l0bmVzc2VzIjpbeyJlbmQiOjUyMywicXVvdGVfaGFzaCI6ImEzZTg4MzVmMmU4ZTFhODQ4OWRjNTI4NTQwNjIwYjM2N2MyZWM2NjIyYzAyNjk1ODY1ZmQxYzhjMmRmNzA4ZTMiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MCIsInNvdXJjZV9oYXNoIjoiYTNlODgzNWYyZThlMWE4NDg5ZGM1Mjg1NDA2MjBiMzY3YzJlYzY2MjJjMDI2OTU4NjVmZDFjOGMyZGY3MDhlMyIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfSx7ImVuZCI6NTA1LCJxdW90ZV9oYXNoIjoiZTA5NzQyYTdlNDY0MTY5OGI4NTUzYTI1YTRkMTZlNDkxNzQ0YjY4ODZhYWJhZmEzZWQyM2FiYTg1M2YwNDAyYiIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQwX293bmVyIiwic291cmNlX2hhc2giOiJlMDk3NDJhN2U0NjQxNjk4Yjg1NTNhMjVhNGQxNmU0OTE3NDRiNjg4NmFhYmFmYTNlZDIzYWJhODUzZjA0MDJiIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9LHsiZW5kIjo1MjAsInF1b3RlX2hhc2giOiIxZmM0OTFmOGM0M2U0OTkxYzRiZjFhZjczMDg5YTgwMTBhY2Y4YzM4M2MzYjBmMmY3Zjg1NDMyMDNjMDEwMTUyIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDIiLCJzb3VyY2VfaGFzaCI6IjFmYzQ5MWY4YzQzZTQ5OTFjNGJmMWFmNzMwODlhODAxMGFjZjhjMzgzYzNiMGYyZjdmODU0MzIwM2MwMTAxNTIiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH0seyJlbmQiOjUwMiwicXVvdGVfaGFzaCI6ImI0MDUxYmMyYTE0OTg0NDkzNzExNTRiMzc3ZTA4NTQ2MzQzZWRjMjU2NDRlNDQ5ODE3ODY3NzVjMmIyMGRhNWUiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50Ml9vd25lciIsInNvdXJjZV9oYXNoIjoiYjQwNTFiYzJhMTQ5ODQ0OTM3MTE1NGIzNzdlMDg1NDYzNDNlZGMyNTY0NGU0NDk4MTc4Njc3NWMyYjIwZGE1ZSIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfV19LHsicGFpciI6IjE6MiIsIndpdG5lc3NlcyI6W3siZW5kIjo1MTgsInF1b3RlX2hhc2giOiIxNGQwYjQ0ZjcyY2Q5NDI1YjMwMGIyYjFiMGU4MjllOWYyNTI3ZDNlOTQ0NGIxNjczZGRmODAwOTEwZTA2OTQxIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDEiLCJzb3VyY2VfaGFzaCI6IjE0ZDBiNDRmNzJjZDk0MjViMzAwYjJiMWIwZTgyOWU5ZjI1MjdkM2U5NDQ0YjE2NzNkZGY4MDA5MTBlMDY5NDEiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH0seyJlbmQiOjUwMCwicXVvdGVfaGFzaCI6ImRlMGI0NWNmYmI0ODM2ZTRjNTkyZjdhYjhmMWFlZDMwZjIwNjY4NmE5OTMwNWZmNDZjYmYyNTg3ZTQ3MTc2OGUiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MV9vd25lciIsInNvdXJjZV9oYXNoIjoiZGUwYjQ1Y2ZiYjQ4MzZlNGM1OTJmN2FiOGYxYWVkMzBmMjA2Njg2YTk5MzA1ZmY0NmNiZjI1ODdlNDcxNzY4ZSIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfSx7ImVuZCI6NTIwLCJxdW90ZV9oYXNoIjoiMWZjNDkxZjhjNDNlNDk5MWM0YmYxYWY3MzA4OWE4MDEwYWNmOGMzODNjM2IwZjJmN2Y4NTQzMjAzYzAxMDE1MiIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQyIiwic291cmNlX2hhc2giOiIxZmM0OTFmOGM0M2U0OTkxYzRiZjFhZjczMDg5YTgwMTBhY2Y4YzM4M2MzYjBmMmY3Zjg1NDMyMDNjMDEwMTUyIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9LHsiZW5kIjo1MDIsInF1b3RlX2hhc2giOiJiNDA1MWJjMmExNDk4NDQ5MzcxMTU0YjM3N2UwODU0NjM0M2VkYzI1NjQ0ZTQ0OTgxNzg2Nzc1YzJiMjBkYTVlIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDJfb3duZXIiLCJzb3VyY2VfaGFzaCI6ImI0MDUxYmMyYTE0OTg0NDkzNzExNTRiMzc3ZTA4NTQ2MzQzZWRjMjU2NDRlNDQ5ODE3ODY3NzVjMmIyMGRhNWUiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH1dfV0sIm9wZXJhdGlvbl9pZCI6InJlc3RvcmVkLWRlbGl2ZXJ5LWluY2lkZW50LWcyIiwib3duZXIiOiIweEJDMTM5OWM1NTUzOGVDMDM0ZDREYTU1MEMwM2MzNEFlMEMzNTdmNTMiLCJwYWlycyI6eyIwOjEiOnsiY292ZXJhZ2UiOnRydWUsInJlbGF0aW9uIjoiSU5ERVBFTkRFTlQiLCJydWxlX2lkIjoiUl9JTkRFUEVOREVOVF9QUk9DRVNTIiwic2NvcGUiOiJlZGl0b3JpYWxfb3JfbWVhc3VyZW1lbnRfb3JpZ2luIiwidW5yZXNvbHZlZCI6ZmFsc2UsIndpdG5lc3NlcyI6W3siZW5kIjo1MjMsInF1b3RlX2hhc2giOiJhM2U4ODM1ZjJlOGUxYTg0ODlkYzUyODU0MDYyMGIzNjdjMmVjNjYyMmMwMjY5NTg2NWZkMWM4YzJkZjcwOGUzIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDAiLCJzb3VyY2VfaGFzaCI6ImEzZTg4MzVmMmU4ZTFhODQ4OWRjNTI4NTQwNjIwYjM2N2MyZWM2NjIyYzAyNjk1ODY1ZmQxYzhjMmRmNzA4ZTMiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH0seyJlbmQiOjUwNSwicXVvdGVfaGFzaCI6ImUwOTc0MmE3ZTQ2NDE2OThiODU1M2EyNWE0ZDE2ZTQ5MTc0NGI2ODg2YWFiYWZhM2VkMjNhYmE4NTNmMDQwMmIiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MF9vd25lciIsInNvdXJjZV9oYXNoIjoiZTA5NzQyYTdlNDY0MTY5OGI4NTUzYTI1YTRkMTZlNDkxNzQ0YjY4ODZhYWJhZmEzZWQyM2FiYTg1M2YwNDAyYiIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfSx7ImVuZCI6NTE4LCJxdW90ZV9oYXNoIjoiMTRkMGI0NGY3MmNkOTQyNWIzMDBiMmIxYjBlODI5ZTlmMjUyN2QzZTk0NDRiMTY3M2RkZjgwMDkxMGUwNjk0MSIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQxIiwic291cmNlX2hhc2giOiIxNGQwYjQ0ZjcyY2Q5NDI1YjMwMGIyYjFiMGU4MjllOWYyNTI3ZDNlOTQ0NGIxNjczZGRmODAwOTEwZTA2OTQxIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9LHsiZW5kIjo1MDAsInF1b3RlX2hhc2giOiJkZTBiNDVjZmJiNDgzNmU0YzU5MmY3YWI4ZjFhZWQzMGYyMDY2ODZhOTkzMDVmZjQ2Y2JmMjU4N2U0NzE3NjhlIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDFfb3duZXIiLCJzb3VyY2VfaGFzaCI6ImRlMGI0NWNmYmI0ODM2ZTRjNTkyZjdhYjhmMWFlZDMwZjIwNjY4NmE5OTMwNWZmNDZjYmYyNTg3ZTQ3MTc2OGUiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH1dfSwiMDoyIjp7ImNvdmVyYWdlIjp0cnVlLCJyZWxhdGlvbiI6IklOREVQRU5ERU5UIiwicnVsZV9pZCI6IlJfSU5ERVBFTkRFTlRfUFJPQ0VTUyIsInNjb3BlIjoiZWRpdG9yaWFsX29yX21lYXN1cmVtZW50X29yaWdpbiIsInVucmVzb2x2ZWQiOmZhbHNlLCJ3aXRuZXNzZXMiOlt7ImVuZCI6NTIzLCJxdW90ZV9oYXNoIjoiYTNlODgzNWYyZThlMWE4NDg5ZGM1Mjg1NDA2MjBiMzY3YzJlYzY2MjJjMDI2OTU4NjVmZDFjOGMyZGY3MDhlMyIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQwIiwic291cmNlX2hhc2giOiJhM2U4ODM1ZjJlOGUxYTg0ODlkYzUyODU0MDYyMGIzNjdjMmVjNjYyMmMwMjY5NTg2NWZkMWM4YzJkZjcwOGUzIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9LHsiZW5kIjo1MDUsInF1b3RlX2hhc2giOiJlMDk3NDJhN2U0NjQxNjk4Yjg1NTNhMjVhNGQxNmU0OTE3NDRiNjg4NmFhYmFmYTNlZDIzYWJhODUzZjA0MDJiIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDBfb3duZXIiLCJzb3VyY2VfaGFzaCI6ImUwOTc0MmE3ZTQ2NDE2OThiODU1M2EyNWE0ZDE2ZTQ5MTc0NGI2ODg2YWFiYWZhM2VkMjNhYmE4NTNmMDQwMmIiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH0seyJlbmQiOjUyMCwicXVvdGVfaGFzaCI6IjFmYzQ5MWY4YzQzZTQ5OTFjNGJmMWFmNzMwODlhODAxMGFjZjhjMzgzYzNiMGYyZjdmODU0MzIwM2MwMTAxNTIiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MiIsInNvdXJjZV9oYXNoIjoiMWZjNDkxZjhjNDNlNDk5MWM0YmYxYWY3MzA4OWE4MDEwYWNmOGMzODNjM2IwZjJmN2Y4NTQzMjAzYzAxMDE1MiIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfSx7ImVuZCI6NTAyLCJxdW90ZV9oYXNoIjoiYjQwNTFiYzJhMTQ5ODQ0OTM3MTE1NGIzNzdlMDg1NDYzNDNlZGMyNTY0NGU0NDk4MTc4Njc3NWMyYjIwZGE1ZSIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQyX293bmVyIiwic291cmNlX2hhc2giOiJiNDA1MWJjMmExNDk4NDQ5MzcxMTU0YjM3N2UwODU0NjM0M2VkYzI1NjQ0ZTQ0OTgxNzg2Nzc1YzJiMjBkYTVlIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9XX0sIjE6MiI6eyJjb3ZlcmFnZSI6dHJ1ZSwicmVsYXRpb24iOiJJTkRFUEVOREVOVCIsInJ1bGVfaWQiOiJSX0lOREVQRU5ERU5UX1BST0NFU1MiLCJzY29wZSI6ImVkaXRvcmlhbF9vcl9tZWFzdXJlbWVudF9vcmlnaW4iLCJ1bnJlc29sdmVkIjpmYWxzZSwid2l0bmVzc2VzIjpbeyJlbmQiOjUxOCwicXVvdGVfaGFzaCI6IjE0ZDBiNDRmNzJjZDk0MjViMzAwYjJiMWIwZTgyOWU5ZjI1MjdkM2U5NDQ0YjE2NzNkZGY4MDA5MTBlMDY5NDEiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50MSIsInNvdXJjZV9oYXNoIjoiMTRkMGI0NGY3MmNkOTQyNWIzMDBiMmIxYjBlODI5ZTlmMjUyN2QzZTk0NDRiMTY3M2RkZjgwMDkxMGUwNjk0MSIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfSx7ImVuZCI6NTAwLCJxdW90ZV9oYXNoIjoiZGUwYjQ1Y2ZiYjQ4MzZlNGM1OTJmN2FiOGYxYWVkMzBmMjA2Njg2YTk5MzA1ZmY0NmNiZjI1ODdlNDcxNzY4ZSIsInJlY29yZF9pZCI6ImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQxX293bmVyIiwic291cmNlX2hhc2giOiJkZTBiNDVjZmJiNDgzNmU0YzU5MmY3YWI4ZjFhZWQzMGYyMDY2ODZhOTkzMDVmZjQ2Y2JmMjU4N2U0NzE3NjhlIiwic3Bhbl9pZCI6ImNvbXBsZXRlIiwic3RhcnQiOjB9LHsiZW5kIjo1MjAsInF1b3RlX2hhc2giOiIxZmM0OTFmOGM0M2U0OTkxYzRiZjFhZjczMDg5YTgwMTBhY2Y4YzM4M2MzYjBmMmY3Zjg1NDMyMDNjMDEwMTUyIiwicmVjb3JkX2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudDIiLCJzb3VyY2VfaGFzaCI6IjFmYzQ5MWY4YzQzZTQ5OTFjNGJmMWFmNzMwODlhODAxMGFjZjhjMzgzYzNiMGYyZjdmODU0MzIwM2MwMTAxNTIiLCJzcGFuX2lkIjoiY29tcGxldGUiLCJzdGFydCI6MH0seyJlbmQiOjUwMiwicXVvdGVfaGFzaCI6ImI0MDUxYmMyYTE0OTg0NDkzNzExNTRiMzc3ZTA4NTQ2MzQzZWRjMjU2NDRlNDQ5ODE3ODY3NzVjMmIyMGRhNWUiLCJyZWNvcmRfaWQiOiJjb250cm9sbGVkX21lYXN1cmVtZW50Ml9vd25lciIsInNvdXJjZV9oYXNoIjoiYjQwNTFiYzJhMTQ5ODQ0OTM3MTE1NGIzNzdlMDg1NDYzNDNlZGMyNTY0NGU0NDk4MTc4Njc3NWMyYjIwZGE1ZSIsInNwYW5faWQiOiJjb21wbGV0ZSIsInN0YXJ0IjowfV19fSwicGFydGllcyI6WyIweEJDMTM5OWM1NTUzOGVDMDM0ZDREYTU1MEMwM2MzNEFlMEMzNTdmNTMiXSwicG9saWN5X2lkIjoidGhyZWVfb3JpZ2lucyIsInBvbGljeV9yZXZpc2lvbiI6MSwicHJpb3JfY2VydGlmaWNhdGVzIjpbImNvbnRyb2xsZWRfbWVhc3VyZW1lbnRfaW5jaWRlbnQ6MSJdLCJyZXF1ZXN0X2lkIjoiY29udHJvbGxlZF9tZWFzdXJlbWVudF9pbmNpZGVudCIsInNlbGVjdGVkX3N1YnNldCI6WzAsMSwyXSwic3RhdHVzIjoiRklOQUxJWkVEIiwic3ViamVjdF9kaWdlc3QiOiIzNTkzODNjNDk5MzRkMDg4YmQ0MDQ4NjY1NzU1YjdjNjNhYmQwOTY0ODI3YTk5Y2U0MDQ4MDA4ODY0YzI0MDlkIiwic3ViamVjdF9pZCI6IkNvbnRyb2xsZWQgbWVhc3VyZW1lbnQgcmVwb3J0aW5nIGZvciBpbmNpZGVudCIsInN1cGVyc2VkZWRfYnkiOiIiLCJzdXBwb3J0ZWRfb3JpZ2luX2lkcyI6WyJjb250cm9sbGVkX21lYXN1cmVtZW50MCIsImNvbnRyb2xsZWRfbWVhc3VyZW1lbnQxIiwiY29udHJvbGxlZF9tZWFzdXJlbWVudDIiXSwidW5yZXNvbHZlZCI6ZmFsc2V9Bm1ldGhvZJwBcmVjZWl2ZV9jZXJ0aWZpY2F0ZQ=="
+  },
+  "value": 0,
+  "type": 2,
+  "status": 7,
+  "result": 6,
+  "consensus_data": {
+    "votes": {
+      "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+      "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+      "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+      "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+    },
+    "leader_receipt": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "leader",
+        "vote": null,
+        "node_config": {
+          "stake": 100,
+          "address": "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A",
+          "primary_model": {
+            "model": "policy:prd-gemini",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-oss-120b"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+          },
+          "secondary_model": {
+            "model": "anthropic/claude-sonnet-4.6",
+            "config": {
+              "models": [
+                "anthropic/claude-sonnet-4.6",
+                "openai/gpt-5.4",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        },
+        "calldata": {
+          "readable": "{\"args\":[\"{\\\"attempts\\\":{\\\"0:1\\\":1,\\\"0:2\\\":1,\\\"1:2\\\":1},\\\"batch_digest\\\":\\\"fd0280bb2ee297366215e4f113661d42ed6cf8d7aa75f99690c49be91c6055ef\\\",\\\"certificate_id\\\":\\\"controlled_measurement_incident:2\\\",\\\"configuration_digest\\\":\\\"271ad5bcf996f4e8e2018943ad40aee696bf32e2be4643c976a4f1134fffe66e\\\",\\\"consequence_digest\\\":\\\"ab3228304ab44b2ab1698cab4d4ea0519f8e63308a14f52f349635cf552c03aa\\\",\\\"consumer\\\":\\\"0x0d67aa9fd5384A4953785c8019d27b964b949025\\\",\\\"coverage\\\":true,\\\"deadline\\\":\\\"2026-11-06T00:00:00+00:00\\\",\\\"generation\\\":2,\\\"manifest\\\":[{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement0_owner\\\",\\\"byte_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"byte_length\\\":505,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement0\\\",\\\"byte_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"byte_length\\\":523,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement0.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement0\\\",\\\"publisher_revision\\\":2},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement1_owner\\\",\\\"byte_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"byte_length\\\":500,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement1\\\",\\\"byte_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"byte_length\\\":518,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement1.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement1\\\",\\\"publisher_revision\\\":2},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement2_owner\\\",\\\"byte_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"byte_length\\\":502,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":502,\\\"quote_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner2.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement2\\\",\\\"byte_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"byte_length\\\":520,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement2.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement2\\\",\\\"publisher_revision\\\":2}],\\\"manifest_digest\\\":\\\"4b78e246e89cc6bafc9d49a2fcead987ada385ea4184ce317c20568ec1ffd46a\\\",\\\"non_merge_witnesses\\\":[{\\\"pair\\\":\\\"0:1\\\",\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},{\\\"pair\\\":\\\"0:2\\\",\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":502,\\\"quote_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner\\\",\\\"source_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},{\\\"pair\\\":\\\"1:2\\\",\\\"witnesses\\\":[{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":502,\\\"quote_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner\\\",\\\"source_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]}],\\\"operation_id\\\":\\\"restored-delivery-incident-g2\\\",\\\"owner\\\":\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\",\\\"pairs\\\":{\\\"0:1\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"INDEPENDENT\\\",\\\"rule_id\\\":\\\"R_INDEPENDENT_PROCESS\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},\\\"0:2\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"INDEPENDENT\\\",\\\"rule_id\\\":\\\"R_INDEPENDENT_PROCESS\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":502,\\\"quote_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner\\\",\\\"source_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},\\\"1:2\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"INDEPENDENT\\\",\\\"rule_id\\\":\\\"R_INDEPENDENT_PROCESS\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":502,\\\"quote_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner\\\",\\\"source_hash\\\":\\\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]}},\\\"parties\\\":[\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\"],\\\"policy_id\\\":\\\"three_origins\\\",\\\"policy_revision\\\":1,\\\"prior_certificates\\\":[\\\"controlled_measurement_incident:1\\\"],\\\"request_id\\\":\\\"controlled_measurement_incident\\\",\\\"selected_subset\\\":[0,1,2],\\\"status\\\":\\\"FINALIZED\\\",\\\"subject_digest\\\":\\\"359383c49934d088bd4048665755b7c63abd0964827a99ce4048008864c2409d\\\",\\\"subject_id\\\":\\\"Controlled measurement reporting for incident\\\",\\\"superseded_by\\\":\\\"\\\",\\\"supported_origin_ids\\\":[\\\"controlled_measurement0\\\",\\\"controlled_measurement1\\\",\\\"controlled_measurement2\\\"],\\\"unresolved\\\":false}\"],\"method\":\"receive_certificate\"}"
+        },
+        "eq_outputs": {},
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle",
+        "node_config": {
+          "id": 5726,
+          "model": "policy:prd-gemini",
+          "stake": 100,
+          "config": {
+            "policy_ir": [
+              "policy",
+              [
+                "and",
+                [
+                  "meets_req"
+                ],
+                [
+                  "not",
+                  [
+                    "is",
+                    "disabled"
+                  ]
+                ],
+                [
+                  "cmp",
+                  "success_rate",
+                  "ge",
+                  0.2
+                ],
+                [
+                  "or",
+                  [
+                    "family_eq",
+                    "gemini-3-flash-preview"
+                  ],
+                  [
+                    "family_eq",
+                    "gpt-oss-120b"
+                  ],
+                  [
+                    "family_eq",
+                    "gpt-5.4"
+                  ]
+                ]
+              ],
+              [
+                "add",
+                [
+                  "scale",
+                  100,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  10,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  1,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.25,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "price_in"
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.45,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "price_out"
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.2,
+                  [
+                    "field",
+                    "success_rate"
+                  ]
+                ],
+                [
+                  "scale",
+                  0.1,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "latency_ms"
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "argmax"
+              ],
+              [
+                "id"
+              ],
+              [
+                "always",
+                {
+                  "action": "next_candidate"
+                }
+              ]
+            ],
+            "timeout_ms": 22000,
+            "first_token_timeout_ms": 7000
+          },
+          "plugin": "openai-compatible",
+          "address": "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A",
+          "provider": "llm-router",
+          "plugin_config": {
+            "api_url": "https://router.ygr.ai",
+            "api_key_env_var": "LLM_ROUTER_API_KEY"
+          },
+          "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+        },
+        "result": {
+          "status": "contract_error",
+          "payload": "idle"
+        }
+      }
+    ],
+    "validators": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "node_config": {
+          "stake": 100,
+          "address": "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2",
+          "primary_model": {
+            "model": "policy:prd-mistral",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "mistral-large"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "mistral-large"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-oss-120b"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+          },
+          "secondary_model": {
+            "model": "anthropic/claude-sonnet-4.6",
+            "config": {
+              "models": [
+                "anthropic/claude-sonnet-4.6",
+                "openai/gpt-5.4",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        }
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle",
+        "node_config": {
+          "id": 5740,
+          "model": "openai/gpt-5.4",
+          "stake": 100,
+          "config": {
+            "models": [
+              "openai/gpt-5.4",
+              "anthropic/claude-sonnet-4.6",
+              "google/gemini-3-flash-preview"
+            ]
+          },
+          "plugin": "openai-compatible",
+          "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+          "provider": "openrouter",
+          "plugin_config": {
+            "api_url": "https://openrouter.ai/api",
+            "api_key_env_var": "OPENROUTERAPIKEY"
+          },
+          "fallback_validator": "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE"
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "node_config": {
+          "stake": 100,
+          "address": "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE",
+          "primary_model": {
+            "model": "policy:prd-gpt-oss",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ],
+                    [
+                      "family_eq",
+                      "deepseek-v3.2"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-oss-120b"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "deepseek-v3.2"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+          },
+          "secondary_model": {
+            "model": "anthropic/claude-sonnet-4.6",
+            "config": {
+              "models": [
+                "anthropic/claude-sonnet-4.6",
+                "openai/gpt-5.4",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "node_config": {
+          "stake": 100,
+          "address": "0x5e84e17266a193077728229751aC8A1dD24be146",
+          "primary_model": {
+            "model": "policy:prd-gpt-5-4",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-oss-120b"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+          },
+          "secondary_model": {
+            "model": "anthropic/claude-sonnet-4.6",
+            "config": {
+              "models": [
+                "anthropic/claude-sonnet-4.6",
+                "openai/gpt-5.4",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "gaslimit": 7,
+  "nonce": 7,
+  "created_at": "2026-10-30T14:44:53.294422+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "origin_address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407",
+  "triggered_on": "finalized",
+  "triggered_transactions": [
+    "0x7f50de53e76f07f289e42f0161135ce9a72c7b6b435ba0dad4a4280334fac7b9"
+  ],
+  "appeal_validators_timeout": false,
+  "sim_config": {
+    "genvm_datetime": null
+  },
+  "value_credited": false,
+  "sender": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407",
+  "recipient": "0x0d67aa9fd5384A4953785c8019d27b964b949025",
+  "tx_id": "0xc5d49cdf9a85f5870f543238412fa59a957cd6805ed566c35e216a20d528cde0",
+  "activator": "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A",
+  "last_leader": "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A",
+  "result_name": "MAJORITY_AGREE",
+  "messages": [
+    {
+      "messageType": "0",
+      "recipient": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407",
+      "value": 0,
+      "data": "FgRhcmdzHewBcmVzdG9yZWQtZGVsaXZlcnktaW5jaWRlbnQtZzKMAmNvbnRyb2xsZWRfbWVhc3VyZW1lbnRfaW5jaWRlbnQ6MhEGbWV0aG9kpAFhY2tub3dsZWRnZV9yZXZpc2lvbg==",
+      "onAcceptance": false
+    }
+  ],
+  "num_of_rounds": "1",
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "0",
+    "result": 6,
+    "round_validators": [
+      "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A",
+      "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2",
+      "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+      "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE",
+      "0x5e84e17266a193077728229751aC8A1dD24be146"
+    ],
+    "validator_votes_hash": [
+      "0x757e1b58a01b50be9edcabd36ceb57ad3bb18daa7419304859a2b94b5a8299ab",
+      "0x9d7bb58e3bdce425e46c612329933757a684564baaf5b1b6115190d5ca8c1a96",
+      "0x2c98e6085f526359d38fde1a0f7252a28137fd314b477bd31ec1bfb472a0fb63",
+      "0x830fed6a8bb979c9687ce82f017fedb9f7dbc1c4748fae6369fa88916d56fbe9",
+      "0x2b80925f81491ac168fb7af499145a38057a84e8dd53d30dcb2d6aa63abe2552"
+    ],
+    "validator_votes": [
+      5,
+      1,
+      5,
+      1,
+      1
+    ],
+    "validator_votes_name": [
+      "IDLE",
+      "AGREE",
+      "IDLE",
+      "AGREE",
+      "AGREE"
+    ]
+  },
+  "status_name": "FINALIZED"
+}

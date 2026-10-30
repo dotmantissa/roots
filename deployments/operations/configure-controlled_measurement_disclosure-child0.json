@@ -1,0 +1,8 @@
+{
+  "operation_id": "configure-controlled_measurement_disclosure-child0",
+  "transaction_hash": "0xa11758c0ce19e45cbca845205ce0d921ea47e4877dcd415c35bb332978186e87",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

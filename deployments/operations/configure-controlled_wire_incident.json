@@ -1,0 +1,8 @@
+{
+  "operation_id": "configure-controlled_wire_incident",
+  "transaction_hash": "0x54ca9394ebd82892c4e8700519674596555b8bdeacb9da47c0dee398208544f1",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x0d67aa9fd5384A4953785c8019d27b964b949025"
+}

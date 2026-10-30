@@ -1,0 +1,18 @@
+{
+  "classification": "Authored copies on distinct authentic public URL hostnames",
+  "domains": [
+    "roots-mauve-delta.vercel.app",
+    "theft-foto-incorporate-blvd.trycloudflare.com",
+    "coated-western-attitude-flights.trycloudflare.com"
+  ],
+  "relations": {
+    "0:1": "SHARED_ORIGIN",
+    "0:2": "SHARED_ORIGIN",
+    "1:2": "SHARED_ORIGIN"
+  },
+  "selected_subset": [
+    0
+  ],
+  "finalized_delivery_acknowledged": true,
+  "admission": false
+}

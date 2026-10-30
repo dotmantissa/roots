@@ -1,0 +1,8 @@
+{
+  "operation_id": "register-controlled_measurement1",
+  "transaction_hash": "0xdee1fc3ca4d63dd7d34a44c2059d4499cd1a4cbbaa22ef9e213e413ef0c86e65",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x85f4F1716E2fC991864A4eb2857e3D5fF255eaAB"
+}

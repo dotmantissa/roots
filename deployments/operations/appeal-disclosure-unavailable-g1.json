@@ -1,0 +1,8 @@
+{
+  "operation_id": "appeal-disclosure-unavailable-g1",
+  "transaction_hash": "0xc493692a3fa384accb34ab6338421bbe3714878b1b8ef53d6a25d4246e68fd84",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

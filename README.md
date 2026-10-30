@@ -2,6 +2,8 @@
 
 Three articles can repeat one press release. Roots makes that visible.
 
+Use the [live evidence desk](https://roots-mauve-delta.vercel.app).
+
 Roots is an evidence federation for applications that need separate reporting or measurement processes before accepting a claim. It commits the source material, evaluates each relationship with independent GenLayer validators, and publishes a certificate describing the largest group of pairwise independent origins. It does not decide whether the underlying claim is true.
 
 ## The product
@@ -54,6 +56,16 @@ npm run test:browser
 Tests generate an ephemeral signing identity and need no production wallet credentials. Python tests execute the real contract source with GenLayer direct storage. They also explicitly invoke captured validator callbacks with wrong decisions, omitted rules and forged spans. Browser tests use the live local API and public contract records. Network evidence is kept separately because hosted Studio runs use real validators and have rate limits.
 
 The controlled Studio scenario is run with `npm run integration:studio`. Its authored fixture documents must be served from the public origin recorded with the run. `scripts/studio_probes.py` exercises independent public sources and malicious leader proposals. These fixtures are labelled controlled validation records; they are not real incidents or adoption claims.
+
+The retained recovery run uses the public documents under `/validation/`. If the original fixture host becomes unavailable, its recorded result stays unresolved. A publisher signs a new disclosure revision and the batch owner approves a successor manifest before validators evaluate the new URLs.
+
+The supplemental three-domain check uses `scripts/studio_domains.py`. Set `DOMAIN_TWO_ORIGIN` and `DOMAIN_THREE_ORIGIN` to public fixture origins when preparing a new run; retained inputs and signed operation journals control resumption.
+
+Audit the retained source hashes, signed journals and finalized delivery acknowledgements without making network requests:
+
+```sh
+bash scripts/python.sh scripts/verify_evidence.py --require-complete
+```
 
 ## Integration
 

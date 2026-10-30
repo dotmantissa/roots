@@ -1,0 +1,8 @@
+{
+  "operation_id": "duplicate-controlled_wire_disclosure",
+  "transaction_hash": "0xf7131b213086929c92d1464de1555e02c09dbb1dd01c6050b614cbc020354b88",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

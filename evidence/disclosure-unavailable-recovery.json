@@ -1,0 +1,254 @@
+{
+  "classification": "Preserved unavailable assessment before authorized prepublication appeal",
+  "batch": {
+    "attempts": {
+      "0:1": 1,
+      "0:2": 1,
+      "1:2": 1
+    },
+    "batch_digest": "a71fe0313abc91d9ba8529c85483c0840b8eb2160bf9b957f56cba566acfd4ec",
+    "certificate_id": "",
+    "consequence_digest": "ab3228304ab44b2ab1698cab4d4ea0519f8e63308a14f52f349635cf552c03aa",
+    "consumer": "0x44988FeBB4C0125b800e0f20A21d344613010fA0",
+    "coverage": false,
+    "deadline": "2026-11-06T00:00:00+00:00",
+    "generation": 1,
+    "manifest": [
+      {
+        "ownership": {
+          "authority": "controlled_measurement0_owner",
+          "byte_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+          "byte_length": 505,
+          "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement-owner0.txt",
+          "channel": "public",
+          "record_id": "controlled_measurement0_owner",
+          "revision": 1,
+          "scope": "Original reporting or measurement and public editorial control",
+          "spans": [
+            {
+              "end": 505,
+              "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+              "span_id": "complete",
+              "start": 0
+            }
+          ],
+          "url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement-owner0.txt"
+        },
+        "publication": {
+          "authority": "controlled_measurement0",
+          "byte_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+          "byte_length": 523,
+          "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement0.txt",
+          "channel": "public",
+          "record_id": "controlled_measurement0",
+          "revision": 1,
+          "scope": "Original reporting or measurement and public editorial control",
+          "spans": [
+            {
+              "end": 523,
+              "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+              "span_id": "complete",
+              "start": 0
+            }
+          ],
+          "url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement0.txt"
+        },
+        "publisher_id": "controlled_measurement0",
+        "publisher_revision": 1
+      },
+      {
+        "ownership": {
+          "authority": "controlled_measurement1_owner",
+          "byte_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+          "byte_length": 500,
+          "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement-owner1.txt",
+          "channel": "public",
+          "record_id": "controlled_measurement1_owner",
+          "revision": 1,
+          "scope": "Original reporting or measurement and public editorial control",
+          "spans": [
+            {
+              "end": 500,
+              "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+              "span_id": "complete",
+              "start": 0
+            }
+          ],
+          "url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement-owner1.txt"
+        },
+        "publication": {
+          "authority": "controlled_measurement1",
+          "byte_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+          "byte_length": 518,
+          "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement1.txt",
+          "channel": "public",
+          "record_id": "controlled_measurement1",
+          "revision": 1,
+          "scope": "Original reporting or measurement and public editorial control",
+          "spans": [
+            {
+              "end": 518,
+              "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+              "span_id": "complete",
+              "start": 0
+            }
+          ],
+          "url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement1.txt"
+        },
+        "publisher_id": "controlled_measurement1",
+        "publisher_revision": 1
+      },
+      {
+        "ownership": {
+          "authority": "controlled_measurement2_owner",
+          "byte_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+          "byte_length": 502,
+          "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement-owner2.txt",
+          "channel": "public",
+          "record_id": "controlled_measurement2_owner",
+          "revision": 1,
+          "scope": "Original reporting or measurement and public editorial control",
+          "spans": [
+            {
+              "end": 502,
+              "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+              "span_id": "complete",
+              "start": 0
+            }
+          ],
+          "url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement-owner2.txt"
+        },
+        "publication": {
+          "authority": "controlled_measurement2",
+          "byte_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+          "byte_length": 520,
+          "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement2.txt",
+          "channel": "public",
+          "record_id": "controlled_measurement2",
+          "revision": 1,
+          "scope": "Original reporting or measurement and public editorial control",
+          "spans": [
+            {
+              "end": 520,
+              "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+              "span_id": "complete",
+              "start": 0
+            }
+          ],
+          "url": "https://way-reuters-isaac-baths.trycloudflare.com/measurement2.txt"
+        },
+        "publisher_id": "controlled_measurement2",
+        "publisher_revision": 1
+      }
+    ],
+    "manifest_digest": "0ac84c087c3077f1e9df680160e43580cdf52a37b908fb4c68455b8d6cbdf024",
+    "non_merge_witnesses": [],
+    "owner": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53",
+    "pairs": {
+      "0:1": {
+        "coverage": true,
+        "relation": "INDEPENDENT",
+        "rule_id": "R_INDEPENDENT_PROCESS",
+        "scope": "editorial_or_measurement_origin",
+        "unresolved": false,
+        "witnesses": [
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "controlled_measurement0",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "controlled_measurement0_owner",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "record_id": "controlled_measurement1",
+            "source_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "record_id": "controlled_measurement1_owner",
+            "source_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      },
+      "0:2": {
+        "coverage": true,
+        "relation": "INDEPENDENT",
+        "rule_id": "R_INDEPENDENT_PROCESS",
+        "scope": "editorial_or_measurement_origin",
+        "unresolved": false,
+        "witnesses": [
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "controlled_measurement0",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "controlled_measurement0_owner",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "record_id": "controlled_measurement2",
+            "source_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "record_id": "controlled_measurement2_owner",
+            "source_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      },
+      "1:2": {
+        "coverage": false,
+        "relation": "UNKNOWN",
+        "rule_id": "R_UNAVAILABLE",
+        "scope": "editorial_or_measurement_origin",
+        "unresolved": true,
+        "witnesses": []
+      }
+    },
+    "parties": [
+      "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53"
+    ],
+    "policy_id": "three_origins",
+    "policy_revision": 1,
+    "prior_certificates": [],
+    "request_id": "controlled_measurement_disclosure",
+    "selected_subset": [],
+    "status": "PROVISIONAL",
+    "subject_digest": "359383c49934d088bd4048665755b7c63abd0964827a99ce4048008864c2409d",
+    "subject_id": "Controlled measurement reporting for disclosure",
+    "superseded_by": "",
+    "supported_origin_ids": [],
+    "unresolved": true
+  }
+}

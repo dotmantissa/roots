@@ -1,0 +1,8 @@
+{
+  "operation_id": "seal-controlled_measurement_incident",
+  "transaction_hash": "0xff0e059ab186c9a8ff3e5b452ba674abc40b39fe2de4818da431ccf7bb8820b2",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

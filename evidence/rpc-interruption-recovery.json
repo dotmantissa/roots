@@ -1,0 +1,80 @@
+{
+  "classification": "Authoritative contract history and empty pair state checked after uncertain HTTP 502; no assessment submission found",
+  "checked_at": "2026-10-30T14:32:32.464606+00:00",
+  "operation_id": "restored-assess-incident-g2-0-1",
+  "contract": "0x96DEB6C0156627F82CEd070D47C61881839A770f",
+  "batch_generation": 2,
+  "pairs": {},
+  "latest_contract_transactions": [
+    {
+      "hash": "0x52db2fa4f5c746e6a72c96ad4aa3dd1472c176916573904cedd6c11aff97fe5f",
+      "created_at": "2026-10-30T14:14:45.438978+00:00",
+      "status": "FINALIZED",
+      "method": "acknowledge_revision"
+    },
+    {
+      "hash": "0xd45f9e6db07b0109257c4b98c7380a10d0f5b372d563250f9165c359ff9565a1",
+      "created_at": "2026-10-30T10:40:34.540165+00:00",
+      "status": "FINALIZED",
+      "method": "assess_pair"
+    },
+    {
+      "hash": "0x43c699c6e81cb263cf67d56d3c1cd3df3aebc67ac2b234d80ab36e1688a50c4b",
+      "created_at": "2026-10-30T10:38:48.508850+00:00",
+      "status": "FINALIZED",
+      "method": "assess_pair"
+    },
+    {
+      "hash": "0xf6e878301b83490b2c804ef4705098c6e98cacca3682be4f5fec87817c1d7334",
+      "created_at": "2026-10-30T10:37:22.409218+00:00",
+      "status": "FINALIZED",
+      "method": "assess_pair"
+    },
+    {
+      "hash": "0xc493692a3fa384accb34ab6338421bbe3714878b1b8ef53d6a25d4246e68fd84",
+      "created_at": "2026-10-30T10:32:46.461903+00:00",
+      "status": "FINALIZED",
+      "method": "appeal_relation"
+    },
+    {
+      "hash": "0x31d5fd9b0d7b890fbf37d5f6d6247c6a0b877e8cabb74f2987ecfb91c3c5f069",
+      "created_at": "2026-10-30T10:23:58.603686+00:00",
+      "status": "FINALIZED",
+      "method": "assess_pair"
+    },
+    {
+      "hash": "0x200f193fb3da21372292a7f3525f6745a8de22c803da8144fa4a85b470fb493b",
+      "created_at": "2026-10-30T10:21:52.999414+00:00",
+      "status": "FINALIZED",
+      "method": "assess_pair"
+    },
+    {
+      "hash": "0x7ded6b7a72f560e072dad21cd185f91b648a4a9ce2c64c9ffa29c95459b6c0ee",
+      "created_at": "2026-10-30T10:20:42.527213+00:00",
+      "status": "FINALIZED",
+      "method": "assess_pair"
+    },
+    {
+      "hash": "0xc3080982e2e058fdd807b81f9aa58673e06be5f41e849335ba4e656eaed171dd",
+      "created_at": "2026-10-30T10:17:44.526865+00:00",
+      "status": "FINALIZED",
+      "method": "open_batch"
+    },
+    {
+      "hash": "0x75f5e4b38decf58a9d19e88d797da41418df4cad06d224223fedaa2c9f8de537",
+      "created_at": "2026-10-30T10:10:39.369933+00:00",
+      "status": "FINALIZED",
+      "method": "publish_certificate"
+    }
+  ],
+  "recovery": "Resume same operation ID with signed-before-broadcast journal; sender nonce is shared and is not proof of this submission",
+  "signed_response_recovery": {
+    "classification": "An ambiguous HTTP 503 at raw send was recovered using the preexisting signed journal",
+    "operation_id": "corrected-assess-incident-g3-0-2",
+    "transaction_hash": "0xa19c5c1a489d9e7e0d8c24eb2a249f1d4a1c6bec030267a2764c6fc5081bf87d",
+    "status": "FINALIZED",
+    "execution_success": true,
+    "signed_bytes_match_finalized_receipt": true,
+    "receipt": "evidence/receipts/corrected-assess-incident-g3-0-2.json"
+  }
+}

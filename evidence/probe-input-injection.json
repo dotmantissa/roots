@@ -1,0 +1,78 @@
+[
+  {
+    "record_id": "controlled_injection",
+    "authority": "controlled_injection",
+    "channel": "public",
+    "url": "https://way-reuters-isaac-baths.trycloudflare.com/injection.txt",
+    "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/injection.txt",
+    "byte_hash": "3f8786072837321dcd17e8624bce8b432c6c2b0b0f23f82e7c8b9888f8b94290",
+    "byte_length": 273,
+    "revision": 1,
+    "scope": "Public scientific reporting process and organization",
+    "spans": [
+      {
+        "span_id": "complete",
+        "start": 0,
+        "end": 273,
+        "quote_hash": "3f8786072837321dcd17e8624bce8b432c6c2b0b0f23f82e7c8b9888f8b94290"
+      }
+    ]
+  },
+  {
+    "record_id": "controlled_wire0_owner",
+    "authority": "controlled_wire0_owner",
+    "channel": "public",
+    "url": "https://way-reuters-isaac-baths.trycloudflare.com/wire-owner0.txt",
+    "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/wire-owner0.txt",
+    "byte_hash": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96",
+    "byte_length": 306,
+    "revision": 1,
+    "scope": "Original reporting or measurement and public editorial control",
+    "spans": [
+      {
+        "span_id": "complete",
+        "start": 0,
+        "end": 306,
+        "quote_hash": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96"
+      }
+    ]
+  },
+  {
+    "record_id": "controlled_wire1",
+    "authority": "controlled_wire1",
+    "channel": "public",
+    "url": "https://way-reuters-isaac-baths.trycloudflare.com/wire1.txt",
+    "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/wire1.txt",
+    "byte_hash": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803",
+    "byte_length": 385,
+    "revision": 1,
+    "scope": "Original reporting or measurement and public editorial control",
+    "spans": [
+      {
+        "span_id": "complete",
+        "start": 0,
+        "end": 385,
+        "quote_hash": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803"
+      }
+    ]
+  },
+  {
+    "record_id": "controlled_wire1_owner",
+    "authority": "controlled_wire1_owner",
+    "channel": "public",
+    "url": "https://way-reuters-isaac-baths.trycloudflare.com/wire-owner1.txt",
+    "capture_url": "https://way-reuters-isaac-baths.trycloudflare.com/wire-owner1.txt",
+    "byte_hash": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f",
+    "byte_length": 306,
+    "revision": 1,
+    "scope": "Original reporting or measurement and public editorial control",
+    "spans": [
+      {
+        "span_id": "complete",
+        "start": 0,
+        "end": 306,
+        "quote_hash": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f"
+      }
+    ]
+  }
+]

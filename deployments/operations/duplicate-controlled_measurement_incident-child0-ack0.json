@@ -1,0 +1,8 @@
+{
+  "operation_id": "duplicate-controlled_measurement_incident-child0-ack0",
+  "transaction_hash": "0x0087eeb58a93b7078c8a3432cb52edf1e2023903b1ea72497aedb50cb33bbec2",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

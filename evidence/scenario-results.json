@@ -1,0 +1,82 @@
+{
+  "controlled_wire_incident": {
+    "subset": [
+      0
+    ],
+    "certificate": "FINALIZED",
+    "admission": false,
+    "pair_vector": {
+      "0:1": "SHARED_ORIGIN",
+      "0:2": "SHARED_ORIGIN",
+      "1:2": "SHARED_ORIGIN"
+    },
+    "delivery_acknowledged": true
+  },
+  "controlled_measurement_incident": {
+    "subset": [
+      0,
+      1,
+      2
+    ],
+    "certificate": "FINALIZED",
+    "admission": true,
+    "delivery_acknowledged": true,
+    "pair_vector": {
+      "0:1": "INDEPENDENT",
+      "0:2": "INDEPENDENT",
+      "1:2": "INDEPENDENT"
+    },
+    "generation": 2,
+    "durable_origin_baseline": true,
+    "restored_from_generation": 1,
+    "corrected_generation": 3,
+    "corrected_subset": [
+      0,
+      1
+    ],
+    "corrected_admission": false,
+    "replacement_acknowledged": true,
+    "frozen_admission_refused": true,
+    "stale_delivery_refused": true
+  },
+  "controlled_wire_disclosure": {
+    "subset": [
+      0
+    ],
+    "certificate": "FINALIZED",
+    "admission": false,
+    "delivery_acknowledged": true,
+    "pair_vector": {
+      "0:1": "SHARED_ORIGIN",
+      "0:2": "SHARED_ORIGIN",
+      "1:2": "SHARED_ORIGIN"
+    }
+  },
+  "controlled_measurement_disclosure": {
+    "generation": 3,
+    "subset": [
+      0,
+      1,
+      2
+    ],
+    "certificate": "FINALIZED",
+    "admission": true,
+    "durable_origin_baseline": true,
+    "delivery_acknowledged": true,
+    "restored_from_generation": 2,
+    "pair_vector": {
+      "0:1": "INDEPENDENT",
+      "0:2": "INDEPENDENT",
+      "1:2": "INDEPENDENT"
+    },
+    "corrected_generation": 4,
+    "corrected_subset": [
+      0,
+      1
+    ],
+    "corrected_admission": false,
+    "replacement_acknowledged": true,
+    "frozen_admission_refused": true,
+    "stale_delivery_refused": true
+  }
+}

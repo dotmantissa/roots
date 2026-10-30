@@ -1,0 +1,8 @@
+{
+  "operation_id": "deliver-controlled_measurement_incident-child0",
+  "transaction_hash": "0x545d79062bfc847607f9f2478b5e1335b629c4594a413afc63f5be2e4161c574",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x0d67aa9fd5384A4953785c8019d27b964b949025"
+}

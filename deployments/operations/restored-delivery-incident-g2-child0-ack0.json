@@ -1,0 +1,7 @@
+{
+  "operation_id": "restored-delivery-incident-g2-child0-ack0",
+  "transaction_hash": "0x7d8d64841cd85518cee0972ffad962e9bc00d11a3645ceae54ccb416acec184d",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

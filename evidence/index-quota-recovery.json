@@ -1,0 +1,21 @@
+{
+  "classification": "Actual Studio hourly quota encountered during final index verification",
+  "quota": {
+    "code": -32029,
+    "bucket": "standard",
+    "window": "hour",
+    "limit": 500
+  },
+  "retry_delays_seconds": [
+    14,
+    3,
+    9,
+    3
+  ],
+  "retry_scope": "same contract page read with unchanged arguments",
+  "completed_feeds_preserved": true,
+  "atomic_page_and_checkpoint_writes": true,
+  "exact_rebuilt_records_preserved": true,
+  "records": 32,
+  "runtime": "project-pinned Node 22.22.2"
+}

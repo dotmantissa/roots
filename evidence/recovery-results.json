@@ -1,0 +1,41 @@
+{
+  "authentic_receipt": "0x7051814d94e2ba15207ed1f60fea89ad040542f0d723dcb36d483d011743bfa7",
+  "lost_broadcast_reconciled": {
+    "operation_id": "controlled-crash-recovery",
+    "transaction_hash": "0x7051814d94e2ba15207ed1f60fea89ad040542f0d723dcb36d483d011743bfa7",
+    "status": "FINALIZED",
+    "execution_success": true
+  },
+  "records_before": 32,
+  "records_after": 32,
+  "classification": "controlled crash state reconstructed from authentic signed broadcast",
+  "interrupted_checkpoint_resumed": true,
+  "exact_rebuilt_records_preserved": true,
+  "lifecycle": [
+    {
+      "status": "FINALIZED",
+      "n": 3
+    },
+    {
+      "status": "PROVISIONAL",
+      "n": 2
+    },
+    {
+      "status": "QUARANTINED",
+      "n": 3
+    },
+    {
+      "status": "SEALED",
+      "n": 6
+    },
+    {
+      "status": "SUPERSEDED",
+      "n": 3
+    },
+    {
+      "status": "TIMEOUT",
+      "n": 1
+    }
+  ],
+  "consumer_successors_verified": true
+}

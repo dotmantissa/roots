@@ -1,0 +1,8 @@
+{
+  "operation_id": "restore-manifest-incident",
+  "transaction_hash": "0x52db2fa4f5c746e6a72c96ad4aa3dd1472c176916573904cedd6c11aff97fe5f",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

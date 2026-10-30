@@ -1,0 +1,8 @@
+{
+  "operation_id": "assess-controlled_wire_disclosure-1-2",
+  "transaction_hash": "0x3bf34ed9a507e4ef1493e4b3fd04e60c3c1469f4241cf59755e623b30e6358ac",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

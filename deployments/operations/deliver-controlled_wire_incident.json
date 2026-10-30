@@ -1,0 +1,8 @@
+{
+  "operation_id": "deliver-controlled_wire_incident",
+  "transaction_hash": "0xec60629c48880ee706aca5024a3632ef52f4d562286a6379ddc6aab38ab8cec3",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

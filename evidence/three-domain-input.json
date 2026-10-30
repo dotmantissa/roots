@@ -1,0 +1,147 @@
+{
+  "classification": "Authored controlled source fixtures served on three actual public hostnames",
+  "request": {
+    "request_id": "controlled_three_actual_domains",
+    "owner": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53",
+    "parties": [
+      "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53"
+    ],
+    "policy_id": "three_origins",
+    "policy_revision": 1,
+    "subject_id": "Controlled copied reporting across three domains",
+    "subject_digest": "2b80027d36c1d01acf448768001ae8eaa8bae0cf228b0876299d41f939c32a67",
+    "manifest_digest": "2c50d128d6e792cbf039782ed46efde0fb0efebae9e27227a622621f830a2612",
+    "consumer": "0x0d67aa9fd5384A4953785c8019d27b964b949025",
+    "consequence_digest": "f2604b6b1daac537332fa49b06202f951b7eaf1e9cae8015697f3a6a21112c19",
+    "generation": 1,
+    "deadline": "2026-11-06T00:00:00Z"
+  },
+  "manifest": [
+    {
+      "publisher_id": "controlled_wire0",
+      "publisher_revision": 2,
+      "publication": {
+        "record_id": "controlled_wire0",
+        "authority": "controlled_wire0",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/wire0.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/wire0.txt",
+        "byte_hash": "f1ba2fed490e6b83972871d9b81ea0ac52e4a786fde1ea45d2efd77cb4bf762c",
+        "byte_length": 385,
+        "revision": 2,
+        "scope": "Original reporting or measurement and public editorial control",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 385,
+            "quote_hash": "f1ba2fed490e6b83972871d9b81ea0ac52e4a786fde1ea45d2efd77cb4bf762c"
+          }
+        ]
+      },
+      "ownership": {
+        "record_id": "controlled_wire0_owner",
+        "authority": "controlled_wire0_owner",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/wire-owner0.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/wire-owner0.txt",
+        "byte_hash": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96",
+        "byte_length": 306,
+        "revision": 2,
+        "scope": "Original reporting or measurement and public editorial control",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 306,
+            "quote_hash": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96"
+          }
+        ]
+      }
+    },
+    {
+      "publisher_id": "controlled_wire1",
+      "publisher_revision": 2,
+      "publication": {
+        "record_id": "controlled_wire1",
+        "authority": "controlled_wire1",
+        "channel": "public",
+        "url": "https://theft-foto-incorporate-blvd.trycloudflare.com/wire1.txt",
+        "capture_url": "https://theft-foto-incorporate-blvd.trycloudflare.com/wire1.txt",
+        "byte_hash": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803",
+        "byte_length": 385,
+        "revision": 2,
+        "scope": "Original reporting or measurement and public editorial control",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 385,
+            "quote_hash": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803"
+          }
+        ]
+      },
+      "ownership": {
+        "record_id": "controlled_wire1_owner",
+        "authority": "controlled_wire1_owner",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/wire-owner1.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/wire-owner1.txt",
+        "byte_hash": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f",
+        "byte_length": 306,
+        "revision": 2,
+        "scope": "Original reporting or measurement and public editorial control",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 306,
+            "quote_hash": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f"
+          }
+        ]
+      }
+    },
+    {
+      "publisher_id": "controlled_wire2",
+      "publisher_revision": 2,
+      "publication": {
+        "record_id": "controlled_wire2",
+        "authority": "controlled_wire2",
+        "channel": "public",
+        "url": "https://coated-western-attitude-flights.trycloudflare.com/wire2.txt",
+        "capture_url": "https://coated-western-attitude-flights.trycloudflare.com/wire2.txt",
+        "byte_hash": "016fa28fb235e959841584fb27592a4804fa73059710c21fd2a86ca06cdc6113",
+        "byte_length": 385,
+        "revision": 2,
+        "scope": "Original reporting or measurement and public editorial control",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 385,
+            "quote_hash": "016fa28fb235e959841584fb27592a4804fa73059710c21fd2a86ca06cdc6113"
+          }
+        ]
+      },
+      "ownership": {
+        "record_id": "controlled_wire2_owner",
+        "authority": "controlled_wire2_owner",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/wire-owner2.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/wire-owner2.txt",
+        "byte_hash": "d724bdd53c98c84b9f4644740c630e2ad81d08d5ccfe53b160e0b919764043a4",
+        "byte_length": 306,
+        "revision": 2,
+        "scope": "Original reporting or measurement and public editorial control",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 306,
+            "quote_hash": "d724bdd53c98c84b9f4644740c630e2ad81d08d5ccfe53b160e0b919764043a4"
+          }
+        ]
+      }
+    }
+  ]
+}

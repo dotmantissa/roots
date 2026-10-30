@@ -1,0 +1,8 @@
+{
+  "operation_id": "assess-controlled_measurement_disclosure-0-1",
+  "transaction_hash": "0x7ded6b7a72f560e072dad21cd185f91b648a4a9ce2c64c9ffa29c95459b6c0ee",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

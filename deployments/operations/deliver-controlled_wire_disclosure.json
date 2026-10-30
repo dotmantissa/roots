@@ -1,0 +1,8 @@
+{
+  "operation_id": "deliver-controlled_wire_disclosure",
+  "transaction_hash": "0x29f044d3c4d7e54a44589c5dea914dc0098494f14ccb9ad8c3d791b63274c01d",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

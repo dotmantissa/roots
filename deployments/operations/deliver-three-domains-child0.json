@@ -1,0 +1,7 @@
+{
+  "operation_id": "deliver-three-domains-child0",
+  "transaction_hash": "0x6465b54780c6373b248dc5a0f97995d0afad9e922ed57c18a711f0f5e094cdbb",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x0d67aa9fd5384A4953785c8019d27b964b949025"
+}

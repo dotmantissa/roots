@@ -1,0 +1,26 @@
+{
+  "corrected-assess-disclosure-g4-0-2": {
+    "original_transaction_hash": "0x1b39ad0639c188f733bc7b1486e494756ff735aed28fba854406a82c5a3e4150",
+    "original_result": "MAJORITY_DISAGREE",
+    "retry_operation_id": "corrected-assess-disclosure-g4-0-2-consensus-retry1",
+    "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f",
+    "method": "assess_pair",
+    "args": [
+      "controlled_measurement_disclosure",
+      4,
+      0,
+      2
+    ],
+    "pre_retry_state": {
+      "generation": 4,
+      "status": "PROVISIONAL",
+      "existing_pairs": [
+        "0:1"
+      ],
+      "target_pair_applied": false
+    },
+    "retry_transaction_hash": "0x674ace992db0f1e65d0eb043cd2c4df5c1a6423059d7c49d894c4f31cf8210db",
+    "retry_result": "MAJORITY_AGREE",
+    "retry_finalized": true
+  }
+}

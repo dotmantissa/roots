@@ -1,0 +1,8 @@
+{
+  "operation_id": "restored-configure-incident-g2",
+  "transaction_hash": "0x9d6c11d53e0bdc722a4b7374441f539ad101f4866839ba107ae4d42f0ad27099",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x0d67aa9fd5384A4953785c8019d27b964b949025"
+}

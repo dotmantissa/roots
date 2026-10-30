@@ -1,0 +1,8 @@
+{
+  "operation_id": "duplicate-controlled_wire_incident",
+  "transaction_hash": "0xb39d1a066a96d21a95b34b542697f3bdd297a8d5903b0a5c629bed5a5199642f",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

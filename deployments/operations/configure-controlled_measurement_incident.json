@@ -1,0 +1,8 @@
+{
+  "operation_id": "configure-controlled_measurement_incident",
+  "transaction_hash": "0xb8b62778d3498fc759bf77a82b8f0dc5af98dedcaf1aad8d1e7175a9a0ca73a2",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x0d67aa9fd5384A4953785c8019d27b964b949025"
+}

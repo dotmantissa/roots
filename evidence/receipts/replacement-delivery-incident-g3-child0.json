@@ -1,0 +1,1251 @@
+{
+  "hash": "0x2f845a4514b5756fa53b38105cc5c38e407610b2c2bf434f59d7591f523cb639",
+  "from_address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407",
+  "to_address": "0x0d67aa9fd5384A4953785c8019d27b964b949025",
+  "data": {
+    "calldata": {
+      "readable": "{\"args\":[\"{\\\"attempts\\\":{\\\"0:1\\\":1,\\\"0:2\\\":1,\\\"1:2\\\":1},\\\"batch_digest\\\":\\\"0e27b8759012d7b8c4f95f9427c54ab2006e87a74a26c4d58855a04996ecd5f3\\\",\\\"certificate_id\\\":\\\"controlled_measurement_incident:3\\\",\\\"configuration_digest\\\":\\\"2f0c74594e744e4e150510d9e7a03d2f8791e8302c941f922562bd24c2ae5c83\\\",\\\"consequence_digest\\\":\\\"ab3228304ab44b2ab1698cab4d4ea0519f8e63308a14f52f349635cf552c03aa\\\",\\\"consumer\\\":\\\"0x0d67aa9fd5384A4953785c8019d27b964b949025\\\",\\\"coverage\\\":true,\\\"deadline\\\":\\\"2026-11-06T00:00:00+00:00\\\",\\\"generation\\\":3,\\\"manifest\\\":[{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement0_owner\\\",\\\"byte_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"byte_length\\\":505,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement0\\\",\\\"byte_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"byte_length\\\":523,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement0.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement0\\\",\\\"publisher_revision\\\":2},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement1_owner\\\",\\\"byte_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"byte_length\\\":500,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement1\\\",\\\"byte_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"byte_length\\\":518,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement1.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement1\\\",\\\"publisher_revision\\\":2},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement2_owner\\\",\\\"byte_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"byte_length\\\":466,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/corrected-owner2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner_v3\\\",\\\"revision\\\":3,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":466,\\\"quote_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/corrected-owner2.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement2\\\",\\\"byte_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"byte_length\\\":520,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement2.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement2\\\",\\\"publisher_revision\\\":3}],\\\"manifest_digest\\\":\\\"258be5894bb520742763774e02837f00578feaf4df0ffbe09f465d71cb3ad3ad\\\",\\\"non_merge_witnesses\\\":[{\\\"pair\\\":\\\"0:1\\\",\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]}],\\\"operation_id\\\":\\\"replacement-delivery-incident-g3\\\",\\\"owner\\\":\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\",\\\"pairs\\\":{\\\"0:1\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"INDEPENDENT\\\",\\\"rule_id\\\":\\\"R_INDEPENDENT_PROCESS\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},\\\"0:2\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"SHARED_ORIGIN\\\",\\\"rule_id\\\":\\\"R_SHARED_CONTROL\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":466,\\\"quote_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner_v3\\\",\\\"source_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},\\\"1:2\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"SHARED_ORIGIN\\\",\\\"rule_id\\\":\\\"R_SHARED_CONTROL\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":466,\\\"quote_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner_v3\\\",\\\"source_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]}},\\\"parties\\\":[\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\"],\\\"policy_id\\\":\\\"three_origins\\\",\\\"policy_revision\\\":1,\\\"prior_certificates\\\":[\\\"controlled_measurement_incident:1\\\",\\\"controlled_measurement_incident:2\\\"],\\\"request_id\\\":\\\"controlled_measurement_incident\\\",\\\"selected_subset\\\":[0,1],\\\"status\\\":\\\"FINALIZED\\\",\\\"subject_digest\\\":\\\"359383c49934d088bd4048665755b7c63abd0964827a99ce4048008864c2409d\\\",\\\"subject_id\\\":\\\"Controlled measurement reporting for incident\\\",\\\"superseded_by\\\":\\\"\\\",\\\"supported_origin_ids\\\":[\\\"controlled_measurement0\\\",\\\"controlled_measurement1\\\"],\\\"unresolved\\\":false}\"],\"method\":\"receive_certificate\"}"
+    }
+  },
+  "value": 0,
+  "type": 2,
+  "status": 7,
+  "result": 6,
+  "consensus_data": {
+    "votes": {
+      "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+      "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+      "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+      "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+      "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "leader_receipt": [
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "leader",
+        "vote": null,
+        "node_config": {
+          "stake": 100,
+          "address": "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947",
+          "primary_model": {
+            "model": "policy:prd-gpt-5-4",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-oss-120b"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+          },
+          "secondary_model": {
+            "model": "openai/gpt-5.4",
+            "config": {
+              "models": [
+                "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        },
+        "calldata": {
+          "readable": "{\"args\":[\"{\\\"attempts\\\":{\\\"0:1\\\":1,\\\"0:2\\\":1,\\\"1:2\\\":1},\\\"batch_digest\\\":\\\"0e27b8759012d7b8c4f95f9427c54ab2006e87a74a26c4d58855a04996ecd5f3\\\",\\\"certificate_id\\\":\\\"controlled_measurement_incident:3\\\",\\\"configuration_digest\\\":\\\"2f0c74594e744e4e150510d9e7a03d2f8791e8302c941f922562bd24c2ae5c83\\\",\\\"consequence_digest\\\":\\\"ab3228304ab44b2ab1698cab4d4ea0519f8e63308a14f52f349635cf552c03aa\\\",\\\"consumer\\\":\\\"0x0d67aa9fd5384A4953785c8019d27b964b949025\\\",\\\"coverage\\\":true,\\\"deadline\\\":\\\"2026-11-06T00:00:00+00:00\\\",\\\"generation\\\":3,\\\"manifest\\\":[{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement0_owner\\\",\\\"byte_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"byte_length\\\":505,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement0\\\",\\\"byte_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"byte_length\\\":523,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement0.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement0\\\",\\\"publisher_revision\\\":2},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement1_owner\\\",\\\"byte_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"byte_length\\\":500,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement1\\\",\\\"byte_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"byte_length\\\":518,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement1.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement1\\\",\\\"publisher_revision\\\":2},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement2_owner\\\",\\\"byte_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"byte_length\\\":466,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/corrected-owner2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner_v3\\\",\\\"revision\\\":3,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":466,\\\"quote_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/corrected-owner2.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement2\\\",\\\"byte_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"byte_length\\\":520,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement2.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement2\\\",\\\"publisher_revision\\\":3}],\\\"manifest_digest\\\":\\\"258be5894bb520742763774e02837f00578feaf4df0ffbe09f465d71cb3ad3ad\\\",\\\"non_merge_witnesses\\\":[{\\\"pair\\\":\\\"0:1\\\",\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]}],\\\"operation_id\\\":\\\"replacement-delivery-incident-g3\\\",\\\"owner\\\":\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\",\\\"pairs\\\":{\\\"0:1\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"INDEPENDENT\\\",\\\"rule_id\\\":\\\"R_INDEPENDENT_PROCESS\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},\\\"0:2\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"SHARED_ORIGIN\\\",\\\"rule_id\\\":\\\"R_SHARED_CONTROL\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":466,\\\"quote_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner_v3\\\",\\\"source_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},\\\"1:2\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"SHARED_ORIGIN\\\",\\\"rule_id\\\":\\\"R_SHARED_CONTROL\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":466,\\\"quote_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner_v3\\\",\\\"source_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]}},\\\"parties\\\":[\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\"],\\\"policy_id\\\":\\\"three_origins\\\",\\\"policy_revision\\\":1,\\\"prior_certificates\\\":[\\\"controlled_measurement_incident:1\\\",\\\"controlled_measurement_incident:2\\\"],\\\"request_id\\\":\\\"controlled_measurement_incident\\\",\\\"selected_subset\\\":[0,1],\\\"status\\\":\\\"FINALIZED\\\",\\\"subject_digest\\\":\\\"359383c49934d088bd4048665755b7c63abd0964827a99ce4048008864c2409d\\\",\\\"subject_id\\\":\\\"Controlled measurement reporting for incident\\\",\\\"superseded_by\\\":\\\"\\\",\\\"supported_origin_ids\\\":[\\\"controlled_measurement0\\\",\\\"controlled_measurement1\\\"],\\\"unresolved\\\":false}\"],\"method\":\"receive_certificate\"}"
+        },
+        "eq_outputs": {},
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "node_config": {
+          "stake": 100,
+          "address": "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947",
+          "primary_model": {
+            "model": "policy:prd-gpt-5-4",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-oss-120b"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+          },
+          "secondary_model": {
+            "model": "openai/gpt-5.4",
+            "config": {
+              "models": [
+                "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        },
+        "calldata": {
+          "readable": "{\"args\":[\"{\\\"attempts\\\":{\\\"0:1\\\":1,\\\"0:2\\\":1,\\\"1:2\\\":1},\\\"batch_digest\\\":\\\"0e27b8759012d7b8c4f95f9427c54ab2006e87a74a26c4d58855a04996ecd5f3\\\",\\\"certificate_id\\\":\\\"controlled_measurement_incident:3\\\",\\\"configuration_digest\\\":\\\"2f0c74594e744e4e150510d9e7a03d2f8791e8302c941f922562bd24c2ae5c83\\\",\\\"consequence_digest\\\":\\\"ab3228304ab44b2ab1698cab4d4ea0519f8e63308a14f52f349635cf552c03aa\\\",\\\"consumer\\\":\\\"0x0d67aa9fd5384A4953785c8019d27b964b949025\\\",\\\"coverage\\\":true,\\\"deadline\\\":\\\"2026-11-06T00:00:00+00:00\\\",\\\"generation\\\":3,\\\"manifest\\\":[{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement0_owner\\\",\\\"byte_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"byte_length\\\":505,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement0\\\",\\\"byte_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"byte_length\\\":523,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement0.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement0.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement0\\\",\\\"publisher_revision\\\":2},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement1_owner\\\",\\\"byte_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"byte_length\\\":500,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement1\\\",\\\"byte_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"byte_length\\\":518,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement1.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement1.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement1\\\",\\\"publisher_revision\\\":2},{\\\"ownership\\\":{\\\"authority\\\":\\\"controlled_measurement2_owner\\\",\\\"byte_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"byte_length\\\":466,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/corrected-owner2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner_v3\\\",\\\"revision\\\":3,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":466,\\\"quote_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/corrected-owner2.txt\\\"},\\\"publication\\\":{\\\"authority\\\":\\\"controlled_measurement2\\\",\\\"byte_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"byte_length\\\":520,\\\"capture_url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement2.txt\\\",\\\"channel\\\":\\\"public\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"revision\\\":2,\\\"scope\\\":\\\"Original reporting or measurement and public editorial control\\\",\\\"spans\\\":[{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}],\\\"url\\\":\\\"https://roots-mauve-delta.vercel.app/validation/measurement2.txt\\\"},\\\"publisher_id\\\":\\\"controlled_measurement2\\\",\\\"publisher_revision\\\":3}],\\\"manifest_digest\\\":\\\"258be5894bb520742763774e02837f00578feaf4df0ffbe09f465d71cb3ad3ad\\\",\\\"non_merge_witnesses\\\":[{\\\"pair\\\":\\\"0:1\\\",\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]}],\\\"operation_id\\\":\\\"replacement-delivery-incident-g3\\\",\\\"owner\\\":\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\",\\\"pairs\\\":{\\\"0:1\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"INDEPENDENT\\\",\\\"rule_id\\\":\\\"R_INDEPENDENT_PROCESS\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},\\\"0:2\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"SHARED_ORIGIN\\\",\\\"rule_id\\\":\\\"R_SHARED_CONTROL\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":523,\\\"quote_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"record_id\\\":\\\"controlled_measurement0\\\",\\\"source_hash\\\":\\\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":505,\\\"quote_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"record_id\\\":\\\"controlled_measurement0_owner\\\",\\\"source_hash\\\":\\\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":466,\\\"quote_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner_v3\\\",\\\"source_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]},\\\"1:2\\\":{\\\"coverage\\\":true,\\\"relation\\\":\\\"SHARED_ORIGIN\\\",\\\"rule_id\\\":\\\"R_SHARED_CONTROL\\\",\\\"scope\\\":\\\"editorial_or_measurement_origin\\\",\\\"unresolved\\\":false,\\\"witnesses\\\":[{\\\"end\\\":518,\\\"quote_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"record_id\\\":\\\"controlled_measurement1\\\",\\\"source_hash\\\":\\\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":500,\\\"quote_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"record_id\\\":\\\"controlled_measurement1_owner\\\",\\\"source_hash\\\":\\\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":520,\\\"quote_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"record_id\\\":\\\"controlled_measurement2\\\",\\\"source_hash\\\":\\\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0},{\\\"end\\\":466,\\\"quote_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"record_id\\\":\\\"controlled_measurement2_owner_v3\\\",\\\"source_hash\\\":\\\"abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd\\\",\\\"span_id\\\":\\\"complete\\\",\\\"start\\\":0}]}},\\\"parties\\\":[\\\"0xBC1399c55538eC034d4Da550C03c34Ae0C357f53\\\"],\\\"policy_id\\\":\\\"three_origins\\\",\\\"policy_revision\\\":1,\\\"prior_certificates\\\":[\\\"controlled_measurement_incident:1\\\",\\\"controlled_measurement_incident:2\\\"],\\\"request_id\\\":\\\"controlled_measurement_incident\\\",\\\"selected_subset\\\":[0,1],\\\"status\\\":\\\"FINALIZED\\\",\\\"subject_digest\\\":\\\"359383c49934d088bd4048665755b7c63abd0964827a99ce4048008864c2409d\\\",\\\"subject_id\\\":\\\"Controlled measurement reporting for incident\\\",\\\"superseded_by\\\":\\\"\\\",\\\"supported_origin_ids\\\":[\\\"controlled_measurement0\\\",\\\"controlled_measurement1\\\"],\\\"unresolved\\\":false}\"],\"method\":\"receive_certificate\"}"
+        },
+        "result": {
+          "status": "return",
+          "payload": {
+            "readable": "null"
+          }
+        }
+      }
+    ],
+    "validators": [
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle",
+        "node_config": {
+          "id": 5725,
+          "model": "policy:prd-gpt-5-4",
+          "stake": 100,
+          "config": {
+            "policy_ir": [
+              "policy",
+              [
+                "and",
+                [
+                  "meets_req"
+                ],
+                [
+                  "not",
+                  [
+                    "is",
+                    "disabled"
+                  ]
+                ],
+                [
+                  "cmp",
+                  "success_rate",
+                  "ge",
+                  0.2
+                ],
+                [
+                  "or",
+                  [
+                    "family_eq",
+                    "gpt-5.4"
+                  ],
+                  [
+                    "family_eq",
+                    "gemini-3-flash-preview"
+                  ],
+                  [
+                    "family_eq",
+                    "gpt-oss-120b"
+                  ]
+                ]
+              ],
+              [
+                "add",
+                [
+                  "scale",
+                  100,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  10,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  1,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.25,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "price_in"
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.45,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "price_out"
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.2,
+                  [
+                    "field",
+                    "success_rate"
+                  ]
+                ],
+                [
+                  "scale",
+                  0.1,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "latency_ms"
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "argmax"
+              ],
+              [
+                "id"
+              ],
+              [
+                "always",
+                {
+                  "action": "next_candidate"
+                }
+              ]
+            ],
+            "timeout_ms": 22000,
+            "first_token_timeout_ms": 7000
+          },
+          "plugin": "openai-compatible",
+          "address": "0x045291B293B9D68969c18B6637A8258038cf787A",
+          "provider": "llm-router",
+          "plugin_config": {
+            "api_url": "https://router.ygr.ai",
+            "api_key_env_var": "LLM_ROUTER_API_KEY"
+          },
+          "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "node_config": {
+          "stake": 100,
+          "address": "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186",
+          "primary_model": {
+            "model": "policy:prd-gemini",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-oss-120b"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-oss-120b"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0x007d6451555Df7765c707284F844137927aE4e5E"
+          },
+          "secondary_model": {
+            "model": "anthropic/claude-sonnet-4.6",
+            "config": {
+              "models": [
+                "anthropic/claude-sonnet-4.6",
+                "openai/gpt-5.4",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0x007d6451555Df7765c707284F844137927aE4e5E",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        }
+      },
+      {
+        "execution_result": "SUCCESS",
+        "genvm_result": {
+          "stderr": "",
+          "stdout": "",
+          "raw_error": null,
+          "error_code": null,
+          "error_description": null
+        },
+        "mode": "validator",
+        "vote": "agree",
+        "node_config": {
+          "stake": 100,
+          "address": "0x336458747913FE397be82c4F0926ACeB3ab13618",
+          "primary_model": {
+            "model": "policy:prd-sonnet",
+            "config": {
+              "policy_ir": [
+                "policy",
+                [
+                  "and",
+                  [
+                    "meets_req"
+                  ],
+                  [
+                    "not",
+                    [
+                      "is",
+                      "disabled"
+                    ]
+                  ],
+                  [
+                    "cmp",
+                    "success_rate",
+                    "ge",
+                    0.2
+                  ],
+                  [
+                    "or",
+                    [
+                      "family_eq",
+                      "claude-sonnet-4-6"
+                    ],
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "family_eq",
+                      "gemini-3-flash-preview"
+                    ]
+                  ]
+                ],
+                [
+                  "add",
+                  [
+                    "scale",
+                    100,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "claude-sonnet-4-6"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    10,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gpt-5.4"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    1,
+                    [
+                      "gate",
+                      [
+                        "family_eq",
+                        "gemini-3-flash-preview"
+                      ],
+                      [
+                        "lit",
+                        1
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.25,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_in"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.45,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "price_out"
+                        ]
+                      ]
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.2,
+                    [
+                      "field",
+                      "success_rate"
+                    ]
+                  ],
+                  [
+                    "scale",
+                    0.1,
+                    [
+                      "neg",
+                      [
+                        "normalize",
+                        [
+                          "field",
+                          "latency_ms"
+                        ]
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "argmax"
+                ],
+                [
+                  "id"
+                ],
+                [
+                  "always",
+                  {
+                    "action": "next_candidate"
+                  }
+                ]
+              ],
+              "timeout_ms": 22000,
+              "first_token_timeout_ms": 7000
+            },
+            "plugin": "openai-compatible",
+            "provider": "llm-router",
+            "plugin_config": {
+              "api_url": "https://router.ygr.ai",
+              "api_key_env_var": "LLM_ROUTER_API_KEY"
+            },
+            "fallback_validator": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4"
+          },
+          "secondary_model": {
+            "model": "openai/gpt-5.4",
+            "config": {
+              "models": [
+                "openai/gpt-5.4",
+                "anthropic/claude-sonnet-4.6",
+                "google/gemini-3-flash-preview"
+              ]
+            },
+            "plugin": "openai-compatible",
+            "address": "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4",
+            "provider": "openrouter",
+            "plugin_config": {
+              "api_url": "https://openrouter.ai/api",
+              "api_key_env_var": "OPENROUTERAPIKEY"
+            }
+          }
+        }
+      },
+      {
+        "execution_result": "ERROR",
+        "genvm_result": {
+          "stderr": "Validator execution cancelled after quorum",
+          "stdout": "",
+          "raw_error": {
+            "fatal": false,
+            "causes": [
+              "VALIDATOR_QUORUM_REACHED"
+            ]
+          },
+          "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+        },
+        "mode": "validator",
+        "vote": "idle",
+        "node_config": {
+          "id": 5734,
+          "model": "policy:prd-kimi",
+          "stake": 100,
+          "config": {
+            "policy_ir": [
+              "policy",
+              [
+                "and",
+                [
+                  "meets_req"
+                ],
+                [
+                  "not",
+                  [
+                    "is",
+                    "disabled"
+                  ]
+                ],
+                [
+                  "cmp",
+                  "success_rate",
+                  "ge",
+                  0.2
+                ],
+                [
+                  "or",
+                  [
+                    "family_eq",
+                    "kimi-k2.7-code"
+                  ],
+                  [
+                    "family_eq",
+                    "claude-sonnet-4-6"
+                  ],
+                  [
+                    "family_eq",
+                    "gpt-5.4"
+                  ]
+                ]
+              ],
+              [
+                "add",
+                [
+                  "scale",
+                  100,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "kimi-k2.7-code"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  10,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "claude-sonnet-4-6"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  1,
+                  [
+                    "gate",
+                    [
+                      "family_eq",
+                      "gpt-5.4"
+                    ],
+                    [
+                      "lit",
+                      1
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.25,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "price_in"
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.45,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "price_out"
+                      ]
+                    ]
+                  ]
+                ],
+                [
+                  "scale",
+                  0.2,
+                  [
+                    "field",
+                    "success_rate"
+                  ]
+                ],
+                [
+                  "scale",
+                  0.1,
+                  [
+                    "neg",
+                    [
+                      "normalize",
+                      [
+                        "field",
+                        "latency_ms"
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "argmax"
+              ],
+              [
+                "id"
+              ],
+              [
+                "always",
+                {
+                  "action": "next_candidate"
+                }
+              ]
+            ],
+            "timeout_ms": 22000,
+            "first_token_timeout_ms": 7000
+          },
+          "plugin": "openai-compatible",
+          "address": "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B",
+          "provider": "llm-router",
+          "plugin_config": {
+            "api_url": "https://router.ygr.ai",
+            "api_key_env_var": "LLM_ROUTER_API_KEY"
+          },
+          "fallback_validator": "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a"
+        }
+      }
+    ]
+  },
+  "gaslimit": 10,
+  "nonce": 10,
+  "created_at": "2026-10-30T15:19:47.278792+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "origin_address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407",
+  "triggered_on": "finalized",
+  "triggered_transactions": [
+    "0x091da472544f6e39abde1f36430941bc863f74338588f442cf381a9d95250007"
+  ],
+  "appeal_validators_timeout": false,
+  "sim_config": {
+    "genvm_datetime": null
+  },
+  "value_credited": false,
+  "sender": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407",
+  "recipient": "0x0d67aa9fd5384A4953785c8019d27b964b949025",
+  "tx_id": "0x2f845a4514b5756fa53b38105cc5c38e407610b2c2bf434f59d7591f523cb639",
+  "activator": "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947",
+  "last_leader": "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947",
+  "result_name": "MAJORITY_AGREE",
+  "messages": [
+    {
+      "messageType": "0",
+      "recipient": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407",
+      "value": 0,
+      "data": "FgRhcmdzHYQCcmVwbGFjZW1lbnQtZGVsaXZlcnktaW5jaWRlbnQtZzOMAmNvbnRyb2xsZWRfbWVhc3VyZW1lbnRfaW5jaWRlbnQ6MxkGbWV0aG9kpAFhY2tub3dsZWRnZV9yZXZpc2lvbg==",
+      "onAcceptance": false
+    }
+  ],
+  "num_of_rounds": "1",
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "0",
+    "result": 6,
+    "round_validators": [
+      "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947",
+      "0x045291B293B9D68969c18B6637A8258038cf787A",
+      "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186",
+      "0x336458747913FE397be82c4F0926ACeB3ab13618",
+      "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B"
+    ],
+    "validator_votes_hash": [
+      "0xd53dde9a61531603a8d4e50326ed59af315c7294ee8dca1e65ca33236909227d",
+      "0x6f29d121d4d15d1d13d47fb8e2f34aaaeb2196060b1cf15fb4b9692bb921c5df",
+      "0xe3a8d3670caa20a4b92fc614d7abf9c25879ca8e5ddefcc6d78c96874d7afd99",
+      "0xd55193cfcd512ab4afdb4f8d4f3ef8d0dd1261060b6234d1a18248908ebf7444",
+      "0x3a4b1aad9aecf1db5c96758969a1c67036ca1e67d0dcaffc1fb30429d631ce06"
+    ],
+    "validator_votes": [
+      1,
+      5,
+      1,
+      1,
+      5
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "IDLE",
+      "AGREE",
+      "AGREE",
+      "IDLE"
+    ]
+  },
+  "status_name": "FINALIZED"
+}

@@ -1,0 +1,8 @@
+{
+  "operation_id": "assess-controlled_wire_incident-1-2",
+  "transaction_hash": "0xa804b229a0d5ca8188a26a167bba57a9ad4da5eb6ad1fab27f33629ac2435536",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}

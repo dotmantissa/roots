@@ -1,0 +1,45 @@
+{
+  "classification": "Actual hosted API responses compared with finalized contract scenario results",
+  "url": "https://roots-mauve-delta.vercel.app",
+  "health": {
+    "status": "ready",
+    "network": "studionet"
+  },
+  "deployment_bindings_verified": 5,
+  "counts": {
+    "batches": 9,
+    "certificates": 9,
+    "policies": 1,
+    "publishers": 7
+  },
+  "consumer_successors": [
+    {
+      "previous_certificate": "controlled_measurement_incident:2",
+      "previous_status": "SUPERSEDED",
+      "current_certificate": "controlled_measurement_incident:3",
+      "current_status": "FINALIZED",
+      "selected_subset": [
+        0,
+        1
+      ]
+    },
+    {
+      "previous_certificate": "controlled_measurement_disclosure:3",
+      "previous_status": "SUPERSEDED",
+      "current_certificate": "controlled_measurement_disclosure:4",
+      "current_status": "FINALIZED",
+      "selected_subset": [
+        0,
+        1
+      ]
+    }
+  ],
+  "three_host_certificate": {
+    "certificate_id": "controlled_three_actual_domains:1",
+    "selected_subset": [
+      0
+    ]
+  },
+  "indexed_at": "2026-10-30T16:58:58.282Z",
+  "served_from_projection": false
+}

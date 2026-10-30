@@ -1,0 +1,8 @@
+{
+  "operation_id": "restore-fixture-controlled_measurement1",
+  "transaction_hash": "0x88e21fb88fba357a12e2b52b021287fbbe82026dda0345094c2c9748809dea83",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x85f4F1716E2fC991864A4eb2857e3D5fF255eaAB"
+}

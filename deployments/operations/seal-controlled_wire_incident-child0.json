@@ -1,0 +1,8 @@
+{
+  "operation_id": "seal-controlled_wire_incident-child0",
+  "transaction_hash": "0x1c263ec89459938a86c8084fdaad17b1d51a0bd84e57e5b59b22c8350cfe0524",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

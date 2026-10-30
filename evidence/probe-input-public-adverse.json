@@ -1,0 +1,78 @@
+[
+  {
+    "record_id": "USGS_archived",
+    "authority": "USGS_archived",
+    "channel": "public",
+    "url": "https://raw.githubusercontent.com/usgs/earthquake-latest-earthquakes/master/README.md",
+    "capture_url": "https://raw.githubusercontent.com/usgs/earthquake-latest-earthquakes/master/README.md",
+    "byte_hash": "c4c999f14a9b9592f4a4cbc4ba76ab78f3dd3d0b771875c26c9b0c1205bfcac3",
+    "byte_length": 1162,
+    "revision": 1,
+    "scope": "Public scientific reporting process and organization",
+    "spans": [
+      {
+        "span_id": "complete",
+        "start": 0,
+        "end": 1162,
+        "quote_hash": "c4c999f14a9b9592f4a4cbc4ba76ab78f3dd3d0b771875c26c9b0c1205bfcac3"
+      }
+    ]
+  },
+  {
+    "record_id": "USGS",
+    "authority": "USGS",
+    "channel": "public",
+    "url": "https://api.github.com/orgs/usgs",
+    "capture_url": "https://api.github.com/orgs/usgs",
+    "byte_hash": "5f7156fd77ead97d381df6d207cfcdb8ced4a3bddbd258f2d201370a710ba802",
+    "byte_length": 1202,
+    "revision": 1,
+    "scope": "Public scientific reporting process and organization",
+    "spans": [
+      {
+        "span_id": "complete",
+        "start": 0,
+        "end": 1202,
+        "quote_hash": "5f7156fd77ead97d381df6d207cfcdb8ced4a3bddbd258f2d201370a710ba802"
+      }
+    ]
+  },
+  {
+    "record_id": "NASA_Worldview",
+    "authority": "NASA_Worldview",
+    "channel": "public",
+    "url": "https://raw.githubusercontent.com/nasa-gibs/worldview/main/README.md",
+    "capture_url": "https://raw.githubusercontent.com/nasa-gibs/worldview/main/README.md",
+    "byte_hash": "21ab5c07f30b13a451ad18d084c24b831c9508d93b02da3df0417dea665882c6",
+    "byte_length": 4381,
+    "revision": 1,
+    "scope": "Public scientific reporting process and organization",
+    "spans": [
+      {
+        "span_id": "complete",
+        "start": 0,
+        "end": 4381,
+        "quote_hash": "21ab5c07f30b13a451ad18d084c24b831c9508d93b02da3df0417dea665882c6"
+      }
+    ]
+  },
+  {
+    "record_id": "NASA",
+    "authority": "NASA",
+    "channel": "public",
+    "url": "https://api.github.com/orgs/nasa-gibs",
+    "capture_url": "https://api.github.com/orgs/nasa-gibs",
+    "byte_hash": "4a8b0107eb27fe5e6104477c8bbc340161a6c1b7d564980b736dafe35fe58b41",
+    "byte_length": 1056,
+    "revision": 1,
+    "scope": "Public scientific reporting process and organization",
+    "spans": [
+      {
+        "span_id": "complete",
+        "start": 0,
+        "end": 1056,
+        "quote_hash": "4a8b0107eb27fe5e6104477c8bbc340161a6c1b7d564980b736dafe35fe58b41"
+      }
+    ]
+  }
+]

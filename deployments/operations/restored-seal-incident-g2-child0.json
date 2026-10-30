@@ -1,0 +1,7 @@
+{
+  "operation_id": "restored-seal-incident-g2-child0",
+  "transaction_hash": "0x6df8f4e2515f2d1a007f0b88330ac67955efd88aa4e141284789bcf7fc4eb1cc",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

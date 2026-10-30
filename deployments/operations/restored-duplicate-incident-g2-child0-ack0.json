@@ -1,0 +1,7 @@
+{
+  "operation_id": "restored-duplicate-incident-g2-child0-ack0",
+  "transaction_hash": "0x7f50de53e76f07f289e42f0161135ce9a72c7b6b435ba0dad4a4280334fac7b9",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407"
+}

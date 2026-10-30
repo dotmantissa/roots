@@ -1,0 +1,19 @@
+{
+  "classification": "Actual production deployment and public fixture verification",
+  "url": "https://roots-mauve-delta.vercel.app",
+  "deployment_id": "dpl_Atbey2e13BVkeYZexoEfz55DMZP6",
+  "deployment_url": "https://roots-l33c0ynad-mantissas-projects.vercel.app",
+  "source_commit": "d9bb96c4ba1a6d5f46917a57f2702eb55ffbc44a",
+  "status": "READY",
+  "fixture_files_verified": 17,
+  "fixture_manifest": "https://roots-mauve-delta.vercel.app/validation/manifest.json",
+  "verification_commands": [
+    "npm run lint",
+    "npm test",
+    "npm run build",
+    "BASE_URL=https://roots-mauve-delta.vercel.app npm run test:browser"
+  ],
+  "local_build_seconds": 44.24,
+  "hosted_build_seconds": 32.34,
+  "browser_checks_passed": 3
+}

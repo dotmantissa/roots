@@ -1,0 +1,8 @@
+{
+  "operation_id": "open-controlled_wire_incident",
+  "transaction_hash": "0xd679f666345a0cd9252a6fb64da00cdd7e7550326b27e5dc142c6926002e54cd",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f"
+}
