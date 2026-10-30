@@ -1,0 +1,73 @@
+{
+  "classification": "Authored controlled validation fixtures. These documents are tests, not real reporting, measurement deployments or adoption.",
+  "files": {
+    "corrected-owner2.txt": {
+      "sha256": "abd5caa2f42e80c4dc53f563afdccbccf85ebd15eccf0d210a1d29c3424c0acd",
+      "bytes": 466
+    },
+    "email-flow-owner-v2.txt": {
+      "sha256": "4ccec920c0b05d60bd873bd87ba84e0ea92c286bb80cad4f576bce81858def67",
+      "bytes": 362
+    },
+    "email-flow-owner.txt": {
+      "sha256": "06ee13fd48705f0522caa490aa2c044375405437dad4a9d21c8a8c8a073d5c64",
+      "bytes": 368
+    },
+    "injection.txt": {
+      "sha256": "3f8786072837321dcd17e8624bce8b432c6c2b0b0f23f82e7c8b9888f8b94290",
+      "bytes": 273
+    },
+    "measurement-owner0.txt": {
+      "sha256": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+      "bytes": 505
+    },
+    "measurement-owner1.txt": {
+      "sha256": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+      "bytes": 500
+    },
+    "measurement-owner2.txt": {
+      "sha256": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+      "bytes": 502
+    },
+    "measurement0.txt": {
+      "sha256": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+      "bytes": 523
+    },
+    "measurement1.txt": {
+      "sha256": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+      "bytes": 518
+    },
+    "measurement2.txt": {
+      "sha256": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+      "bytes": 520
+    },
+    "obscured-owner.txt": {
+      "sha256": "9475f291336796ff7d065c1e76431845309097a3294e67df8292b07fdc521006",
+      "bytes": 218
+    },
+    "wire-owner0.txt": {
+      "sha256": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96",
+      "bytes": 306
+    },
+    "wire-owner1.txt": {
+      "sha256": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f",
+      "bytes": 306
+    },
+    "wire-owner2.txt": {
+      "sha256": "d724bdd53c98c84b9f4644740c630e2ad81d08d5ccfe53b160e0b919764043a4",
+      "bytes": 306
+    },
+    "wire0.txt": {
+      "sha256": "f1ba2fed490e6b83972871d9b81ea0ac52e4a786fde1ea45d2efd77cb4bf762c",
+      "bytes": 385
+    },
+    "wire1.txt": {
+      "sha256": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803",
+      "bytes": 385
+    },
+    "wire2.txt": {
+      "sha256": "016fa28fb235e959841584fb27592a4804fa73059710c21fd2a86ca06cdc6113",
+      "bytes": 385
+    }
+  }
+}
