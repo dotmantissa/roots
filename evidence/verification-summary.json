@@ -1,0 +1,83 @@
+{
+  "classification": "Completed local and live validation with retained authentic receipts",
+  "implementation_source_commit": "06520d724fe0e1cbb33aee9e613988e7950cf035",
+  "verified_at_utc": "2026-10-30T17:05:28.555118+00:00",
+  "production_url": "https://roots-mauve-delta.vercel.app",
+  "production_deployment_id": "dpl_Atbey2e13BVkeYZexoEfz55DMZP6",
+  "production_source_commit": "d9bb96c4ba1a6d5f46917a57f2702eb55ffbc44a",
+  "checks": {
+    "contract_lint": {
+      "passed": true,
+      "files": 7
+    },
+    "node_tests": 6,
+    "python_tests": 24,
+    "production_build": {
+      "passed": true,
+      "seconds": 35.71
+    },
+    "verifier_and_browser_types": {
+      "passed": true
+    },
+    "hosted_browser": {
+      "passed": 3,
+      "seconds": 42.7
+    },
+    "hosted_api_bindings": {
+      "passed": true,
+      "evidence": "evidence/hosted-records.json"
+    },
+    "offline_evidence_audit": {
+      "finalized_operation_receipts_verified": 187,
+      "signed_journals_verified": 48,
+      "contract_source_hashes_verified": 5,
+      "captured_source_hashes_verified": 20,
+      "complete_scenarios_required": true
+    }
+  },
+  "studio_outcomes": {
+    "independent_baselines": {
+      "incident_generation": 2,
+      "disclosure_generation": 3,
+      "selected_subset": [
+        0,
+        1,
+        2
+      ],
+      "admission": true
+    },
+    "affiliation_correction": {
+      "incident_generation": 3,
+      "disclosure_generation": 4,
+      "selected_subset": [
+        0,
+        1
+      ],
+      "frozen_admission_refused": true,
+      "stale_delivery_refused": true,
+      "reduced_admission_refused": true,
+      "replacement_delivery_acknowledged": true
+    },
+    "three_distinct_public_hosts": {
+      "relations": "SHARED_ORIGIN",
+      "selected_subset": [
+        0
+      ],
+      "delivery_acknowledged": true,
+      "admission": false
+    },
+    "retained_disagreement": "evidence/consensus-recovery.json"
+  },
+  "index_recovery": {
+    "records": 32,
+    "exact_payloads_preserved": true,
+    "consumer_successors_verified": true,
+    "real_hourly_quota_recovered": "evidence/index-quota-recovery.json"
+  },
+  "remaining_limits": [
+    "Upstream dependency audit retains 21 high and 10 moderate advisories",
+    "Studio supplies no VM CPU, memory or billed model token telemetry",
+    "Two supplemental fixture hostnames are temporary; original inputs and receipts are retained"
+  ],
+  "verification_record": "docs/verification.md"
+}

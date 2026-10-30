@@ -1,0 +1,6 @@
+{
+  "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4",
+  "source_hash": "e55f0e3233075125d40d915817f328c72248b38fc97c82d4a4fe5c91646b7723",
+  "network": "studionet",
+  "purpose": "adversarial validator validation, not production verdicts"
+}
