@@ -26,7 +26,7 @@ def deployment_operation(name, identity, release_id):
     return key + '-' + release_id[:12] if name == 'relation_docket' else key
 
 
-def resolve_owners(previous, environment, generate):
+def resolve_owners(previous, environment, generate, live_authorities=None):
     owners = {}
     for kind in ['incident', 'disclosure']:
         address = environment.get(kind.upper() + '_OWNER_ADDRESS')
@@ -35,7 +35,7 @@ def resolve_owners(previous, environment, generate):
         if address and derived and address.lower() != derived.lower():
             raise ValueError(kind + ' owner key does not match the configured address')
         # Never silently invent a different owner for an existing deployment.
-        owners[kind] = address or derived or previous.get('owners', {}).get(kind) or generate(kind)
+        owners[kind] = address or (live_authorities or {}).get(kind) or derived or previous.get('owners', {}).get(kind) or generate(kind)
     if owners['incident'].lower() == owners['disclosure'].lower():
         raise ValueError('The two consumer owners must be separate authorities')
     owners['registry'] = Account.from_key(environment['DEPLOYER_PRIVATE_KEY']).address
@@ -88,6 +88,18 @@ def main():
         verify_stack(c, previous, initial_owners=False)
         print('Unchanged code, owners and constructor dependencies verified', flush=True)
         return
+    if previous.get('schema_version') == 2:
+        # Constructor owners describe deployment time. A subsequent nominated
+        # wallet may now own a consumer; an old local key cannot reclaim it on
+        # upgrade. Preserve the authoritative owner unless an address override
+        # explicitly requests replacement under a different authority.
+        live_authorities = {}
+        for kind in ['incident', 'disclosure']:
+            authority = c.read_contract(address=previous['contracts'][kind+'_consumer']['address'],
+                                        function_name='get_authority', args=[])
+            live_authorities[kind] = authority['owner']
+        owners = resolve_owners(previous, os.environ, generate, live_authorities)
+        release_id = fingerprint(hashlib.sha256(json.dumps(hashes,sort_keys=True).encode()).hexdigest(), owners, owners['registry'])
     # A hub cannot be replaced under an existing one-time docket binding.
     # Every incompatible release replaces the whole connected stack, preserving
     # the old public manifest until deployments, binding and reads all succeed.
