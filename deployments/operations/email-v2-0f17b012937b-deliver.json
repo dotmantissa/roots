@@ -1,0 +1,9 @@
+{
+  "operation_id": "email-v2-0f17b012937b-deliver",
+  "api_operation_id": "87c0cb43-fb3f-45d5-800c-97a622488162",
+  "transaction_hash": "0xea5f944123ffc9e9773efc32a272e9e9c1912a15b3b4102621f695d7f0fbe5df",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x8098c120F2a35F8c06d65169FdE88Cc1Bd7230BF"
+}

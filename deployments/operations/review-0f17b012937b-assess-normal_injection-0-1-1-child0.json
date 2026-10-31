@@ -1,0 +1,8 @@
+{
+  "operation_id": "review-0f17b012937b-assess-normal_injection-0-1-1-child0",
+  "transaction_hash": "0xe4bcf0fb99ecead72888d343e137573def669af7cb9b50305b4894bb7865c7c2",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0xB25eaE346F0c4a4816370b12a80bcE3D2a57eC6C"
+}

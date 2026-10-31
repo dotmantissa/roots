@@ -1,0 +1,30 @@
+{
+  "release_id": "0f17b012937b09f6dc56af565b3426c5936bb0fb0f9a5e38993e1367fbf294d2",
+  "classification": "Authentic consumer-owner browser controls and actual public captures; no successor transaction submitted",
+  "origin": "https://roots-evidence-federation.vercel.app",
+  "request_id": "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+  "finalized_owner_can_open_recovery": true,
+  "edited_url_requires_capture": true,
+  "captured_replacement_host_enabled": true,
+  "changed_url_invalidates_capture": true,
+  "unchanged_capture_cannot_reset_revision": true,
+  "replacement_capture": {
+    "record_id": "ea35c9ee-ec30-4da9-a63a-74c1934f55b6",
+    "authority": "controlled_0f17b012937b_measurement0",
+    "channel": "public",
+    "url": "https://roots-evidence-federation.vercel.app/validation/measurement0.txt",
+    "capture_url": "https://roots-evidence-federation.vercel.app/api/captures/a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+    "byte_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+    "byte_length": 523,
+    "revision": 2,
+    "scope": "Controlled email-to-admission v2",
+    "spans": [
+      {
+        "span_id": "complete",
+        "start": 0,
+        "end": 523,
+        "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "operation_id": "review-0f17b012937b-deliver-disclosure-child0",
+  "transaction_hash": "0x9f5d80b681a340fedca9bb80102f2a4e29b7eeb0d53dfc0711ccbe6db989b285",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x2b771195a8E2B355d7FAdAf6Ff2c316CdCe9eeD2"
+}

@@ -1,0 +1,76 @@
+{
+  "classification": "Actual current Studio feeds, exact SDK bindings and PostgreSQL rebuild/continuation; source observations are operational and do not authorize corrections",
+  "release_id": "0f17b012937b09f6dc56af565b3426c5936bb0fb0f9a5e38993e1367fbf294d2",
+  "counts": {
+    "batches": 4,
+    "certificates": 4,
+    "publishers": 9,
+    "policies": 1,
+    "indexed": 18
+  },
+  "sdk_semantic_bindings_verified": true,
+  "stable_current_batches": true,
+  "interrupted_continuation_equals_rebuild": true,
+  "observations": [
+    {
+      "record_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/measurement1.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:45.894Z"
+    },
+    {
+      "record_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/measurement2.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:45.939Z"
+    },
+    {
+      "record_hash": "3f8786072837321dcd17e8624bce8b432c6c2b0b0f23f82e7c8b9888f8b94290",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/injection.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:45.767Z"
+    },
+    {
+      "record_hash": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/wire1.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:47.211Z"
+    },
+    {
+      "record_hash": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/wire-owner1.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:47.212Z"
+    },
+    {
+      "record_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/measurement0.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:45.910Z"
+    },
+    {
+      "record_hash": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/wire-owner0.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:45.904Z"
+    },
+    {
+      "record_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner2.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:45.207Z"
+    },
+    {
+      "record_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:45.778Z"
+    },
+    {
+      "record_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+      "original_url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt",
+      "status": "MATCHED",
+      "checked_at": "2026-10-31T15:54:45.209Z"
+    }
+  ]
+}

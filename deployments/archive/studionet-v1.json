@@ -1,0 +1,38 @@
+{
+  "network": "studionet",
+  "rpc": "https://studio.genlayer.com/api",
+  "chain_id": 61999,
+  "runner": "1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "contracts": {
+    "source_registry": {
+      "address": "0x85f4F1716E2fC991864A4eb2857e3D5fF255eaAB",
+      "source_hash": "5f0e1417edd070af2051b7ca7575b3821dd31b1d3b78383e7e0982a278d0c90e",
+      "deployment_transaction": "0x3c1121262ac0df3b1070747951cb233fb2d6f1d13e5ec35aeed48e0560922337"
+    },
+    "relation_docket": {
+      "address": "0x96DEB6C0156627F82CEd070D47C61881839A770f",
+      "source_hash": "f0256beaecc231c622ed412d32304524bd38586ea6da1bf69aeaf33036c4aa96",
+      "deployment_transaction": "0xdb0094198340ed6fcebec6f3adc4220331ef8ec8fc24aadab572cb010dc66831"
+    },
+    "certificate_hub": {
+      "address": "0x9628d8723a54E3a4B804d6AAce19cC377AD22407",
+      "source_hash": "36dcfec3671f2a350ad47c0b86e3e6264b2a38fb0b5814ea8b3519efd24057da",
+      "deployment_transaction": "0x191ab8d404125754674437dd2280b90ed3c3ce422a98a739f8514897eca0e3a6"
+    },
+    "incident_consumer": {
+      "address": "0x0d67aa9fd5384A4953785c8019d27b964b949025",
+      "source_hash": "19ad4487c98fee0ff9d0001e3af7c635f67d8c8084e8eb9d22cc49255c18027c",
+      "deployment_transaction": "0x84f0d8ad14fa7881c99309b39d7712a7f2d6852c9137455c23df81382ccdf97d"
+    },
+    "disclosure_consumer": {
+      "address": "0x44988FeBB4C0125b800e0f20A21d344613010fA0",
+      "source_hash": "640cc5ae203f37d0938d05bbd220ff2324a0d363936bbe28a75780301fab6220",
+      "deployment_transaction": "0xff3cc7334bf23ad645a6240d9c0cbbd97761d5665ea1beca0f127435c12ce45f"
+    }
+  },
+  "owners": {
+    "incident": "0x27E2B3ca3A69f61FcdBE7772b1a91042f099D75a",
+    "disclosure": "0xd74650f764BdEd9910542B446e111924dA86cF89",
+    "registry": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53"
+  }
+}

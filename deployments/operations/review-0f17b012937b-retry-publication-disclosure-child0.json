@@ -1,0 +1,8 @@
+{
+  "operation_id": "review-0f17b012937b-retry-publication-disclosure-child0",
+  "transaction_hash": "0xff78b2763f3618ee068cb17cf767573c83ef4b3cffe8ee3f33b9bf4b22a15da0",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x8098c120F2a35F8c06d65169FdE88Cc1Bd7230BF"
+}

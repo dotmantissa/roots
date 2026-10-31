@@ -1,0 +1,15 @@
+{
+  "classification": "Real PostgreSQL integration with stubbed RPC and feed inputs; no network consensus claim",
+  "stable_current_batch_key": true,
+  "obsolete_rows_removed": true,
+  "generations_observed": [
+    1,
+    2
+  ],
+  "stuck_operations": 24,
+  "later_finalized_operations_reconciled": 16,
+  "reconciliation_cycles": 2,
+  "stuck_callbacks": 24,
+  "later_completed_callbacks_reconciled": 16,
+  "callback_cycles": 5
+}

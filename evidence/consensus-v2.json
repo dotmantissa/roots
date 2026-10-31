@@ -1,0 +1,304 @@
+{
+  "release_id": "0f17b012937b09f6dc56af565b3426c5936bb0fb0f9a5e38993e1367fbf294d2",
+  "classification": "Authored controlled public fixtures, not real incidents or adoption",
+  "results": {
+    "incident": {
+      "generation": 1,
+      "selected_subset": [
+        0,
+        1,
+        2
+      ],
+      "pair_relations": {
+        "0:1": "INDEPENDENT",
+        "0:2": "INDEPENDENT",
+        "1:2": "INDEPENDENT"
+      },
+      "certificate_id": "controlled_v2_incident:1",
+      "batch_commitment_verified": true,
+      "publication_retry_same_generation": true,
+      "normal_unmodified_execution": true,
+      "accepted_witnesses": {
+        "0:1": [
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "a",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "record_id": "a:b",
+            "source_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "c:d",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "record_id": "e",
+            "source_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ],
+        "0:2": [
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "a",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "record_id": "c",
+            "source_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "c:d",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "record_id": "f",
+            "source_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ],
+        "1:2": [
+          {
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "record_id": "a:b",
+            "source_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "record_id": "c",
+            "source_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "record_id": "e",
+            "source_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "record_id": "f",
+            "source_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      }
+    },
+    "disclosure": {
+      "generation": 1,
+      "selected_subset": [
+        0,
+        1,
+        2
+      ],
+      "pair_relations": {
+        "0:1": "INDEPENDENT",
+        "0:2": "INDEPENDENT",
+        "1:2": "INDEPENDENT"
+      },
+      "certificate_id": "controlled_v2_disclosure:1",
+      "batch_commitment_verified": true,
+      "publication_retry_same_generation": true,
+      "normal_unmodified_execution": true,
+      "accepted_witnesses": {
+        "0:1": [
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "a",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "record_id": "a:b",
+            "source_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "c:d",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "record_id": "e",
+            "source_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ],
+        "0:2": [
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "a",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "record_id": "c",
+            "source_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "c:d",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "record_id": "f",
+            "source_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ],
+        "1:2": [
+          {
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "record_id": "a:b",
+            "source_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "record_id": "c",
+            "source_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "record_id": "e",
+            "source_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "record_id": "f",
+            "source_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      },
+      "owner_relevance_attestation_required": true,
+      "subscription_retry_same_generation": true,
+      "finalized_delivery_acknowledged": true,
+      "admitted": true
+    },
+    "normal_injection": {
+      "generation": 1,
+      "selected_subset": [
+        0
+      ],
+      "pair_relations": {
+        "0:1": "SHARED_ORIGIN"
+      },
+      "certificate_id": "controlled_v2_normal_injection:1",
+      "batch_commitment_verified": true,
+      "publication_retry_same_generation": true,
+      "normal_unmodified_execution": true,
+      "accepted_witnesses": {
+        "0:1": [
+          {
+            "end": 306,
+            "quote_hash": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96",
+            "record_id": "wire-owner:0",
+            "source_hash": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 306,
+            "quote_hash": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f",
+            "record_id": "wire-owner:1",
+            "source_hash": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 273,
+            "quote_hash": "3f8786072837321dcd17e8624bce8b432c6c2b0b0f23f82e7c8b9888f8b94290",
+            "record_id": "wire:0",
+            "source_hash": "3f8786072837321dcd17e8624bce8b432c6c2b0b0f23f82e7c8b9888f8b94290",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 385,
+            "quote_hash": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803",
+            "record_id": "wire:1",
+            "source_hash": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Public-fixture outcomes establish controlled execution, not universal semantic reliability. Historical public copied-source disagreement is retained without attributing its cause."
+  ]
+}

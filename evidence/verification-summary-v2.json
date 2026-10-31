@@ -1,0 +1,87 @@
+{
+  "classification": "Completed scoped local, GenVM, Studio, PostgreSQL and authenticated hosted-browser verification",
+  "verified_at_utc": "2026-10-31T16:00:29.295756+00:00",
+  "implementation_source_commit": "8b87746c820d679e895ee5a3e0922b9e8aee1cfa",
+  "application_source_commit": "9a6ebf9f4d4273d41e98bf4492eb6523aaada00b",
+  "release_id": "0f17b012937b09f6dc56af565b3426c5936bb0fb0f9a5e38993e1367fbf294d2",
+  "production_url": "https://roots-evidence-federation.vercel.app",
+  "checks": {
+    "genvm_safety_and_sdk_semantics": {
+      "passed": true,
+      "files": 7,
+      "runner": "1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6"
+    },
+    "mocked_python_logic_validator_and_deployment_tests": 57,
+    "node_unit_tests": 12,
+    "strict_types_and_production_build": {
+      "passed": true,
+      "local_build_seconds": 25.13
+    },
+    "hosted_public_browser": {
+      "passed": 3,
+      "seconds": 19.9
+    },
+    "authentic_email_capture_to_admission": {
+      "passed": true,
+      "verified_steps": 9,
+      "evidence": "evidence/email-admission-v2.json"
+    },
+    "authenticated_finalized_batch_host_replacement_controls": {
+      "passed": true,
+      "evidence": "evidence/replacement-browser-v2.json",
+      "successor_submitted": false
+    },
+    "fresh_actual_studio_consensus": {
+      "passed": true,
+      "scenarios": [
+        "incident",
+        "disclosure",
+        "normal_injection"
+      ],
+      "evidence": "evidence/consensus-v2.json",
+      "normal_injection_forced_leader_mutation": false
+    },
+    "actual_current_feed_and_database_equality": {
+      "passed": true,
+      "counts": {
+        "batches": 4,
+        "certificates": 4,
+        "publishers": 9,
+        "policies": 1,
+        "indexed": 18
+      },
+      "observations": 10,
+      "evidence": "evidence/release-records-v2.json"
+    },
+    "actual_database_starvation_and_generation_regressions": {
+      "passed": true,
+      "rpc_and_feed_inputs_stubbed": true,
+      "evidence": "evidence/database-recovery-v2.json"
+    },
+    "hosted_bindings_and_owner": {
+      "passed": true,
+      "evidence": "evidence/hosted-release-v2.json"
+    },
+    "dependency_audit": {
+      "advisories": 0,
+      "evidence": "evidence/dependency-audit-v2.json",
+      "package_lock_sha256": "d071d50469d5ab0b9939e9a8a7ce148d5c480cd691f3a8b10cc96ac4125c1f8a"
+    },
+    "complete_offline_evidence_audit": {
+      "finalized_operation_receipts_verified": 284,
+      "signed_journals_verified": 114,
+      "contract_source_hashes_verified": 5,
+      "captured_source_hashes_verified": 20,
+      "historical_probe_source_verified": true,
+      "current_release_v2_verified": true,
+      "complete_scenarios_required": true
+    }
+  },
+  "limitations": [
+    "Fresh complete consumer scenarios and normal injection use clearly labelled authored public fixtures. They establish controlled execution, not universal semantic reliability or adoption.",
+    "Historical authentic public copied-source MAJORITY_DISAGREE is preserved without attributing its cause; its original deployed probe source is archived and hash-verified.",
+    "Contract freshness covers registered-custodian revisions and deadlines. Original-source monitoring is operational evidence; custodians authorize corrections.",
+    "The shared contract/SDK URL grammar rejects private IP literals and nonstandard ports; capture retrieval pins public DNS answers. Validator DNS and redirect behavior was not separately adversarially exercised.",
+    "Studio VM CPU, memory and billed-token telemetry is not established by these retained receipts."
+  ]
+}

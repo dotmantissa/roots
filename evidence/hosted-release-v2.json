@@ -1,0 +1,85 @@
+{
+  "verified_at_utc": "2026-10-31T15:54:48.942899+00:00",
+  "classification": "Public hosted HTTP checks against the final bindings and successful complete SDK feed reads",
+  "production_url": "https://roots-evidence-federation.vercel.app",
+  "production_deployment_id": "dpl_9yZ3dSVC7ejFyWHFEjDwE6HRVpGN",
+  "production_deployment_url": "https://roots-mutagi7qf-mantissas-projects.vercel.app",
+  "application_source_commit": "9a6ebf9",
+  "release_id": "0f17b012937b09f6dc56af565b3426c5936bb0fb0f9a5e38993e1367fbf294d2",
+  "public_json_without_redirects": true,
+  "deployed_bindings_match_manifest": true,
+  "email_consumer_owner_verified": true,
+  "counts": {
+    "batches": 4,
+    "certificates": 4,
+    "publishers": 9,
+    "policies": 1
+  },
+  "deployment": {
+    "network": "studionet",
+    "rpc": "https://studio.genlayer.com/api",
+    "chain_id": 61999,
+    "runner": "1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+    "schema_version": 2,
+    "release_id": "0f17b012937b09f6dc56af565b3426c5936bb0fb0f9a5e38993e1367fbf294d2",
+    "contracts": {
+      "source_registry": {
+        "address": "0x27963bb9A5cE6f3D73a11d1740E03a952451da61",
+        "source_hash": "9df8073dee3e8352560c15828956739dd3c649bc7a11070e55d546ab7da528e3",
+        "deployment_transaction": "0xc8377bd23d60cd9e49e6a191a974714edb3fc2cfa028dac1d62455efc55098bf",
+        "constructor_args": [],
+        "deployment_fingerprint": "9d5f93c3c3a5fa683160c2d02924a7a32ace2205267aaf3fc5383bf7364bbd97"
+      },
+      "relation_docket": {
+        "address": "0xB25eaE346F0c4a4816370b12a80bcE3D2a57eC6C",
+        "source_hash": "4308374259c8d9274ec4b468ecd96115449c72a1fff91d665a4b6914901fdb53",
+        "deployment_transaction": "0xdbfe20d57a3eebdde3a81f18459015d4d120fdc8638174c72163c53448dab54b",
+        "constructor_args": [
+          "0x27963bb9A5cE6f3D73a11d1740E03a952451da61"
+        ],
+        "deployment_fingerprint": "1791008de3a8862b88d3f6c681a41c66ca836019175f82fff25012efd522c1d9"
+      },
+      "certificate_hub": {
+        "address": "0x8098c120F2a35F8c06d65169FdE88Cc1Bd7230BF",
+        "source_hash": "12ac8cfcd1d04068ef90788c0f59749c5e9b522394380bd8b19b9d7f47047a05",
+        "deployment_transaction": "0x62fd72aec2b9efa75afa67fbbe6b555a51938a17e509ce00dcac7fd483b64889",
+        "constructor_args": [
+          "0xB25eaE346F0c4a4816370b12a80bcE3D2a57eC6C"
+        ],
+        "deployment_fingerprint": "a0e754d2ea6581b71e2a37d433a6077bae3d0d8d375b1725478c097cb24b0f7a"
+      },
+      "incident_consumer": {
+        "address": "0x3193456Dd5Dd57f200192817911bD06832da2A8A",
+        "source_hash": "98239e0a0591c194aff93b01036bce8fb7099175fe8e493e95cf47e31b03fea5",
+        "deployment_transaction": "0xf1f543ac96c16b1bd586d834e2d246eba81bf646bd8b21be34d6c95257d4bbe1",
+        "constructor_args": [
+          "0x8098c120F2a35F8c06d65169FdE88Cc1Bd7230BF",
+          "0x27E2B3ca3A69f61FcdBE7772b1a91042f099D75a"
+        ],
+        "deployment_fingerprint": "0682b4ede0c565a5cff1c53d10c35dc650426f8b86dbfa343370fabab0dcf26a"
+      },
+      "disclosure_consumer": {
+        "address": "0x2b771195a8E2B355d7FAdAf6Ff2c316CdCe9eeD2",
+        "source_hash": "23ff0fe155ae77359469475d24f825f7fa7e7f9d1660cbc71d33ede07c3b7b07",
+        "deployment_transaction": "0x0e33fdb04e9a61c8be0bc9f4528861c1b2b727a04dc31ec7359b5729ea569f6d",
+        "constructor_args": [
+          "0x8098c120F2a35F8c06d65169FdE88Cc1Bd7230BF",
+          "0xd74650f764BdEd9910542B446e111924dA86cF89"
+        ],
+        "deployment_fingerprint": "9c8c848ccdfc88ac17c86ba425d008a82d7fcca4f3975808bc01ff3076ba494e"
+      }
+    },
+    "owners": {
+      "incident": "0x06dbBb48045c703f8869816F10Bc2ae1c43D455D",
+      "disclosure": "0xd74650f764BdEd9910542B446e111924dA86cF89",
+      "registry": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53",
+      "docket": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53"
+    },
+    "pending_owners": {
+      "registry": "",
+      "docket": "",
+      "incident": "",
+      "disclosure": ""
+    }
+  }
+}

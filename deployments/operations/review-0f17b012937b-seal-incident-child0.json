@@ -1,0 +1,8 @@
+{
+  "operation_id": "review-0f17b012937b-seal-incident-child0",
+  "transaction_hash": "0x30718511c6910655050acae6719ce1f5a9afba8d73756b8acb1af53cee4113a9",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x8098c120F2a35F8c06d65169FdE88Cc1Bd7230BF"
+}

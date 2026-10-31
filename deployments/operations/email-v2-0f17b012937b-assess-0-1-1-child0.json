@@ -1,0 +1,8 @@
+{
+  "operation_id": "email-v2-0f17b012937b-assess-0-1-1-child0",
+  "transaction_hash": "0xaab97f46848410d733797110ff44fc36f9689241d09225eeb488d9e2ce1473f0",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0xB25eaE346F0c4a4816370b12a80bcE3D2a57eC6C"
+}

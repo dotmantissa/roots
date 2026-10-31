@@ -1,0 +1,8 @@
+{
+  "operation_id": "review-0f17b012937b-seal-normal_injection-child0",
+  "transaction_hash": "0xfd31a51c044d3611c2499132a216c66ebc048ef30401f47ddeee6a12d4b0a508",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0x8098c120F2a35F8c06d65169FdE88Cc1Bd7230BF"
+}

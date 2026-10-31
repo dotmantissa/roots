@@ -1,0 +1,60 @@
+{
+  "network": "studionet",
+  "rpc": "https://studio.genlayer.com/api",
+  "chain_id": 61999,
+  "runner": "1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "schema_version": 2,
+  "release_id": "e5dcbf774c83cd053531744a0acd9fe156e6458bc0c2f3618f99c494d7c16b9c",
+  "contracts": {
+    "source_registry": {
+      "address": "0x27963bb9A5cE6f3D73a11d1740E03a952451da61",
+      "source_hash": "9df8073dee3e8352560c15828956739dd3c649bc7a11070e55d546ab7da528e3",
+      "deployment_transaction": "0xc8377bd23d60cd9e49e6a191a974714edb3fc2cfa028dac1d62455efc55098bf",
+      "constructor_args": [],
+      "deployment_fingerprint": "9d5f93c3c3a5fa683160c2d02924a7a32ace2205267aaf3fc5383bf7364bbd97"
+    },
+    "relation_docket": {
+      "address": "0xAf9192c2D92dada43D41Ea0C549253d37A163dB1",
+      "source_hash": "9f30780178a09d52d8229c72f36022d5d8291f5fab01e5f9c0503c99088259cb",
+      "deployment_transaction": "0xe77d6962e09af7b70a264855c083d12fb841f95fede48b932bdd9263003f11b5",
+      "constructor_args": [
+        "0x27963bb9A5cE6f3D73a11d1740E03a952451da61"
+      ],
+      "deployment_fingerprint": "ec320db5f852cfeb17d1cf7869bf29227c96e559cfe1f63244f5343efd035353"
+    },
+    "certificate_hub": {
+      "address": "0x1aADE73f3A05374a960de2AF3c5E67ba7Bd7059F",
+      "source_hash": "12ac8cfcd1d04068ef90788c0f59749c5e9b522394380bd8b19b9d7f47047a05",
+      "deployment_transaction": "0x3fa30ae5a1017d7794db10134737b6c6d8a4708498269261e0a87c2993a49498",
+      "constructor_args": [
+        "0xAf9192c2D92dada43D41Ea0C549253d37A163dB1"
+      ],
+      "deployment_fingerprint": "13ea113bd39a22688eb6c47e890817156f8d9dccc2529b614dd9b837f531794d"
+    },
+    "incident_consumer": {
+      "address": "0xD30EaDa35586483b77817b6BB170c0372e9D4F74",
+      "source_hash": "98239e0a0591c194aff93b01036bce8fb7099175fe8e493e95cf47e31b03fea5",
+      "deployment_transaction": "0x18560f0be0a2b85d11a53b3d65007a352760394b4493cc65b16d67a489140b9b",
+      "constructor_args": [
+        "0x1aADE73f3A05374a960de2AF3c5E67ba7Bd7059F",
+        "0x27E2B3ca3A69f61FcdBE7772b1a91042f099D75a"
+      ],
+      "deployment_fingerprint": "f4607de0237d3910aef2717b2d2f6158545993a362c1aac4fb325d468aa7a9fa"
+    },
+    "disclosure_consumer": {
+      "address": "0x6335D58F395439AF3F930bf4e9d71CCF81cf230D",
+      "source_hash": "23ff0fe155ae77359469475d24f825f7fa7e7f9d1660cbc71d33ede07c3b7b07",
+      "deployment_transaction": "0xbd01d159d9c929656e7761eab6d0945040604567a8006a09c6b2ef0538723e29",
+      "constructor_args": [
+        "0x1aADE73f3A05374a960de2AF3c5E67ba7Bd7059F",
+        "0xd74650f764BdEd9910542B446e111924dA86cF89"
+      ],
+      "deployment_fingerprint": "b058295077f180cd805b62ef18d44ede4c4ec2c13fd9e88635eb8c2320303b4c"
+    }
+  },
+  "owners": {
+    "incident": "0x27E2B3ca3A69f61FcdBE7772b1a91042f099D75a",
+    "disclosure": "0xd74650f764BdEd9910542B446e111924dA86cF89",
+    "registry": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53"
+  }
+}

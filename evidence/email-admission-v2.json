@@ -1,0 +1,647 @@
+{
+  "release_id": "0f17b012937b09f6dc56af565b3426c5936bb0fb0f9a5e38993e1367fbf294d2",
+  "classification": "Authentic email-wallet browser signing and public authored fixture captures; controlled execution, not adoption",
+  "origin": "https://roots-evidence-federation.vercel.app",
+  "wallet": "0x06dbBb48045c703f8869816F10Bc2ae1c43D455D",
+  "claim": "Controlled validation: independently authored public river measurements support this fixture evidence request.",
+  "consequence": "Admit this controlled fixture after the incident owner verifies source relevance.",
+  "steps": {
+    "accept": {
+      "operation_id": "33f9cd80-4ace-4467-a16f-e443d5d4f4ad",
+      "method": "accept_owner",
+      "args": [],
+      "transaction_hash": "0x12b934570d49de615d6bf90989dbab12a71e72e0f860f0830ec7082c10ab849c",
+      "finalized": true,
+      "verified": true,
+      "receipt_path": "evidence/receipts/email-v2-0f17b012937b-accept.json"
+    },
+    "open": {
+      "operation_id": "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+      "method": "open_batch",
+      "args": [
+        "{\"admission_scope\":\"DOCUMENT_ANCESTRY\",\"consequence_digest\":\"fa449cf99cd23c20b25cf48f0d929b20863220d252ae07161f49f153950d33a1\",\"consequence_text\":\"Admit this controlled fixture after the incident owner verifies source relevance.\",\"consumer\":\"0x3193456Dd5Dd57f200192817911bD06832da2A8A\",\"deadline\":\"2026-11-07T15:00:51.394Z\",\"generation\":1,\"manifest_digest\":\"6b691dd8a40cf8b1192fbe144be8c9b6e5b2bd8cca3ecde6cc82f1f116421150\",\"owner\":\"0x06dbBb48045c703f8869816F10Bc2ae1c43D455D\",\"parties\":[\"0x06dbBb48045c703f8869816F10Bc2ae1c43D455D\"],\"policy_id\":\"three_origins\",\"policy_revision\":1,\"request_id\":\"0bf2db07-aa47-4a9d-812d-4cfc1751b810\",\"subject_digest\":\"8aab00ec13c3672f62fb8c05477f2435ddd2de71e9dd09ddc749986a9e611184\",\"subject_id\":\"Controlled email-to-admission v2\",\"subject_text\":\"Controlled validation: independently authored public river measurements support this fixture evidence request.\"}",
+        "[{\"ownership\":{\"authority\":\"Authored controlled validation organization\",\"byte_hash\":\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\",\"byte_length\":505,\"capture_url\":\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\",\"channel\":\"public\",\"record_id\":\"c:d\",\"revision\":1,\"scope\":\"Labelled controlled ancestry and public organizational authority test\",\"spans\":[{\"end\":505,\"quote_hash\":\"e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b\",\"span_id\":\"complete\",\"start\":0},{\"end\":33,\"quote_hash\":\"1ec9d5adfe2c127cef62a5d4b597a903c84e4581588d11f8ddc45237ad1bc005\",\"span_id\":\"opening\",\"start\":0}],\"url\":\"https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt\"},\"publication\":{\"authority\":\"controlled_0f17b012937b_measurement0\",\"byte_hash\":\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\",\"byte_length\":523,\"capture_url\":\"https://roots-evidence-federation.vercel.app/api/captures/a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\",\"channel\":\"public\",\"record_id\":\"ea35c9ee-ec30-4da9-a63a-74c1934f55b6\",\"revision\":1,\"scope\":\"Controlled email-to-admission v2\",\"spans\":[{\"end\":523,\"quote_hash\":\"a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3\",\"span_id\":\"complete\",\"start\":0}],\"url\":\"https://roots-mauve-delta.vercel.app/validation/measurement0.txt\"},\"publisher_id\":\"controlled_0f17b012937b_measurement0\",\"publisher_revision\":1},{\"ownership\":{\"authority\":\"Authored controlled validation organization\",\"byte_hash\":\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\",\"byte_length\":500,\"capture_url\":\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\",\"channel\":\"public\",\"record_id\":\"e\",\"revision\":1,\"scope\":\"Labelled controlled ancestry and public organizational authority test\",\"spans\":[{\"end\":500,\"quote_hash\":\"de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e\",\"span_id\":\"complete\",\"start\":0},{\"end\":33,\"quote_hash\":\"1ec9d5adfe2c127cef62a5d4b597a903c84e4581588d11f8ddc45237ad1bc005\",\"span_id\":\"opening\",\"start\":0}],\"url\":\"https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt\"},\"publication\":{\"authority\":\"controlled_0f17b012937b_measurement1\",\"byte_hash\":\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\",\"byte_length\":518,\"capture_url\":\"https://roots-evidence-federation.vercel.app/api/captures/14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\",\"channel\":\"public\",\"record_id\":\"981e036f-76f0-4214-9195-5fa514b230f5\",\"revision\":1,\"scope\":\"Controlled email-to-admission v2\",\"spans\":[{\"end\":518,\"quote_hash\":\"14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941\",\"span_id\":\"complete\",\"start\":0}],\"url\":\"https://roots-mauve-delta.vercel.app/validation/measurement1.txt\"},\"publisher_id\":\"controlled_0f17b012937b_measurement1\",\"publisher_revision\":1},{\"ownership\":{\"authority\":\"Authored controlled validation organization\",\"byte_hash\":\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\",\"byte_length\":502,\"capture_url\":\"https://roots-mauve-delta.vercel.app/validation/measurement-owner2.txt\",\"channel\":\"public\",\"record_id\":\"f\",\"revision\":1,\"scope\":\"Labelled controlled ancestry and public organizational authority test\",\"spans\":[{\"end\":502,\"quote_hash\":\"b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e\",\"span_id\":\"complete\",\"start\":0},{\"end\":33,\"quote_hash\":\"1ec9d5adfe2c127cef62a5d4b597a903c84e4581588d11f8ddc45237ad1bc005\",\"span_id\":\"opening\",\"start\":0}],\"url\":\"https://roots-mauve-delta.vercel.app/validation/measurement-owner2.txt\"},\"publication\":{\"authority\":\"controlled_0f17b012937b_measurement2\",\"byte_hash\":\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\",\"byte_length\":520,\"capture_url\":\"https://roots-evidence-federation.vercel.app/api/captures/1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\",\"channel\":\"public\",\"record_id\":\"7abb39ef-0e8a-46b7-bea3-f31cd1d44fb6\",\"revision\":1,\"scope\":\"Controlled email-to-admission v2\",\"spans\":[{\"end\":520,\"quote_hash\":\"1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152\",\"span_id\":\"complete\",\"start\":0}],\"url\":\"https://roots-mauve-delta.vercel.app/validation/measurement2.txt\"},\"publisher_id\":\"controlled_0f17b012937b_measurement2\",\"publisher_revision\":1}]"
+      ],
+      "transaction_hash": "0xd53dce8b3c4bed25024f0e6197edad2f597c080c9efa63e97b826b32d859b9f5",
+      "finalized": true,
+      "verified": true,
+      "receipt_path": "evidence/receipts/email-v2-0f17b012937b-open.json"
+    },
+    "assess-0-1-1": {
+      "operation_id": "6ab9cc3d-64b7-40cf-9863-7a19abca6690",
+      "method": "reserve_assessment",
+      "args": [
+        "3f71ab3d-dcd1-428a-89e1-6b0010f5e18e",
+        "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+        1,
+        0,
+        1
+      ],
+      "transaction_hash": "0x4ec2b0983afff8bf9335422d88de3d616f491c41cdcceb6c85ee58cc53dc6991",
+      "pair_applied": true,
+      "attempts_consumed": 1,
+      "finalized": true,
+      "verified": true,
+      "receipt_path": "evidence/receipts/email-v2-0f17b012937b-assess-0-1-1.json"
+    },
+    "assess-0-2-1": {
+      "operation_id": "203d4ad8-b9d3-4bae-b60b-312f025d9828",
+      "method": "reserve_assessment",
+      "args": [
+        "5694ff7d-4cf6-4739-a838-d649dbec314b",
+        "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+        1,
+        0,
+        2
+      ],
+      "transaction_hash": "0x27abf141f5613bb329fcfac86eb678a1d56bc40fcf169cbfc98bdc0b93ba46bc",
+      "pair_applied": true,
+      "attempts_consumed": 1,
+      "finalized": true,
+      "verified": true,
+      "receipt_path": "evidence/receipts/email-v2-0f17b012937b-assess-0-2-1.json"
+    },
+    "assess-1-2-1": {
+      "operation_id": "16380816-c187-4a62-98c5-18c12f9fad4d",
+      "method": "reserve_assessment",
+      "args": [
+        "9e9fdb67-e594-4cb2-a715-a08cb36ff41b",
+        "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+        1,
+        1,
+        2
+      ],
+      "transaction_hash": "0x6cfc37764add65147f88ff00212bd64169e8754e78e1eccb9d9d69c8e9035934",
+      "pair_applied": true,
+      "attempts_consumed": 1,
+      "finalized": true,
+      "verified": true,
+      "receipt_path": "evidence/receipts/email-v2-0f17b012937b-assess-1-2-1.json"
+    },
+    "seal": {
+      "operation_id": "0c5984cd-2972-4fce-95ad-a9e36f331db6",
+      "method": "seal_batch",
+      "args": [
+        "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+        1,
+        "[0,1,2]"
+      ],
+      "transaction_hash": "0x5d59ed7e3d9ce0a9ee74050d560eaaad7265a7f5b1b4a7b9425c2d06d2ef9b9f",
+      "finalized": true,
+      "verified": true,
+      "receipt_path": "evidence/receipts/email-v2-0f17b012937b-seal.json"
+    },
+    "configure": {
+      "operation_id": "737de4ef-8cc8-4d88-8fd7-44e7051ec272",
+      "method": "configure",
+      "args": [
+        "configure-1a0d1308e00b790dac35eba0ba66ae497d8c9779fc79fd7f205ed62dffa8efb4",
+        "{\"admission_scope\":\"DOCUMENT_ANCESTRY\",\"consequence_digest\":\"fa449cf99cd23c20b25cf48f0d929b20863220d252ae07161f49f153950d33a1\",\"consequence_text\":\"Admit this controlled fixture after the incident owner verifies source relevance.\",\"consumer\":\"0x3193456Dd5Dd57f200192817911bD06832da2A8A\",\"deadline\":\"2026-11-07T15:00:51.394Z\",\"generation\":1,\"manifest_digest\":\"6b691dd8a40cf8b1192fbe144be8c9b6e5b2bd8cca3ecde6cc82f1f116421150\",\"policy_id\":\"three_origins\",\"policy_revision\":1,\"request_id\":\"0bf2db07-aa47-4a9d-812d-4cfc1751b810\",\"subject_digest\":\"8aab00ec13c3672f62fb8c05477f2435ddd2de71e9dd09ddc749986a9e611184\",\"subject_id\":\"Controlled email-to-admission v2\",\"subject_text\":\"Controlled validation: independently authored public river measurements support this fixture evidence request.\"}",
+        true
+      ],
+      "transaction_hash": "0x743e389c2d229c4276af37a5b97446d1545c30e356771fde48b1d4a7665a5f92",
+      "owner_relevance_attestation": true,
+      "finalized": true,
+      "verified": true,
+      "receipt_path": "evidence/receipts/email-v2-0f17b012937b-configure.json"
+    },
+    "deliver": {
+      "operation_id": "87c0cb43-fb3f-45d5-800c-97a622488162",
+      "method": "deliver_certificate",
+      "args": [
+        "c00bfc02-f5d5-4741-ad5f-76f17461e995",
+        "0bf2db07-aa47-4a9d-812d-4cfc1751b810:1",
+        "0x3193456Dd5Dd57f200192817911bD06832da2A8A"
+      ],
+      "transaction_hash": "0xea5f944123ffc9e9773efc32a272e9e9c1912a15b3b4102621f695d7f0fbe5df",
+      "finalized": true,
+      "verified": true,
+      "receipt_path": "evidence/receipts/email-v2-0f17b012937b-deliver.json"
+    },
+    "admit": {
+      "operation_id": "48668a0f-ef64-4a5c-a8ff-0f14fb86b66a",
+      "method": "admit_incident",
+      "args": [
+        "640fe64e-b0f8-4ae6-be9a-8b2e1b0cf00b",
+        "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+        "8aab00ec13c3672f62fb8c05477f2435ddd2de71e9dd09ddc749986a9e611184",
+        "fa449cf99cd23c20b25cf48f0d929b20863220d252ae07161f49f153950d33a1"
+      ],
+      "transaction_hash": "0x13b6d10c4509e031d0ad643b1c40aeece7f5dd3854d4e27e41339cf1511c64f5",
+      "finalized": true,
+      "verified": true,
+      "receipt_path": "evidence/receipts/email-v2-0f17b012937b-admit.json"
+    }
+  },
+  "captures": [
+    {
+      "record": {
+        "record_id": "ea35c9ee-ec30-4da9-a63a-74c1934f55b6",
+        "authority": "controlled_0f17b012937b_measurement0",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/measurement0.txt",
+        "capture_url": "https://roots-evidence-federation.vercel.app/api/captures/a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+        "byte_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+        "byte_length": 523,
+        "revision": 1,
+        "scope": "Controlled email-to-admission v2",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3"
+          }
+        ]
+      },
+      "captured_bytes_verified": true
+    },
+    {
+      "record": {
+        "record_id": "981e036f-76f0-4214-9195-5fa514b230f5",
+        "authority": "controlled_0f17b012937b_measurement1",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/measurement1.txt",
+        "capture_url": "https://roots-evidence-federation.vercel.app/api/captures/14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+        "byte_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+        "byte_length": 518,
+        "revision": 1,
+        "scope": "Controlled email-to-admission v2",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941"
+          }
+        ]
+      },
+      "captured_bytes_verified": true
+    },
+    {
+      "record": {
+        "record_id": "7abb39ef-0e8a-46b7-bea3-f31cd1d44fb6",
+        "authority": "controlled_0f17b012937b_measurement2",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/measurement2.txt",
+        "capture_url": "https://roots-evidence-federation.vercel.app/api/captures/1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+        "byte_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+        "byte_length": 520,
+        "revision": 1,
+        "scope": "Controlled email-to-admission v2",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152"
+          }
+        ]
+      },
+      "captured_bytes_verified": true
+    }
+  ],
+  "request_id": "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+  "batch": {
+    "admission_scope": "DOCUMENT_ANCESTRY",
+    "attempt_ledger": {
+      "429f1f352f217baa5f2b0d5a2a9ca19189eee1bd6bf00a2dfff682c4b57f5f3e": 1,
+      "56d5b0b3b13c4d304d503c9d159d1556b962fb623eaad22b3055e36f2e13befb": 1,
+      "d8d4cb40cb2998bdb7807db7e9f2731e40af5ef8b6443882e2bef84834748a57": 1
+    },
+    "attempts": {
+      "0:1": 1,
+      "0:2": 1,
+      "1:2": 1
+    },
+    "batch_digest": "7a7af6f5f83ee8f45d397e4e532dbde23b6e77e42080f9d123e243602c5c8c13",
+    "certificate_id": "0bf2db07-aa47-4a9d-812d-4cfc1751b810:1",
+    "consequence_digest": "fa449cf99cd23c20b25cf48f0d929b20863220d252ae07161f49f153950d33a1",
+    "consequence_text": "Admit this controlled fixture after the incident owner verifies source relevance.",
+    "consumer": "0x3193456Dd5Dd57f200192817911bD06832da2A8A",
+    "coverage": true,
+    "deadline": "2026-11-07T15:00:51.394Z",
+    "freshness_scope": "REGISTERED_CUSTODIAN_REVISIONS_AND_DEADLINE",
+    "generation": 1,
+    "manifest": [
+      {
+        "ownership": {
+          "authority": "Authored controlled validation organization",
+          "byte_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+          "byte_length": 505,
+          "capture_url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt",
+          "channel": "public",
+          "record_id": "c:d",
+          "revision": 1,
+          "scope": "Labelled controlled ancestry and public organizational authority test",
+          "spans": [
+            {
+              "end": 505,
+              "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+              "span_id": "complete",
+              "start": 0
+            },
+            {
+              "end": 33,
+              "quote_hash": "1ec9d5adfe2c127cef62a5d4b597a903c84e4581588d11f8ddc45237ad1bc005",
+              "span_id": "opening",
+              "start": 0
+            }
+          ],
+          "url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt"
+        },
+        "publication": {
+          "authority": "controlled_0f17b012937b_measurement0",
+          "byte_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+          "byte_length": 523,
+          "capture_url": "https://roots-evidence-federation.vercel.app/api/captures/a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+          "channel": "public",
+          "record_id": "ea35c9ee-ec30-4da9-a63a-74c1934f55b6",
+          "revision": 1,
+          "scope": "Controlled email-to-admission v2",
+          "spans": [
+            {
+              "end": 523,
+              "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+              "span_id": "complete",
+              "start": 0
+            }
+          ],
+          "url": "https://roots-mauve-delta.vercel.app/validation/measurement0.txt"
+        },
+        "publisher_id": "controlled_0f17b012937b_measurement0",
+        "publisher_revision": 1
+      },
+      {
+        "ownership": {
+          "authority": "Authored controlled validation organization",
+          "byte_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+          "byte_length": 500,
+          "capture_url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt",
+          "channel": "public",
+          "record_id": "e",
+          "revision": 1,
+          "scope": "Labelled controlled ancestry and public organizational authority test",
+          "spans": [
+            {
+              "end": 500,
+              "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+              "span_id": "complete",
+              "start": 0
+            },
+            {
+              "end": 33,
+              "quote_hash": "1ec9d5adfe2c127cef62a5d4b597a903c84e4581588d11f8ddc45237ad1bc005",
+              "span_id": "opening",
+              "start": 0
+            }
+          ],
+          "url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt"
+        },
+        "publication": {
+          "authority": "controlled_0f17b012937b_measurement1",
+          "byte_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+          "byte_length": 518,
+          "capture_url": "https://roots-evidence-federation.vercel.app/api/captures/14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+          "channel": "public",
+          "record_id": "981e036f-76f0-4214-9195-5fa514b230f5",
+          "revision": 1,
+          "scope": "Controlled email-to-admission v2",
+          "spans": [
+            {
+              "end": 518,
+              "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+              "span_id": "complete",
+              "start": 0
+            }
+          ],
+          "url": "https://roots-mauve-delta.vercel.app/validation/measurement1.txt"
+        },
+        "publisher_id": "controlled_0f17b012937b_measurement1",
+        "publisher_revision": 1
+      },
+      {
+        "ownership": {
+          "authority": "Authored controlled validation organization",
+          "byte_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+          "byte_length": 502,
+          "capture_url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner2.txt",
+          "channel": "public",
+          "record_id": "f",
+          "revision": 1,
+          "scope": "Labelled controlled ancestry and public organizational authority test",
+          "spans": [
+            {
+              "end": 502,
+              "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+              "span_id": "complete",
+              "start": 0
+            },
+            {
+              "end": 33,
+              "quote_hash": "1ec9d5adfe2c127cef62a5d4b597a903c84e4581588d11f8ddc45237ad1bc005",
+              "span_id": "opening",
+              "start": 0
+            }
+          ],
+          "url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner2.txt"
+        },
+        "publication": {
+          "authority": "controlled_0f17b012937b_measurement2",
+          "byte_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+          "byte_length": 520,
+          "capture_url": "https://roots-evidence-federation.vercel.app/api/captures/1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+          "channel": "public",
+          "record_id": "7abb39ef-0e8a-46b7-bea3-f31cd1d44fb6",
+          "revision": 1,
+          "scope": "Controlled email-to-admission v2",
+          "spans": [
+            {
+              "end": 520,
+              "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+              "span_id": "complete",
+              "start": 0
+            }
+          ],
+          "url": "https://roots-mauve-delta.vercel.app/validation/measurement2.txt"
+        },
+        "publisher_id": "controlled_0f17b012937b_measurement2",
+        "publisher_revision": 1
+      }
+    ],
+    "manifest_digest": "6b691dd8a40cf8b1192fbe144be8c9b6e5b2bd8cca3ecde6cc82f1f116421150",
+    "non_merge_witnesses": [
+      {
+        "pair": "0:1",
+        "witnesses": [
+          {
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "record_id": "981e036f-76f0-4214-9195-5fa514b230f5",
+            "source_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "c:d",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "record_id": "e",
+            "source_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "ea35c9ee-ec30-4da9-a63a-74c1934f55b6",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      },
+      {
+        "pair": "0:2",
+        "witnesses": [
+          {
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "record_id": "7abb39ef-0e8a-46b7-bea3-f31cd1d44fb6",
+            "source_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "c:d",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "ea35c9ee-ec30-4da9-a63a-74c1934f55b6",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "record_id": "f",
+            "source_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      },
+      {
+        "pair": "1:2",
+        "witnesses": [
+          {
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "record_id": "7abb39ef-0e8a-46b7-bea3-f31cd1d44fb6",
+            "source_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "record_id": "981e036f-76f0-4214-9195-5fa514b230f5",
+            "source_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "record_id": "e",
+            "source_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "record_id": "f",
+            "source_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      }
+    ],
+    "owner": "0x06dbBb48045c703f8869816F10Bc2ae1c43D455D",
+    "pairs": {
+      "0:1": {
+        "coverage": true,
+        "relation": "INDEPENDENT",
+        "rule_id": "R_INDEPENDENT_PROCESS",
+        "scope": "editorial_or_measurement_origin",
+        "unresolved": false,
+        "witnesses": [
+          {
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "record_id": "981e036f-76f0-4214-9195-5fa514b230f5",
+            "source_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "c:d",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "record_id": "e",
+            "source_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "ea35c9ee-ec30-4da9-a63a-74c1934f55b6",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      },
+      "0:2": {
+        "coverage": true,
+        "relation": "INDEPENDENT",
+        "rule_id": "R_INDEPENDENT_PROCESS",
+        "scope": "editorial_or_measurement_origin",
+        "unresolved": false,
+        "witnesses": [
+          {
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "record_id": "7abb39ef-0e8a-46b7-bea3-f31cd1d44fb6",
+            "source_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "record_id": "c:d",
+            "source_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "record_id": "ea35c9ee-ec30-4da9-a63a-74c1934f55b6",
+            "source_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "record_id": "f",
+            "source_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      },
+      "1:2": {
+        "coverage": true,
+        "relation": "INDEPENDENT",
+        "rule_id": "R_INDEPENDENT_PROCESS",
+        "scope": "editorial_or_measurement_origin",
+        "unresolved": false,
+        "witnesses": [
+          {
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "record_id": "7abb39ef-0e8a-46b7-bea3-f31cd1d44fb6",
+            "source_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "record_id": "981e036f-76f0-4214-9195-5fa514b230f5",
+            "source_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "record_id": "e",
+            "source_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+            "span_id": "complete",
+            "start": 0
+          },
+          {
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "record_id": "f",
+            "source_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+            "span_id": "complete",
+            "start": 0
+          }
+        ]
+      }
+    },
+    "parties": [
+      "0x06dbBb48045c703f8869816F10Bc2ae1c43D455D"
+    ],
+    "pending_attempts": {},
+    "policy_id": "three_origins",
+    "policy_revision": 1,
+    "prior_certificates": [],
+    "request_id": "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+    "selected_subset": [
+      0,
+      1,
+      2
+    ],
+    "status": "SEALED",
+    "subject_digest": "8aab00ec13c3672f62fb8c05477f2435ddd2de71e9dd09ddc749986a9e611184",
+    "subject_id": "Controlled email-to-admission v2",
+    "subject_text": "Controlled validation: independently authored public river measurements support this fixture evidence request.",
+    "superseded_by": "",
+    "supported_origin_ids": [
+      "controlled_0f17b012937b_measurement0",
+      "controlled_0f17b012937b_measurement1",
+      "controlled_0f17b012937b_measurement2"
+    ],
+    "unresolved": false
+  },
+  "admission": {
+    "binding": "4dada995662544cdf0296c610f5edbd89e4e2f173c8bed07d23d0519412aad1b",
+    "certificate_id": "0bf2db07-aa47-4a9d-812d-4cfc1751b810:1",
+    "consumer_kind": "incident_evidence",
+    "generation": 1,
+    "operation_id": "640fe64e-b0f8-4ae6-be9a-8b2e1b0cf00b",
+    "request_id": "0bf2db07-aa47-4a9d-812d-4cfc1751b810",
+    "status": "ADMITTED"
+  },
+  "complete_email_to_admission": true
+}

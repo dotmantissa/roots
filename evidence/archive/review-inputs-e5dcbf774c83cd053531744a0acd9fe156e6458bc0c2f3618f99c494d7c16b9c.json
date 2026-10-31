@@ -1,0 +1,337 @@
+{
+  "release_id": "e5dcbf774c83cd053531744a0acd9fe156e6458bc0c2f3618f99c494d7c16b9c",
+  "classification": "Authored controlled public fixtures, not real incidents or adoption",
+  "sources": [
+    {
+      "publisher_id": "controlled_v2_measurement0",
+      "publisher_revision": 1,
+      "publication": {
+        "record_id": "a",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/measurement0.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/measurement0.txt",
+        "byte_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3",
+        "byte_length": 523,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 523,
+            "quote_hash": "a3e8835f2e8e1a8489dc528540620b367c2ec6622c02695865fd1c8c2df708e3"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 80,
+            "quote_hash": "3a4226c4eeb87a15d2633c497e758ac84f498f894ebfc828a868ae324110d8f3"
+          }
+        ]
+      },
+      "ownership": {
+        "record_id": "c:d",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner0.txt",
+        "byte_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b",
+        "byte_length": 505,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 505,
+            "quote_hash": "e09742a7e4641698b8553a25a4d16e491744b6886aabafa3ed23aba853f0402b"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 33,
+            "quote_hash": "1ec9d5adfe2c127cef62a5d4b597a903c84e4581588d11f8ddc45237ad1bc005"
+          }
+        ]
+      }
+    },
+    {
+      "publisher_id": "controlled_v2_measurement1",
+      "publisher_revision": 1,
+      "publication": {
+        "record_id": "a:b",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/measurement1.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/measurement1.txt",
+        "byte_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941",
+        "byte_length": 518,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 518,
+            "quote_hash": "14d0b44f72cd9425b300b2b1b0e829e9f2527d3e9444b1673ddf800910e06941"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 75,
+            "quote_hash": "4257c6a3ead023a26e0aae123efb2d62f6bec4c569e32b2acbb44b14390ad76c"
+          }
+        ]
+      },
+      "ownership": {
+        "record_id": "e",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner1.txt",
+        "byte_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e",
+        "byte_length": 500,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 500,
+            "quote_hash": "de0b45cfbb4836e4c592f7ab8f1aed30f206686a99305ff46cbf2587e471768e"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 33,
+            "quote_hash": "1ec9d5adfe2c127cef62a5d4b597a903c84e4581588d11f8ddc45237ad1bc005"
+          }
+        ]
+      }
+    },
+    {
+      "publisher_id": "controlled_v2_measurement2",
+      "publisher_revision": 1,
+      "publication": {
+        "record_id": "c",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/measurement2.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/measurement2.txt",
+        "byte_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152",
+        "byte_length": 520,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 520,
+            "quote_hash": "1fc491f8c43e4991c4bf1af73089a8010acf8c383c3b0f2f7f8543203c010152"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 77,
+            "quote_hash": "0b81711a2b7a799615ce599c449c31e6cd77fc225d1adcd69750463258be44cd"
+          }
+        ]
+      },
+      "ownership": {
+        "record_id": "f",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner2.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/measurement-owner2.txt",
+        "byte_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e",
+        "byte_length": 502,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 502,
+            "quote_hash": "b4051bc2a1498449371154b377e08546343edc25644e44981786775c2b20da5e"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 33,
+            "quote_hash": "1ec9d5adfe2c127cef62a5d4b597a903c84e4581588d11f8ddc45237ad1bc005"
+          }
+        ]
+      }
+    }
+  ],
+  "wire": [
+    {
+      "publisher_id": "controlled_v2_wire0",
+      "publisher_revision": 1,
+      "publication": {
+        "record_id": "wire:0",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/injection.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/injection.txt",
+        "byte_hash": "3f8786072837321dcd17e8624bce8b432c6c2b0b0f23f82e7c8b9888f8b94290",
+        "byte_length": 273,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 273,
+            "quote_hash": "3f8786072837321dcd17e8624bce8b432c6c2b0b0f23f82e7c8b9888f8b94290"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 83,
+            "quote_hash": "844a1f3b79af5419c9ca2280f9fb7fdd9d764e37ae4d671c60cbe38618cf8aa3"
+          }
+        ]
+      },
+      "ownership": {
+        "record_id": "wire-owner:0",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/wire-owner0.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/wire-owner0.txt",
+        "byte_hash": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96",
+        "byte_length": 306,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 306,
+            "quote_hash": "adcbfd615ffa8effc1386fdcefffaa2563f6b9a303d1549bcb43d104fff26c96"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 56,
+            "quote_hash": "18ea6228ca3f1c85ae338fa51eadb6beb1281b871ec9e9b562df17d4d0fe2e3b"
+          }
+        ]
+      }
+    },
+    {
+      "publisher_id": "controlled_v2_wire1",
+      "publisher_revision": 1,
+      "publication": {
+        "record_id": "wire:1",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/wire1.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/wire1.txt",
+        "byte_hash": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803",
+        "byte_length": 385,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 385,
+            "quote_hash": "540c8efb8a5b2482d2a5ed69dcaa31cbc237f5ba3e3851f39056cd87b646a803"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 42,
+            "quote_hash": "5f62d877d1bcb4f2ef4f6b318e3fe4bfef3d31bebb485fc7620088ffb53f7517"
+          }
+        ]
+      },
+      "ownership": {
+        "record_id": "wire-owner:1",
+        "authority": "Authored controlled validation organization",
+        "channel": "public",
+        "url": "https://roots-mauve-delta.vercel.app/validation/wire-owner1.txt",
+        "capture_url": "https://roots-mauve-delta.vercel.app/validation/wire-owner1.txt",
+        "byte_hash": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f",
+        "byte_length": 306,
+        "revision": 1,
+        "scope": "Labelled controlled ancestry and public organizational authority test",
+        "spans": [
+          {
+            "span_id": "complete",
+            "start": 0,
+            "end": 306,
+            "quote_hash": "89d936aae975e51e747ee920b85ceb225d1feacc043b5bbc4014a8fcc96c477f"
+          },
+          {
+            "span_id": "opening",
+            "start": 0,
+            "end": 56,
+            "quote_hash": "dca25c1540fcb4de1373b1480fa6dcb3a3072ec45f7d3640468fd733b98858db"
+          }
+        ]
+      }
+    }
+  ],
+  "requests": {
+    "incident": {
+      "request_id": "controlled_v2_incident",
+      "owner": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53",
+      "parties": [
+        "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53"
+      ],
+      "policy_id": "three_origins",
+      "policy_revision": 1,
+      "subject_id": "Controlled v2 incident",
+      "subject_text": "Controlled fixture verification: authored independent river measurements.",
+      "subject_digest": "94b1463d75f368ffde71f4f100af5939df5664d8c2e45ed3c4d869dab768b891",
+      "manifest_digest": "ee3f65ba97f04142c1339284222a49c3e7dc07bcd4199f2ab551de601ed3fdd1",
+      "consumer": "0xD30EaDa35586483b77817b6BB170c0372e9D4F74",
+      "consequence_text": "Admit document ancestry only after application-owner relevance review.",
+      "consequence_digest": "d912ee4bc614d1e2b4103b6ca9f85d070d2f4677e0490603b709b953fb904b1c",
+      "admission_scope": "DOCUMENT_ANCESTRY",
+      "generation": 1,
+      "deadline": "2026-11-07T14:12:23.562401+00:00"
+    },
+    "disclosure": {
+      "request_id": "controlled_v2_disclosure",
+      "owner": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53",
+      "parties": [
+        "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53"
+      ],
+      "policy_id": "three_origins",
+      "policy_revision": 1,
+      "subject_id": "Controlled v2 disclosure",
+      "subject_text": "Controlled fixture verification: authored independent river measurements.",
+      "subject_digest": "94b1463d75f368ffde71f4f100af5939df5664d8c2e45ed3c4d869dab768b891",
+      "manifest_digest": "ee3f65ba97f04142c1339284222a49c3e7dc07bcd4199f2ab551de601ed3fdd1",
+      "consumer": "0x6335D58F395439AF3F930bf4e9d71CCF81cf230D",
+      "consequence_text": "Admit document ancestry only after application-owner relevance review.",
+      "consequence_digest": "d912ee4bc614d1e2b4103b6ca9f85d070d2f4677e0490603b709b953fb904b1c",
+      "admission_scope": "DOCUMENT_ANCESTRY",
+      "generation": 1,
+      "deadline": "2026-11-07T14:12:23.566368+00:00"
+    },
+    "normal_injection": {
+      "request_id": "controlled_v2_normal_injection",
+      "owner": "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53",
+      "parties": [
+        "0xBC1399c55538eC034d4Da550C03c34Ae0C357f53"
+      ],
+      "policy_id": "three_origins",
+      "policy_revision": 1,
+      "subject_id": "Controlled v2 normal_injection",
+      "subject_text": "Controlled normal-path injected copied dispatch; no forced leader mutation.",
+      "subject_digest": "0009e64585ffa16483ea79794f95a4498d692a129ed288adbdb5fed6b14a1b5c",
+      "manifest_digest": "c971ec9ca021d3cffe416cc2d52930f67770e2fe359a1ce61c1e903a295416e3",
+      "consumer": "0x6335D58F395439AF3F930bf4e9d71CCF81cf230D",
+      "consequence_text": "Admit document ancestry only after application-owner relevance review.",
+      "consequence_digest": "d912ee4bc614d1e2b4103b6ca9f85d070d2f4677e0490603b709b953fb904b1c",
+      "admission_scope": "DOCUMENT_ANCESTRY",
+      "generation": 1,
+      "deadline": "2026-11-07T14:12:23.566659+00:00"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "operation_id": "review-0f17b012937b-assess-incident-0-1-1-child0",
+  "transaction_hash": "0x9dfdc8e1533160983b6d4a86d109da70a76ed1002f03885469ba4e4ba6f9a566",
+  "network": "studionet",
+  "status": "FINALIZED",
+  "execution_success": true,
+  "address": "0xB25eaE346F0c4a4816370b12a80bcE3D2a57eC6C"
+}
