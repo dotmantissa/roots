@@ -60,5 +60,17 @@
     "typescript": "5.9.3",
     "typescript-eslint": "8.46.2",
     "vite": "6.4.5"
+  },
+  "overrides": {
+    "zod": "$zod",
+    "viem": "$viem",
+    "ws": "8.22.1",
+    "decode-uri-component": "0.5.1",
+    "uuid": "11.1.1",
+    "minimatch": "11.0.3",
+    "@walletconnect/core": "2.26.0",
+    "@walletconnect/sign-client": "2.26.0",
+    "@walletconnect/universal-provider": "2.26.0",
+    "@walletconnect/utils": "2.26.0"
   }
 }
