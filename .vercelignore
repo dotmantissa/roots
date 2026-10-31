@@ -20,5 +20,7 @@ deployments/archive
 
 pyproject.toml
 requirements.lock.txt
+requirements.txt
+scripts
 gltest.config.yaml
 pytest.ini
