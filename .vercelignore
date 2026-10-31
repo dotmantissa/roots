@@ -15,6 +15,8 @@ __pycache__
 evidence
 tests
 contracts
+deployments/operations
+deployments/archive
 
 pyproject.toml
 requirements.lock.txt
