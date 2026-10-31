@@ -64,8 +64,16 @@ for source in inputs['sources']+inputs['wire']:
 # Self-enrollment and unreserved direct assessments must fail on the real VM.
 r=write('reject-self-enrollment',registry,'register_publisher',[prefix+'-squat','recognizable_organization',d['owners']['disclosure'],canon(inputs['sources'][0]['ownership'])],disclosure,False)
 assert not succeeded(r)
-results={}
+result_path=Path('evidence/consensus-v2.json')
+retained=json.loads(result_path.read_text()) if result_path.exists() else {}
+assert not retained or retained['release_id']==d['release_id'],'Retained outcomes belong to a different stack'
+results=retained.get('results',{})
 for kind,request in inputs['requests'].items():
+    # Completed outcomes remain independently checked by verify_evidence.py.
+    # A transient RPC failure must not replay their application actions.
+    if kind in results:
+        print('Verified completed scenario retained:',kind,flush=True)
+        continue
     manifest=inputs['wire'] if kind=='normal_injection' else inputs['sources']
     write('open-'+kind,docket,'open_batch',[canon(request),canon(manifest)])
     if kind=='incident':

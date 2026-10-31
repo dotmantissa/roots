@@ -2,5 +2,7 @@
   "address": "0x51CfDC3f69260A3B16C6dA4c385342a0DDc3a1D4",
   "source_hash": "e55f0e3233075125d40d915817f328c72248b38fc97c82d4a4fe5c91646b7723",
   "network": "studionet",
-  "purpose": "adversarial validator validation, not production verdicts"
+  "purpose": "Historical forced-proposal adversarial checks; current normal-path evidence is consensus-v2.json",
+  "source_path": "evidence/archive/validator-probe-v1.py",
+  "historical": true
 }
