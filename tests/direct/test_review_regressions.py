@@ -166,6 +166,7 @@ def test_failed_subscription_can_retry_original_configuration_and_requires_relev
     c.configure('config',canonical(config),True)
     assert len(emitted)==2 and emitted[0]==emitted[1]
     assert c.get_state('batch1')['subscription_digest']==''
+    assert c.get_state('batch1')['configuration_operation']=='config'
     with direct_vm.expect_revert('Reuse the original'):
         c.configure('different',canonical(config),True)
     c.nominate_owner(addr(direct_bob))

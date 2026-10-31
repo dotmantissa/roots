@@ -211,6 +211,7 @@ class ProviderDisclosureConsumer(gl.Contract):
     pending_owner: str
     operation_count: u32
     relevance_approvals: TreeMap[str, str]
+    configuration_operations: TreeMap[str, str]
 
     def __init__(self, hub: str, owner: str):
         self.hub = Address(hub)
@@ -272,6 +273,7 @@ class ProviderDisclosureConsumer(gl.Contract):
         require(config == configuration_value(authoritative), "Configuration differs from docket")
         require(len(self.configurations) < 1024 or key in self.configurations, "Consumer configuration capacity reached")
         self.configurations[key] = canon(config)
+        self.configuration_operations[key] = operation_id
         self.relevance_approvals[key] = binding
         self._remember(operation_key, binding)
         # Configuration changes freeze the prior receipt immediately, before subscription finality.
@@ -331,7 +333,7 @@ class ProviderDisclosureConsumer(gl.Contract):
 
     @gl.public.view
     def get_state(self, request_id: str) -> dict:
-        return {"owner":str(self.owner), "subscription_digest":gl.get_contract_at(self.hub).view().get_subscription(str(gl.message.contract_address), request_id), "consumer_kind":"provider_disclosure", "configuration":json.loads(self.configurations[request_id]) if request_id in self.configurations else None, "receipt":json.loads(self.receipts[request_id]) if request_id in self.receipts else None, "last_generation":int(self.generations[request_id]) if request_id in self.generations else 0}
+        return {"owner":str(self.owner), "configuration_operation":self.configuration_operations[request_id] if request_id in self.configuration_operations else "", "subscription_digest":gl.get_contract_at(self.hub).view().get_subscription(str(gl.message.contract_address), request_id), "consumer_kind":"provider_disclosure", "configuration":json.loads(self.configurations[request_id]) if request_id in self.configurations else None, "receipt":json.loads(self.receipts[request_id]) if request_id in self.receipts else None, "last_generation":int(self.generations[request_id]) if request_id in self.generations else 0}
 
     @gl.public.view
     def get_action(self, operation_id: str) -> dict:
