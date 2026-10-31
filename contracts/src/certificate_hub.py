@@ -8,6 +8,7 @@ class CertificateHub(gl.Contract):
     certificate_ids: DynArray[str]
     subscription_ids: DynArray[str]
     count: u32
+    delivery_ids: TreeMap[str, str]
 
     def __init__(self, docket: str):
         self.owner = gl.message.sender_address
@@ -22,13 +23,19 @@ class CertificateHub(gl.Contract):
         require(gl.message.sender_address == Address(consumer), "Consumer contract required")
         batch = gl.get_contract_at(self.docket).view().get_batch(request_id)
         require(batch["consumer"] == consumer, "Consumer binding mismatch")
-        expected = digest({k:batch[k] for k in ["request_id", "policy_id", "policy_revision", "subject_id", "subject_digest", "manifest_digest", "consumer", "consequence_digest", "generation", "deadline"]})
+        expected = digest(configuration_value(batch))
         require(expected == configuration_digest, "Subscription configuration mismatch")
         binding = digest([consumer,request_id,configuration_digest])
         if operation_id in self.subscriptions:
             require(self.subscriptions[operation_id] == binding, "Conflicting operation reuse")
             return
-        require(len(self.subscription_ids) < 4096, "Subscription capacity reached")
+        require(len(self.subscription_ids) < 8192, "Subscription capacity reached")
+        # One retained subscription operation per configuration commitment.
+        config_key = "config:" + configuration_digest
+        if config_key in self.subscriptions:
+            require(self.subscriptions[config_key] == binding, "Conflicting subscription binding")
+            return
+        self.subscriptions[config_key] = binding
         self.subscriptions[operation_id] = binding
         self.subscriptions[consumer + ":" + request_id] = configuration_digest
         self.subscription_ids.append(operation_id)
@@ -62,13 +69,20 @@ class CertificateHub(gl.Contract):
     def deliver_certificate(self, operation_id: str, certificate_id: str, consumer: str) -> None:
         text(operation_id)
         cert = self.get_certificate(certificate_id)
+        authority = gl.get_contract_at(Address(consumer)).view().get_authority()
+        require(gl.message.sender_address == Address(cert["owner"]) or gl.message.sender_address == Address(authority["owner"]), "Request or consumer owner delivery required")
         require(cert["consumer"] == consumer, "Consumer mismatch")
         require(self.is_active(certificate_id), "Certificate stale or quarantined")
         key = consumer + ":" + cert["request_id"]
         require(key in self.subscriptions, "Consumer has not subscribed")
-        config = digest({k:cert[k] for k in ["request_id", "policy_id", "policy_revision", "subject_id", "subject_digest", "manifest_digest", "consumer", "consequence_digest", "generation", "deadline"]})
+        config = digest(configuration_value(cert))
         require(self.subscriptions[key] == config, "Consumer configuration stale")
         binding = digest([certificate_id, consumer, config])
+        if certificate_id in self.delivery_ids:
+            require(self.delivery_ids[certificate_id] == operation_id, "Reuse the certificate delivery operation")
+        else:
+            require(len(self.delivery_ids) < 8192, "Delivery capacity reached")
+            self.delivery_ids[certificate_id] = operation_id
         if operation_id in self.deliveries:
             require(self.deliveries[operation_id] == binding, "Conflicting delivery reuse")
             # An exact duplicate may retry a failed callback safely.
@@ -83,6 +97,7 @@ class CertificateHub(gl.Contract):
         cert = self.get_certificate(certificate_id)
         require(gl.message.sender_address == Address(cert["consumer"]), "Consumer acknowledgement required")
         require(generation == cert["generation"] and operation_id in self.deliveries, "Unknown delivery generation")
+        require(self.deliveries[operation_id] == digest([certificate_id, cert["consumer"], digest(configuration_value(cert))]), "Delivery acknowledgement binding mismatch")
         value = canon({"operation_id":operation_id,"certificate_id":certificate_id,"consumer":cert["consumer"],"generation":generation})
         if operation_id in self.acknowledgements:
             require(self.acknowledgements[operation_id] == value, "Conflicting acknowledgement")
@@ -98,15 +113,38 @@ class CertificateHub(gl.Contract):
         if certificate_id not in self.certificates:
             return False
         cert = json.loads(self.certificates[certificate_id])
-        return cert["status"] in ["FINALIZED", "UNRESOLVED"] and gl.get_contract_at(self.docket).view().is_current(cert["request_id"], cert["generation"])
+        return now() <= datetime.fromisoformat(cert["deadline"].replace("Z", "+00:00")) and cert["status"] in ["FINALIZED", "UNRESOLVED"] and gl.get_contract_at(self.docket).view().is_current(cert["request_id"], cert["generation"])
 
     @gl.public.view
     def get_certificate(self, certificate_id: str) -> dict:
         require(certificate_id in self.certificates, "Unknown certificate")
         value = json.loads(self.certificates[certificate_id])
-        if value["status"] != "SUPERSEDED" and not self.is_active(certificate_id):
+        if value["status"] != "SUPERSEDED" and now() > datetime.fromisoformat(value["deadline"].replace("Z", "+00:00")):
+            value["status"] = "TIMEOUT"
+        elif value["status"] != "SUPERSEDED" and not self.is_active(certificate_id):
             value["status"] = "QUARANTINED"
         return value
+
+    @gl.public.view
+    def get_dependencies(self) -> dict:
+        return {"owner":str(self.owner), "docket":str(self.docket)}
+
+    @gl.public.view
+    def get_batch(self, request_id: str) -> dict:
+        return gl.get_contract_at(self.docket).view().get_batch(request_id)
+
+    @gl.public.view
+    def has_certificate(self, certificate_id: str) -> bool:
+        return certificate_id in self.certificates
+
+    @gl.public.view
+    def get_subscription(self, consumer: str, request_id: str) -> str:
+        key = consumer + ":" + request_id
+        return self.subscriptions[key] if key in self.subscriptions else ""
+
+    @gl.public.view
+    def get_delivery_operation(self, certificate_id: str) -> str:
+        return self.delivery_ids[certificate_id] if certificate_id in self.delivery_ids else ""
 
     @gl.public.view
     def list_certificates(self, offset: int, limit: int) -> dict:

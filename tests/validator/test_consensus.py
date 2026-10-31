@@ -2,7 +2,7 @@ from conftest import addr
 import json
 from types import SimpleNamespace
 import pytest
-from conftest import manifest,request,module_of
+from conftest import manifest,request,module_of,rec,canonical,sha
 
 # Authored fixtures are strictly test inputs, never product data.
 CASES=[('Syndicated wire story copied with permission.','SHARED_ORIGIN','R_SYNDICATION'),('Original independently calibrated gauge measurement.','INDEPENDENT','R_INDEPENDENT_PROCESS'),('Only evidence is a quotation copied from the first report.','SHARED_ORIGIN','R_COPIED_REPORTING'),('Identical hosting but disclosed different owners and separate measurements.','INDEPENDENT','R_INDEPENDENT_PROCESS'),('Affiliation is deliberately obscured and cannot be verified.','UNKNOWN','R_AMBIGUOUS')]
@@ -10,14 +10,21 @@ CASES=[('Syndicated wire story copied with permission.','SHARED_ORIGIN','R_SYNDI
 @pytest.mark.parametrize('fixture,label,rule',CASES)
 def test_captured_validator_material_decision(fixture,label,rule,direct_deploy,direct_vm,direct_owner,direct_bob,refs):
     c=direct_deploy('contracts/relation_docket.py',addr(direct_bob));m=module_of(c);sources=manifest(2)
+    for i,source in enumerate(sources):
+        source['publication']=rec(f'pub{i}',fixture+f' Public organization {i} report.')
     refs(m,SimpleNamespace(get_policy=lambda *a:{'min_origins':3},get_publisher=lambda key:{'revision':1,'status':'ACTIVE','evidence':sources[int(key[-1])]['ownership']}))
-    c.open_batch(json.dumps(request(direct_owner,direct_bob,2)),json.dumps(sources))
+    c.authorize_requester(addr(direct_owner), 10)
+    req=request(direct_owner,direct_bob,2);req["manifest_digest"]=sha(canonical(sources))
+    c.open_batch(json.dumps(req),json.dumps(sources))
     for source in sources:
-        for rec in [source['publication'],source['ownership']]:
-            direct_vm.mock_web(rec['url'],{'status':200,'body':'Independent measurement by a disclosed organization.'})
-    keys=[r['record_id']+':whole' for s in sources for r in [s['publication'],s['ownership']]]
-    direct_vm.mock_llm('.*',json.dumps({'relation':label,'rule_id':rule,'witness_ids':keys if label!='UNKNOWN' else []}))
-    c.assess_pair('batch1',1,0,1)
+        for committed in [source['publication'],source['ownership']]:
+            direct_vm.mock_web(committed['url'],{'status':200,'body':fixture+f' Public organization {sources.index(source)} report.' if committed is source['publication'] else f'Organization {sources.index(source)} is separately owned by owner {sources.index(source)}.'})
+    keys=[canonical([r['record_id'],'whole']) for s in sources for r in [s['publication'],s['ownership']]]
+    direct_vm.mock_llm('You adjudicate.*',json.dumps({'relation':label,'rule_id':rule,'witness_ids':keys if label!='UNKNOWN' else []}))
+    direct_vm.mock_llm('Independently verify.*',json.dumps({'supported':True}))
+    c.reserve_assessment('try-1','batch1',1,0,1)
+    direct_vm.sender=m.gl.message.contract_address
+    c.assess_pair('batch1',1,0,1,'try-1')
     assert direct_vm.run_validator()
     agreed=c.get_batch('batch1')['pairs']['0:1']
     wrong=dict(agreed,relation='INDEPENDENT' if label!='INDEPENDENT' else 'SHARED_ORIGIN')

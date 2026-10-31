@@ -10,6 +10,7 @@ def docket(direct_deploy,direct_owner,direct_bob,refs):
     m=module_of(c)
     sources=manifest()
     refs(m,SimpleNamespace(get_policy=lambda *a:{'min_origins':3},get_publisher=lambda key:{'revision':1,'status':'ACTIVE','evidence':sources[int(key[-1])]['ownership']}))
+    c.authorize_requester(addr(direct_owner), 10)
     c.bind_hub(addr(direct_bob))
     c.open_batch(json.dumps(request(direct_owner,direct_bob)),json.dumps(sources))
     return c,m
@@ -40,7 +41,7 @@ def test_request_owner_and_conflicting_reuse(docket,direct_vm,direct_bob,direct_
     c,m=docket
     r=request(direct_owner,direct_bob)
     c.open_batch(json.dumps(r),json.dumps(manifest()))
-    r['subject_digest']='c'*64
+    r['subject_text']='Changed exact claim';r['subject_digest']=m.hashlib.sha256(r['subject_text'].encode()).hexdigest()
     with direct_vm.expect_revert('Conflicting request'):
         c.open_batch(json.dumps(r),json.dumps(manifest()))
     direct_vm.sender=direct_bob
@@ -80,5 +81,5 @@ def test_source_and_complete_packet_limits_fail_before_evaluation(docket,direct_
     b['manifest'][0]['publication']['byte_length']=16384
     c.batches['batch1']=m.canon(b)
     with direct_vm.expect_revert('Complete packet exceeds budget'):
-        c.assess_pair('batch1',1,0,1)
+        c.reserve_assessment('oversize','batch1',1,0,1)
     assert c.get_batch('batch1')['pairs']=={}

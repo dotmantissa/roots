@@ -2,12 +2,17 @@
 from genlayer import *
 import hashlib
 import json
+import re
 from datetime import datetime
 
 MAX_RECORD_BYTES = 49152
 MAX_PACKET_BYTES = 16384
 MAX_REQUEST_BYTES = 24576
 RULES = ["R_SHARED_CONTROL", "R_SYNDICATION", "R_COPIED_REPORTING", "R_INDEPENDENT_PROCESS", "R_AMBIGUOUS", "R_UNAVAILABLE"]
+CONFIG_FIELDS = ["request_id", "policy_id", "policy_revision", "subject_id", "subject_digest", "subject_text", "manifest_digest", "consumer", "consequence_digest", "consequence_text", "admission_scope", "generation", "deadline"]
+REQUEST_FIELDS = CONFIG_FIELDS + ["owner", "parties"]
+MAX_GENERATIONS = 8
+MAX_OPERATIONS = 524288
 LABELS = ["SHARED_ORIGIN", "INDEPENDENT", "UNKNOWN"]
 
 def canon(value):
@@ -38,20 +43,45 @@ def now():
 
 def deadline_ok(deadline):
     require(isinstance(deadline, str) and len(deadline) <= 40, "Invalid deadline")
+    require(re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\.[0-9]+)?(?:Z|[+-][0-9]{2}:[0-9]{2})", deadline) is not None, "ISO timestamp with timezone required")
     try:
         expiry = datetime.fromisoformat(deadline.replace("Z", "+00:00"))
         require(expiry.tzinfo is not None and now() <= expiry, "Deadline expired")
     except ValueError:
         require(False, "Invalid deadline")
 
+def exact_fields(value, names):
+    require(isinstance(value, dict) and set(value) == set(names), "Unexpected or missing fields")
+
+def public_url(value):
+    url = text(value, 2048)
+    match = re.fullmatch(r"https://([A-Za-z0-9.-]+)(?::443)?(?:[/?][^\s\\#]*)?", url)
+    require(match is not None, "Public HTTPS URL with default port required")
+    host = match.group(1).lower()
+    labels = host.split(".")
+    require(len(labels) >= 2 and all(re.fullmatch(r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?", label) is not None for label in labels), "Public DNS hostname required")
+    require(re.fullmatch(r"[a-z]{2,63}", labels[-1]) is not None and labels[-1] not in ["local", "localhost", "internal", "invalid", "test", "onion"], "Public DNS hostname required")
+    return url
+
+def configuration_value(value):
+    return {k:value[k] for k in CONFIG_FIELDS}
+
+def batch_commitment(value):
+    # v2: the entire exact request, including parties, generation and preimages.
+    return digest({"version":2, "request":{k:value[k] for k in REQUEST_FIELDS}})
+
 def envelope(raw):
     require(isinstance(raw, str) and len(raw.encode()) <= MAX_REQUEST_BYTES, "Request size exceeded")
     value = json.loads(raw)
-    require(isinstance(value, dict), "Expected request object")
+    exact_fields(value, REQUEST_FIELDS)
     for name in ["request_id", "owner", "policy_id", "subject_id", "consumer"]:
         text(value.get(name))
     for name in ["subject_digest", "manifest_digest", "consequence_digest"]:
         hash_value(value.get(name))
+    for name, commitment, limit in [("subject_text", "subject_digest", 4000), ("consequence_text", "consequence_digest", 1000)]:
+        text(value.get(name), limit)
+        require(hashlib.sha256(value[name].encode()).hexdigest() == value[commitment], "Preimage digest mismatch")
+    require(value.get("admission_scope") == "DOCUMENT_ANCESTRY", "Document ancestry admission scope required")
     integer(value.get("policy_revision"), 1, 4294967295)
     integer(value.get("generation"), 1, 4294967295)
     require(isinstance(value.get("parties"), list) and len(value["parties"]) <= 6, "Invalid parties")
@@ -63,12 +93,12 @@ def envelope(raw):
     return value
 
 def record(value):
-    require(isinstance(value, dict), "Invalid record")
-    for name in ["record_id", "authority", "channel", "scope"]:
+    exact_fields(value, ["record_id", "authority", "channel", "scope", "url", "capture_url", "byte_hash", "revision", "byte_length", "spans"])
+    text(value.get("record_id"))
+    for name in ["authority", "channel", "scope"]:
         text(value.get(name), 256)
     for name in ["url", "capture_url"]:
-        url = text(value.get(name), 2048)
-        require(url.startswith("https://") and "@" not in url and "#" not in url, "HTTPS record required")
+        public_url(value.get(name))
     hash_value(value.get("byte_hash"))
     integer(value.get("revision"), 1, 4294967295)
     integer(value.get("byte_length"), 1, MAX_RECORD_BYTES)
@@ -76,6 +106,7 @@ def record(value):
     require(isinstance(spans, list) and 1 <= len(spans) <= 8, "Witness spans required")
     seen = []
     for span in spans:
+        exact_fields(span, ["span_id", "start", "end", "quote_hash"])
         text(span.get("span_id"))
         require(span["span_id"] not in seen, "Duplicate span")
         seen.append(span["span_id"])
@@ -114,16 +145,28 @@ def canonical_decision(result, packet):
     candidates = {}
     for item in packet:
         for span in item["record"]["spans"]:
-            key = item["record"]["record_id"] + ":" + span["span_id"]
+            key = canon([item["record"]["record_id"], span["span_id"]])
+            require(key not in candidates, "Duplicate witness locator")
             candidates[key] = {"source_hash":item["record"]["byte_hash"], "span_id":span["span_id"], "record_id":item["record"]["record_id"], "start":span["start"], "end":span["end"], "quote_hash":span["quote_hash"]}
     keys = result.get("witness_ids")
-    if not isinstance(keys, list) or len(keys) > 32 or len(set(keys)) != len(keys) or any(k not in candidates for k in keys):
+    if isinstance(keys, list):
+        keys = [canon(k) if isinstance(k, list) and len(k) == 2 and all(isinstance(part, str) for part in k) else k for k in keys]
+    if not isinstance(keys, list) or len(keys) > 32 or any(not isinstance(k, str) for k in keys) or len(set(keys)) != len(keys) or any(k not in candidates for k in keys):
         raise gl.vm.UserError("[LLM_ERROR] Forged witness locator")
-    if relation != "UNKNOWN" and (not keys or any(not any(k.startswith(item["record"]["record_id"] + ":") for k in keys) for item in packet)):
+    if relation != "UNKNOWN" and (not keys or any(item["record"]["record_id"] not in [candidates[k]["record_id"] for k in keys] for item in packet)):
         raise gl.vm.UserError("[LLM_ERROR] Incomplete evidence coverage")
     return {"relation":relation, "rule_id":rule, "scope":"editorial_or_measurement_origin", "witnesses":[candidates[k] for k in sorted(keys)], "coverage":relation != "UNKNOWN", "unresolved":relation == "UNKNOWN"}
 
-def independent_validator(proposal, derive):
+def valid_decision_witnesses(value, records):
+    try:
+        exact_fields(value, ["relation", "rule_id", "scope", "witnesses", "coverage", "unresolved"])
+        ids = [canon([w["record_id"], w["span_id"]]) for w in value["witnesses"]]
+        rebuilt = canonical_decision({"relation":value["relation"], "rule_id":value["rule_id"], "witness_ids":ids}, [{"record":r} for r in records])
+        return rebuilt == value
+    except Exception:
+        return False
+
+def independent_validator(proposal, derive, records=None, verify=None):
     if isinstance(proposal, gl.vm.VMError):
         return False
     if isinstance(proposal, gl.vm.UserError):
@@ -138,7 +181,20 @@ def independent_validator(proposal, derive):
         return False
     try:
         independent = derive()
-        return proposal.calldata == independent
+        leader = proposal.calldata
+        if records is None:
+            return leader == independent
+        if not valid_decision_witnesses(leader, records):
+            return False
+        # Citation and overlapping shared-origin rule choices may differ. Each
+        # validator still derives the relationship and verifies the leader's
+        # exact controlling rule and cited evidence independently.
+        if any(leader[k] != independent[k] for k in ["relation", "scope", "coverage", "unresolved"]):
+            return False
+        if leader["relation"] == "UNKNOWN":
+            return leader["rule_id"] == independent["rule_id"]
+        return verify is not None and verify(leader)
+
     except Exception:
         return False
 
@@ -152,17 +208,45 @@ class IncidentEvidenceConsumer(gl.Contract):
     actions: TreeMap[str, str]
     action_ids: DynArray[str]
     count: u32
+    pending_owner: str
+    operation_count: u32
+    relevance_approvals: TreeMap[str, str]
 
     def __init__(self, hub: str, owner: str):
         self.hub = Address(hub)
         self.owner = Address(owner)
         self.count = u32(0)
+        self.pending_owner = ""
+        self.operation_count = u32(0)
+
+    def _remember(self, operation_id, binding):
+        require(int(self.operation_count) < 16384, "Consumer operation capacity reached")
+        self.acknowledgements[operation_id] = binding
+        self.operation_count = u32(int(self.operation_count) + 1)
 
     @gl.public.write
-    def configure(self, operation_id: str, configuration_json: str) -> None:
+    def nominate_owner(self, principal: str) -> None:
+        require(gl.message.sender_address == self.owner, "Consumer owner required")
+        require(Address(principal) != Address("0x" + "0" * 40), "Nonzero owner required")
+        self.pending_owner = str(Address(principal))
+
+    @gl.public.write
+    def accept_owner(self) -> None:
+        require(self.pending_owner and gl.message.sender_address == Address(self.pending_owner), "Nominated owner required")
+        self.owner = Address(self.pending_owner)
+        self.pending_owner = ""
+
+    @gl.public.view
+    def get_authority(self) -> dict:
+        return {"owner":str(self.owner), "pending_owner":self.pending_owner, "hub":str(self.hub), "admission_scope":"DOCUMENT_ANCESTRY", "relevance_responsibility":"CONSUMER_OWNER"}
+
+    @gl.public.write
+    def configure(self, operation_id: str, configuration_json: str, relevance_approved: bool) -> None:
         text(operation_id)
         require(gl.message.sender_address == self.owner, "Consumer owner required")
+        require(relevance_approved is True, "Owner must review exact claim and source relevance")
         config = json.loads(configuration_json)
+        exact_fields(config, CONFIG_FIELDS)
         # An exact request, subject and intended consequence are locked by this owner.
         envelope(canon(dict(config, owner=str(self.owner), parties=[])))
         require(config["consumer"] == str(gl.message.contract_address), "Consumer address mismatch")
@@ -170,14 +254,25 @@ class IncidentEvidenceConsumer(gl.Contract):
         binding = digest(config)
         if operation_id in self.acknowledgements:
             require(self.acknowledgements[operation_id] == binding, "Conflicting configuration reuse")
+            require(self.configurations[key] == canon(config), "Configuration superseded")
+            # Re-emit identical subscription after a failed finalized child.
+            gl.get_contract_at(self.hub).emit(on="finalized").subscribe(operation_id, str(gl.message.contract_address), key, binding)
             return
         if key in self.configurations:
             old = json.loads(self.configurations[key])
+            if config["generation"] == old["generation"]:
+                require(config == old, "Conflicting same-generation configuration")
+                # Use the original operation to keep recovery storage bounded.
+                require(False, "Reuse the original configuration operation")
             require(config["generation"] > old["generation"], "Configuration generation must increase")
-            for name in ["policy_id", "policy_revision", "subject_id", "subject_digest", "consequence_digest", "consumer"]:
+            for name in ["policy_id", "policy_revision", "subject_id", "subject_digest", "subject_text", "consequence_digest", "consequence_text", "admission_scope", "consumer"]:
                 require(old[name] == config[name], "Locked consumer binding changed")
+        authoritative = gl.get_contract_at(self.hub).view().get_batch(key)
+        require(config == configuration_value(authoritative), "Configuration differs from docket")
+        require(len(self.configurations) < 1024 or key in self.configurations, "Consumer configuration capacity reached")
         self.configurations[key] = canon(config)
-        self.acknowledgements[operation_id] = binding
+        self.relevance_approvals[key] = binding
+        self._remember(operation_id, binding)
         # Configuration changes freeze the prior receipt immediately, before subscription finality.
         gl.get_contract_at(self.hub).emit(on="finalized").subscribe(operation_id, str(gl.message.contract_address), key, binding)
 
@@ -206,7 +301,7 @@ class IncidentEvidenceConsumer(gl.Contract):
         else:
             self.receipts[key] = canon(payload)
             self.generations[key] = u32(generation)
-            self.acknowledgements[op] = binding
+            self._remember(op, binding)
         gl.get_contract_at(self.hub).emit(on="finalized").acknowledge_revision(op, payload["certificate_id"], generation)
 
     @gl.public.write
@@ -220,6 +315,7 @@ class IncidentEvidenceConsumer(gl.Contract):
         require(request_id in self.receipts and request_id in self.configurations, "Finalized certificate required")
         receipt = json.loads(self.receipts[request_id])
         config = json.loads(self.configurations[request_id])
+        require(request_id in self.relevance_approvals and self.relevance_approvals[request_id] == digest(config), "Owner relevance review required")
         require(receipt["configuration_digest"] == digest(config), "New revision awaiting acknowledgement")
         require(receipt["subject_digest"] == subject_digest and receipt["consequence_digest"] == consequence_digest, "Exact action binding required")
         deadline_ok(receipt["deadline"])
@@ -233,7 +329,7 @@ class IncidentEvidenceConsumer(gl.Contract):
 
     @gl.public.view
     def get_state(self, request_id: str) -> dict:
-        return {"owner":str(self.owner), "consumer_kind":"incident_evidence", "configuration":json.loads(self.configurations[request_id]) if request_id in self.configurations else None, "receipt":json.loads(self.receipts[request_id]) if request_id in self.receipts else None, "last_generation":int(self.generations[request_id]) if request_id in self.generations else 0}
+        return {"owner":str(self.owner), "subscription_digest":gl.get_contract_at(self.hub).view().get_subscription(str(gl.message.contract_address), request_id), "consumer_kind":"incident_evidence", "configuration":json.loads(self.configurations[request_id]) if request_id in self.configurations else None, "receipt":json.loads(self.receipts[request_id]) if request_id in self.receipts else None, "last_generation":int(self.generations[request_id]) if request_id in self.generations else 0}
 
     @gl.public.view
     def get_action(self, operation_id: str) -> dict:
