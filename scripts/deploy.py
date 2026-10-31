@@ -19,6 +19,13 @@ def fingerprint(source_hash, args, deployer):
     return hashlib.sha256(payload.encode()).hexdigest()
 
 
+def deployment_operation(name, identity, release_id):
+    key = 'deploy-v2-' + name + '-' + identity[:20]
+    # A docket's hub is bound after construction. Any coordinated release
+    # needs a fresh docket even when its registry constructor is unchanged.
+    return key + '-' + release_id[:12] if name == 'relation_docket' else key
+
+
 def resolve_owners(previous, environment, generate):
     owners = {}
     for kind in ['incident', 'disclosure']:
@@ -98,7 +105,7 @@ def main():
                 raise RuntimeError('Pending deployment constructor identity changed')
             continue
         code = (ROOT/f'contracts/{name}.py').read_bytes()
-        receipt = operation(c, 'deploy-v2-'+name+'-'+identity[:20], lambda code=code,args=args:c.deploy_contract(code=code,args=args))
+        receipt = operation(c, deployment_operation(name,identity,release_id), lambda code=code,args=args:c.deploy_contract(code=code,args=args))
         manifest['contracts'][name] = {'address':receipt['data']['contract_address'], 'source_hash':hashes[name],
             'deployment_transaction':receipt['hash'], 'constructor_args':args,'deployment_fingerprint':identity}
         atomic(pending_path, manifest)

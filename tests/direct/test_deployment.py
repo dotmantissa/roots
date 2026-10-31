@@ -1,5 +1,7 @@
 from eth_account import Account
 from scripts.deploy import fingerprint,resolve_owners,deployment_args
+import json
+from scripts import deploy
 
 
 def test_deployment_identity_includes_constructor_dependencies_and_owner():
@@ -18,3 +20,44 @@ def test_missing_local_owner_keys_preserve_existing_authorities():
     def forbid_generate(kind): raise AssertionError('Existing owner must never be regenerated')
     result=resolve_owners(previous,{'DEPLOYER_PRIVATE_KEY':'0x'+'3'*64},forbid_generate)
     assert result['incident']==previous['owners']['incident'] and result['disclosure']==previous['owners']['disclosure']
+
+
+def test_hub_only_upgrade_replaces_the_one_time_bound_docket(tmp_path,monkeypatch):
+    monkeypatch.chdir(tmp_path);monkeypatch.setattr(deploy,'ROOT',tmp_path)
+    monkeypatch.setenv('DEPLOYER_PRIVATE_KEY','0x'+'3'*64)
+    for kind,index in [('INCIDENT',6),('DISCLOSURE',7)]:
+        monkeypatch.delenv(kind+'_OWNER_PRIVATE_KEY',raising=False)
+        monkeypatch.setenv(kind+'_OWNER_ADDRESS','0x'+str(index)*40)
+    (tmp_path/'contracts').mkdir()
+    for name in deploy.NAMES:(tmp_path/'contracts'/f'{name}.py').write_text(name+':initial')
+    steward=Account.from_key('0x'+'3'*64).address
+    class Network:
+        def __init__(self):self.contracts={};self.bindings={}
+        def deploy_contract(self,code,args):
+            address='0x'+str(len(self.contracts)+1).zfill(40)
+            self.contracts[address]=(code.decode().split(':')[0],args)
+            return {'hash':'0x'+str(len(self.contracts)).zfill(64),'data':{'contract_address':address}}
+        def write_contract(self,address,function_name,args):
+            if function_name=='bind_hub':
+                assert address not in self.bindings or self.bindings[address]==args[0],'Old docket cannot bind a replacement hub'
+                self.bindings[address]=args[0]
+            return {'hash':'0x'+'0'*64}
+        def read_contract(self,address,function_name,args):
+            name,constructor=self.contracts[address]
+            if name=='source_registry':return {'owner':steward}
+            if name=='relation_docket':return {'owner':steward,'registry':constructor[0],'hub':self.bindings[address]}
+            if name=='certificate_hub':return {'owner':steward,'docket':constructor[0]}
+            return {'owner':constructor[1],'hub':constructor[0]}
+    network=Network();journals={}
+    def operation(client,name,send):
+        if name not in journals:journals[name]=send()
+        return journals[name]
+    monkeypatch.setattr(deploy,'client',lambda:network);monkeypatch.setattr(deploy,'operation',operation)
+    deploy.main();first=json.loads((tmp_path/'deployments/studionet.json').read_text())
+    (tmp_path/'contracts/certificate_hub.py').write_text('certificate_hub:updated')
+    deploy.main();second=json.loads((tmp_path/'deployments/studionet.json').read_text())
+    assert first['contracts']['source_registry']['address']==second['contracts']['source_registry']['address']
+    for name in ['relation_docket','certificate_hub','incident_consumer','disclosure_consumer']:
+        assert first['contracts'][name]['address']!=second['contracts'][name]['address']
+    assert len(network.contracts)==9
+    deploy.verify_stack(network,second)
