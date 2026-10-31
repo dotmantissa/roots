@@ -7,6 +7,14 @@ from types import SimpleNamespace
 import pytest
 
 
+@pytest.fixture
+def direct_deploy(direct_deploy):
+    # This release contains the exact runner pinned in every contract header.
+    # The upstream default follows latest, whose 0.3 bundles were renamed.
+    from functools import partial
+    return partial(direct_deploy, sdk_version='v0.2.16')
+
+
 def canonical(x):
     return json.dumps(x,sort_keys=True,separators=(',',':'),ensure_ascii=False)
 
