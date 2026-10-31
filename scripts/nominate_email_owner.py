@@ -11,5 +11,5 @@ args=parser.parse_args()
 deployment=json.loads(Path('deployments/studionet.json').read_text())
 owner=client(args.consumer.upper()+'_OWNER_PRIVATE_KEY')
 address=deployment['contracts'][args.consumer+'_consumer']['address']
-operation(owner,'nominate-email-'+args.consumer+'-'+args.address[2:18].lower(),lambda:owner.write_contract(address=address,function_name='nominate_owner',args=[args.address]))
+operation(owner,'nominate-email-'+deployment['release_id'][:12]+'-'+args.consumer+'-'+args.address[2:18].lower(),lambda:owner.write_contract(address=address,function_name='nominate_owner',args=[args.address]))
 print('Nomination finalized. Sign in with the nominated email wallet and choose Applications → Connect authorized email wallet → Accept my ownership nomination.')

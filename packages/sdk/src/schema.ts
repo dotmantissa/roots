@@ -1,18 +1,22 @@
 import { z } from 'zod';
 export const Hash = z.string().regex(/^[a-f0-9]{64}$/);
 export const Address = z.string().regex(/^0x[a-fA-F0-9]{40}$/);
-export const Id = z.string().min(1).max(128);
+export const Utf8=(limit:number)=>z.string().min(1).refine(s=>new TextEncoder().encode(s).length<=limit,`Text exceeds ${limit} UTF-8 bytes`);
+export const Id = Utf8(128);
+export const Text256 = Utf8(256);
+export const Revision=z.number().int().min(1).max(4294967295);
+export const PublicUrl = Utf8(2048).refine(s=>{const m=/^https:\/\/([A-Za-z0-9.-]+)(?::443)?(?:[/?][^\s\\#]*)?$/.exec(s);if(!m)return false;const labels=m[1].toLowerCase().split('.');return labels.length>=2&&labels.every(l=>/^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/.test(l))&&/^[a-z]{2,63}$/.test(labels.at(-1)!)&&!['local','localhost','internal','invalid','test','onion'].includes(labels.at(-1)!);},'Use a public HTTPS DNS URL with default port');
 export const Relation = z.enum(['SHARED_ORIGIN','INDEPENDENT','UNKNOWN']);
 export const Lifecycle = z.enum(['PENDING','ACCEPTED','PROVISIONAL','SEALED','FINALIZED','UNRESOLVED','SUPERSEDED','QUARANTINED','TIMEOUT','DELIVERY_FAILED']);
 export const SpanSchema = z.object({span_id:Id,start:z.number().int().nonnegative(),end:z.number().int().positive(),quote_hash:Hash}).strict();
-export const RecordSchema = z.object({record_id:Id,authority:z.string().min(1).max(256),channel:z.string().min(1).max(256),url:z.url().startsWith('https://').max(2048),capture_url:z.url().startsWith('https://').max(2048),byte_hash:Hash,byte_length:z.number().int().min(1).max(49152),revision:z.number().int().min(1).max(4294967295),scope:z.string().min(1).max(256),spans:z.array(SpanSchema).min(1).max(8)}).strict().superRefine((r,ctx)=>{for(const s of r.spans)if(s.start>=s.end||s.end>r.byte_length)ctx.addIssue({code:'custom',message:'Span is outside committed bytes'});});
-export const SourceSchema = z.object({publisher_id:Id,publisher_revision:z.number().int().positive(),publication:RecordSchema,ownership:RecordSchema}).strict();
+export const RecordSchema = z.object({record_id:Id,authority:Text256,channel:Text256,url:PublicUrl,capture_url:PublicUrl,byte_hash:Hash,byte_length:z.number().int().min(1).max(49152),revision:z.number().int().min(1).max(4294967295),scope:Text256,spans:z.array(SpanSchema).min(1).max(8)}).strict().superRefine((r,ctx)=>{if(new Set(r.spans.map(s=>s.span_id)).size!==r.spans.length)ctx.addIssue({code:'custom',message:'Duplicate span ID'});for(const s of r.spans)if(s.start>=s.end||s.end>r.byte_length)ctx.addIssue({code:'custom',message:'Span is outside committed bytes'});});
+export const SourceSchema = z.object({publisher_id:Id,publisher_revision:Revision,publication:RecordSchema,ownership:RecordSchema}).strict();
 export const ManifestSchema = z.array(SourceSchema).min(2).max(6);
-export const ConfigurationSchema = z.object({request_id:Id,policy_id:Id,policy_revision:z.number().int().positive(),subject_id:Id,subject_digest:Hash,manifest_digest:Hash,consumer:Address,consequence_digest:Hash,generation:z.number().int().positive(),deadline:z.iso.datetime({offset:true})}).strict();
+export const ConfigurationSchema = z.object({request_id:Id,policy_id:Id,policy_revision:Revision,subject_id:Id,subject_digest:Hash,subject_text:Utf8(4000),manifest_digest:Hash,consumer:Address,consequence_digest:Hash,consequence_text:Utf8(1000),admission_scope:z.literal('DOCUMENT_ANCESTRY'),generation:Revision,deadline:z.iso.datetime({offset:true})}).strict();
 export const RequestSchema = ConfigurationSchema.extend({owner:Address,parties:z.array(Address).max(6)}).strict();
 export const WitnessSchema = SpanSchema.extend({source_hash:Hash,record_id:Id});
 export const DecisionSchema = z.object({relation:Relation,rule_id:z.enum(['R_SHARED_CONTROL','R_SYNDICATION','R_COPIED_REPORTING','R_INDEPENDENT_PROCESS','R_AMBIGUOUS','R_UNAVAILABLE']),scope:z.literal('editorial_or_measurement_origin'),witnesses:z.array(WitnessSchema).max(32),coverage:z.boolean(),unresolved:z.boolean()});
-export const BatchSchema = RequestSchema.extend({batch_digest:Hash,manifest:ManifestSchema,status:Lifecycle,pairs:z.record(z.string(),DecisionSchema),attempts:z.record(z.string(),z.number()),selected_subset:z.array(z.number().int()).max(6),supported_origin_ids:z.array(Id).max(6),non_merge_witnesses:z.array(z.object({pair:z.string(),witnesses:z.array(WitnessSchema)})),superseded_by:z.string(),certificate_id:z.string(),prior_certificates:z.array(z.string()),unresolved:z.boolean(),coverage:z.boolean()});
+export const BatchSchema = RequestSchema.extend({batch_digest:Hash,manifest:ManifestSchema,status:Lifecycle,pairs:z.record(z.string(),DecisionSchema),attempts:z.record(z.string(),z.number()),attempt_ledger:z.record(Hash,z.number().int().min(1).max(3)),pending_attempts:z.record(z.string(),Id),freshness_scope:z.literal('REGISTERED_CUSTODIAN_REVISIONS_AND_DEADLINE'),selected_subset:z.array(z.number().int()).max(6),supported_origin_ids:z.array(Id).max(6),non_merge_witnesses:z.array(z.object({pair:z.string(),witnesses:z.array(WitnessSchema)})),superseded_by:z.string(),certificate_id:z.string(),prior_certificates:z.array(z.string()),unresolved:z.boolean(),coverage:z.boolean()});
 export const PolicySchema=z.object({policy_id:Id,revision:z.number(),owner:Address,min_origins:z.literal(3),max_sources:z.literal(6),unresolved_consequence:z.literal('REFUSE_ADMISSION'),name:z.string().optional()});
 export const PublisherSchema=z.object({publisher_id:Id,principal:Address,revision:z.number(),status:z.enum(['ACTIVE','QUARANTINED']),evidence:RecordSchema});
 export type Batch=z.infer<typeof BatchSchema>;
@@ -22,8 +26,8 @@ export type Configuration=z.infer<typeof ConfigurationSchema>;
 export type SourcePolicy=z.infer<typeof PolicySchema>;
 export type Publisher=z.infer<typeof PublisherSchema>;
 export type Decision=z.infer<typeof DecisionSchema>;
-export type Contracts=Record<'source_registry'|'relation_docket'|'certificate_hub'|'incident_consumer'|'disclosure_consumer',{address:`0x${string}`;source_hash:string;deployment_transaction:string}>;
-export type Deployment={network:string;rpc:string;chain_id:number;runner:string;contracts:Partial<Contracts>;owners:Record<string,string>};
+export type Contracts=Record<'source_registry'|'relation_docket'|'certificate_hub'|'incident_consumer'|'disclosure_consumer',{address:`0x${string}`;source_hash:string;deployment_transaction:string;constructor_args?:unknown[];deployment_fingerprint?:string}>;
+export type Deployment={network:string;rpc:string;chain_id:number;runner:string;contracts:Partial<Contracts>;owners:Record<string,string>;pending_owners?:Record<string,string>;release_id?:string;schema_version?:number};
 export function canonical(value:unknown):string {
   if(value===null||typeof value!=='object') return JSON.stringify(value);
   if(Array.isArray(value))return '['+value.map(canonical).join(',')+']';
@@ -37,3 +41,8 @@ export function selectMaximum(manifest:Source[],pairs:Record<string,Decision>):n
  return best;
 }
 export function admissionStatus(batch:Batch):'eligible'|'refused'|'waiting'{if(batch.status!=='FINALIZED')return batch.unresolved&&batch.status==='UNRESOLVED'?'refused':'waiting';return !batch.unresolved&&batch.selected_subset.length>=3?'eligible':'refused';}
+
+export async function verifyRequestBindings(request:z.infer<typeof RequestSchema>){
+ if(await sha256(request.subject_text)!==request.subject_digest||await sha256(request.consequence_text)!==request.consequence_digest)throw Error('Exact text does not match its commitment');
+}
+export async function batchCommitment(batch:z.infer<typeof RequestSchema>){return sha256(canonical({version:2,request:Object.fromEntries(Object.keys(RequestSchema.shape).map(k=>[k,batch[k as keyof typeof batch]]))}));}

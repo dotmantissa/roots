@@ -4,7 +4,7 @@ import {studionet} from 'genlayer-js/chains';
 import type {UnsignedTransactionRequest} from '@privy-io/react-auth';
 import {api} from './api';
 import type {Deployment} from '../../../packages/sdk/src/schema';
-export type Operation={operation_id:string;method:string;transaction_hash:string|null;status:string;execution_success:boolean|null;delivery_status?:string|null;created_at:string};
+export type Operation={operation_id:string;method:string;transaction_hash:string|null;status:string;execution_success:boolean|null;delivery_status?:string|null;callback_status?:string|null;needs_attention?:boolean;created_at:string};
 export function useTransactions(deployment:Deployment|null){
  const {wallets}=useWallets();const {signTransaction}=useSignTransaction();const wallet=wallets.find(w=>w.walletClientType==='privy');
  async function write(contract:keyof Deployment['contracts'],method:string,args:(string|number|boolean)[],operationId:string=crypto.randomUUID()){

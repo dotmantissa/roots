@@ -18,7 +18,7 @@
     "worker": "tsx apps/api/src/worker.ts",
     "setup": "bash scripts/setup.sh",
     "deploy:contracts": "bash scripts/python.sh scripts/deploy.py",
-    "integration:studio": "bash scripts/python.sh scripts/studio_scenario.py"
+    "integration:studio": "bash scripts/python.sh scripts/studio_review.py"
   },
   "keywords": [],
   "author": "",

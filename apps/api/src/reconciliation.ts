@@ -1,32 +1,65 @@
 import {sql} from './db.js';
 import {keccak256} from 'viem';
 import {networkClient} from '../../../packages/sdk/src/client.js';
-export async function reconcile(){
- const lost=await sql`SELECT operation_id,signed_transaction FROM roots_operations WHERE transaction_hash IS NULL AND signed_transaction IS NOT NULL AND status='PENDING' LIMIT 8`;
- for(const row of lost){const hash=keccak256(row.signed_transaction);try{await networkClient().getTransaction({hash:hash as Parameters<ReturnType<typeof networkClient>["getTransaction"]>[0]["hash"]});await sql`UPDATE roots_operations SET transaction_hash=${hash},status='BROADCAST',updated_at=now() WHERE operation_id=${row.operation_id}`;}catch{try{const sent=await networkClient().sendRawTransaction({serializedTransaction:row.signed_transaction});await sql`UPDATE roots_operations SET transaction_hash=${sent},status='BROADCAST',updated_at=now() WHERE operation_id=${row.operation_id}`;}catch{console.error('Broadcast recovery remains pending for operation',row.operation_id);}}}
- const pending=await sql`SELECT operation_id,transaction_hash,method,args FROM roots_operations WHERE transaction_hash IS NOT NULL AND status IN ('PENDING','ACCEPTED','BROADCAST') ORDER BY created_at LIMIT 20`;
- for(const row of pending){
-  try{const receipt=await networkClient().request({method:'eth_getTransactionByHash',params:[row.transaction_hash]});const data=receipt as unknown as {statusName?:string;status:number|string;result_name?:string;consensus_data?:{leader_receipt?:{mode:string;execution_result:string}[]};consensusData?:{leaderReceipt?:{mode:string;executionResult:string}[]}};
-   const state=data.statusName||(typeof data.status==='string'?data.status:data.status===7?'FINALIZED':data.status===5?'ACCEPTED':'PENDING');
-   const leader=data.consensus_data?.leader_receipt?.find(r=>r.mode==='leader');const success=leader?data.result_name==='MAJORITY_AGREE'&&leader.execution_result==='SUCCESS':null;
-   await sql`UPDATE roots_operations SET status=${state},execution_success=${success},updated_at=now() WHERE operation_id=${row.operation_id}`;
-   if(state==='FINALIZED'){const raw=receipt as unknown as {consensus_data?:{votes?:Record<string,string>}};const disagreements=Object.values(raw.consensus_data?.votes||{}).filter(x=>x.toLowerCase()==='disagree').length;const relation=row.method==='assess_pair'?`${row.args[0]}:${row.args[2]}:${row.args[3]}`:row.operation_id;const generation=row.method==='assess_pair'?Number(row.args[1]):0;await sql`INSERT INTO roots_metrics(operation_id,relation_key,generation,disagreement_count,receipt) VALUES(${row.operation_id},${relation},${generation},${disagreements},${JSON.stringify(receipt)}::jsonb) ON CONFLICT(operation_id) DO NOTHING`;}
-  }catch{console.error('Receipt pending for operation',row.operation_id);}
- }
- const callbacks=await sql`SELECT operation_id,args,contract_address FROM roots_operations WHERE method='deliver_certificate' AND status='FINALIZED' AND execution_success=true AND (delivery_status IS NULL OR delivery_status='AWAITING_DELIVERY') ORDER BY created_at LIMIT 4`;
- for(const row of callbacks){
+import {canonical,sha256} from '../../../packages/sdk/src/schema.js';
+import {receiptState,retryDelay,type NetworkReceipt} from './receipt.js';
+export async function reconcile(clientFactory:typeof networkClient=networkClient,operationPrefix=''){
+ // Claim eligible rows atomically. Leases and independent eligibility timestamps
+ // prevent stuck operations or concurrent workers from occupying every slot.
+ const pending=await sql`WITH selected AS (
+  SELECT operation_id FROM roots_operations WHERE operation_id LIKE ${operationPrefix+'%'} AND next_reconcile_at<=now() AND status IN ('PENDING','ACCEPTED','BROADCAST') AND (transaction_hash IS NOT NULL OR signed_transaction IS NOT NULL)
+  ORDER BY next_reconcile_at,updated_at,operation_id FOR UPDATE SKIP LOCKED LIMIT 20
+ ) UPDATE roots_operations o SET next_reconcile_at=now()+interval '45 seconds',reconcile_attempts=reconcile_attempts+1 FROM selected s WHERE o.operation_id=s.operation_id RETURNING o.*`;
+ await Promise.all(pending.map(async row=>{
+  const delay=retryDelay(Number(row.reconcile_attempts));
   try{
-   const client=networkClient();const delivery=await client.readContract({address:row.contract_address,functionName:'get_delivery',args:[row.args[0]]}) as {acknowledgement:null|{certificate_id:string}};
-   if(delivery.acknowledgement?.certificate_id===row.args[1]){await sql`UPDATE roots_operations SET delivery_status='DELIVERED',updated_at=now() WHERE operation_id=${row.operation_id}`;continue;}
-   const metrics=await sql`SELECT receipt FROM roots_metrics WHERE operation_id=${row.operation_id}`;
-   const children=(metrics[0]?.receipt as {triggered_transactions?:string[]}|undefined)?.triggered_transactions||[];
-   let failed=false;
-   for(const hash of children.slice(0,1)){
-    const child=await client.request({method:'eth_getTransactionByHash',params:[hash as `0x${string}`]}) as unknown as {status:number|string;result_name?:string;consensus_data?:{leader_receipt?:{mode:string;execution_result:string}[]}};
-    const leader=child.consensus_data?.leader_receipt?.find(x=>x.mode==='leader');
-    if((child.status===7||child.status==='FINALIZED')&&leader&&(child.result_name!=='MAJORITY_AGREE'||leader.execution_result!=='SUCCESS'))failed=true;
+   const client=clientFactory();let hash=row.transaction_hash;
+   if(!hash){hash=keccak256(row.signed_transaction);try{await client.getTransaction({hash});}catch(error){if(!/not found/i.test(String(error)))throw error;const sent=await client.sendRawTransaction({serializedTransaction:row.signed_transaction});if(sent!==hash)throw Error('Broadcast hash mismatch');}
+    await sql`UPDATE roots_operations SET transaction_hash=${hash},status='BROADCAST' WHERE operation_id=${row.operation_id}`;
    }
-   await sql`UPDATE roots_operations SET delivery_status=${failed?'DELIVERY_FAILED':'AWAITING_DELIVERY'},updated_at=now() WHERE operation_id=${row.operation_id}`;
-  }catch{console.error('Delivery acknowledgement pending for operation',row.operation_id);}
- }
+   const receipt=await client.request({method:'eth_getTransactionByHash',params:[hash]}) as unknown as NetworkReceipt;
+   if(!receipt)throw Error('Receipt not available');const state=receiptState(receipt);
+   await sql`UPDATE roots_operations SET status=${state.status},execution_success=${state.success},next_reconcile_at=now()+${delay}*interval '1 second',needs_attention=${Number(row.reconcile_attempts)>=12&&state.status!=='FINALIZED'},error_code=NULL,updated_at=now() WHERE operation_id=${row.operation_id}`;
+   if(state.status==='FINALIZED'){
+    const args=row.args as (string|number)[];const assessment=row.method==='reserve_assessment';const relation=assessment?`${args[1]}:${args[3]}:${args[4]}`:row.operation_id;const generation=assessment?Number(args[2]):0;
+    await sql`INSERT INTO roots_metrics(operation_id,relation_key,generation,disagreement_count,receipt) VALUES(${row.operation_id},${relation},${generation},${state.disagreements},${JSON.stringify(receipt)}::jsonb) ON CONFLICT(operation_id) DO UPDATE SET receipt=EXCLUDED.receipt,disagreement_count=EXCLUDED.disagreement_count`;
+   }
+  }catch{
+   await sql`UPDATE roots_operations SET next_reconcile_at=now()+${delay}*interval '1 second',needs_attention=${Number(row.reconcile_attempts)>=12},error_code='RECONCILIATION_PENDING',updated_at=now() WHERE operation_id=${row.operation_id}`;
+  }
+ }));
+ const callbacks=await sql`WITH selected AS (
+  SELECT operation_id FROM roots_operations WHERE operation_id LIKE ${operationPrefix+'%'} AND callback_next_at<=now() AND status='FINALIZED' AND execution_success=true AND method IN ('deliver_certificate','configure','seal_batch','reserve_assessment') AND (callback_status IS NULL OR callback_status='AWAITING_CALLBACK')
+  ORDER BY callback_next_at,updated_at,operation_id FOR UPDATE SKIP LOCKED LIMIT 8
+ ) UPDATE roots_operations o SET callback_next_at=now()+interval '45 seconds',callback_attempts=callback_attempts+1 FROM selected s WHERE o.operation_id=s.operation_id RETURNING o.*`;
+ await Promise.all(callbacks.map(async row=>{
+  let status='AWAITING_CALLBACK';const delay=retryDelay(Number(row.callback_attempts));
+  try{
+   const client=clientFactory();const address=row.contract_address as `0x${string}`;const args=row.args as (string|number|boolean)[];
+   if(row.method==='deliver_certificate'){
+    const delivery=await client.readContract({address,functionName:'get_delivery',args:[args[0]]}) as {acknowledgement:null|{certificate_id:string}};
+    if(delivery.acknowledgement?.certificate_id===args[1])status='COMPLETED';
+   }else if(row.method==='configure'){
+    const config=JSON.parse(String(args[1]));const state=await client.readContract({address,functionName:'get_state',args:[config.request_id]}) as {subscription_digest:string;configuration:unknown};
+    if(state.subscription_digest===await sha256(canonical(config)))status='COMPLETED';else if(canonical(state.configuration)!==canonical(config))status='SUPERSEDED';
+   }else if(row.method==='seal_batch'){
+    const state=await client.readContract({address,functionName:'publication_state',args:[args[0]]}) as {published:boolean;generation:number};
+    if(state.generation!==args[1])status='SUPERSEDED';else if(state.published)status='COMPLETED';
+   }else{
+    const batch=await client.readContract({address,functionName:'get_batch',args:[args[1]]}) as {generation:number;pairs:Record<string,unknown>;pending_attempts:Record<string,string>};const key=`${args[3]}:${args[4]}`;
+    if(batch.generation!==args[2]||!batch.pairs[key]&&batch.pending_attempts[key]!==args[0])status='SUPERSEDED';else if(batch.pairs[key])status='COMPLETED';
+   }
+   if(status==='AWAITING_CALLBACK'){
+    const metrics=await sql`SELECT receipt FROM roots_metrics WHERE operation_id=${row.operation_id}`;
+    const children=receiptState(metrics[0]?.receipt as NetworkReceipt).children;
+    for(const hash of children.slice(0,1)){
+     const raw=await client.request({method:'eth_getTransactionByHash',params:[hash as `0x${string}`]}) as unknown as NetworkReceipt;
+     if(!raw)continue;const child=receiptState(raw);
+     if(child.status==='FINALIZED'&&child.success===false)status='CHILD_FAILED';
+    }
+   }
+  }catch{/* Leave this operation eligible after backoff, allowing later rows through. */}
+  const delivery=row.method==='deliver_certificate'?(status==='COMPLETED'?'DELIVERED':status==='CHILD_FAILED'?'DELIVERY_FAILED':'AWAITING_DELIVERY'):null;
+  await sql`UPDATE roots_operations SET callback_status=${status},delivery_status=${delivery},callback_next_at=now()+${delay}*interval '1 second',needs_attention=${status==='CHILD_FAILED'||status==='AWAITING_CALLBACK'&&Number(row.callback_attempts)>=12},updated_at=now() WHERE operation_id=${row.operation_id}`;
+ }));
 }
