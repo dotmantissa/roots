@@ -110,6 +110,25 @@ def test_contract_schemas_reject_extra_fields_utf8_overflow_and_wrong_preimages(
         m.envelope(canonical(dict(payload,subject_text='unrelated hidden claim')))
 
 
+def test_publisher_revision_booleans_cannot_enter_sdk_feeds(reserved_docket,direct_vm,direct_owner,direct_bob):
+    c,m,sources=reserved_docket
+    sources[0]['publisher_revision']=True
+    r=request(direct_owner,direct_bob,3);r['request_id']='typed_revision';r['manifest_digest']=sha(canonical(sources))
+    with direct_vm.expect_revert('Invalid integer'):
+        c.open_batch(canonical(r),canonical(sources))
+    sources[0]['publication']=dict(sources[0]['publication'],revision=2,url='https://replacement.example/report')
+    with direct_vm.expect_revert('Invalid integer'):
+        c.acknowledge_revision('typed-revision','batch1',canonical(sources),'2099-02-01T00:00:00Z')
+
+
+@pytest.mark.parametrize('party',[True,1,{'address':'0x'+'1'*40}])
+def test_party_json_types_are_addresses(direct_deploy,direct_owner,direct_bob,party):
+    c=direct_deploy('contracts/source_registry.py');m=module_of(c)
+    r=request(direct_owner,direct_bob,3);r['parties']=[party]
+    with pytest.raises(Exception):
+        m.envelope(canonical(r))
+
+
 def test_transport_exceptions_have_terminal_unavailable_outcome(direct_deploy,monkeypatch):
     c=direct_deploy('contracts/relation_docket.py','0x'+'1'*40);m=module_of(c)
     def timeout(*args): raise TimeoutError('Transport timed out')

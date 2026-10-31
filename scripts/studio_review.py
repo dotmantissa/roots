@@ -49,8 +49,8 @@ input_path=Path('evidence/review-v2-inputs.json')
 if input_path.exists():
     inputs=json.loads(input_path.read_text());assert inputs['release_id']==d['release_id'],'Retained inputs belong to a different stack'
 else:
-    sources=[{'publisher_id':'controlled_v2_measurement'+str(i),'publisher_revision':1,'publication':record(['a','a:b','c'][i],'measurement'+str(i)+'.txt'),'ownership':record(['c:d','e','f'][i],'measurement-owner'+str(i)+'.txt')} for i in range(3)]
-    wire=[{'publisher_id':'controlled_v2_wire'+str(i),'publisher_revision':1,'publication':record('wire:'+str(i),'injection.txt' if i==0 else 'wire'+str(i)+'.txt'),'ownership':record('wire-owner:'+str(i),'wire-owner'+str(i)+'.txt')} for i in range(2)]
+    sources=[{'publisher_id':'controlled_'+d['release_id'][:12]+'_measurement'+str(i),'publisher_revision':1,'publication':record(['a','a:b','c'][i],'measurement'+str(i)+'.txt'),'ownership':record(['c:d','e','f'][i],'measurement-owner'+str(i)+'.txt')} for i in range(3)]
+    wire=[{'publisher_id':'controlled_'+d['release_id'][:12]+'_wire'+str(i),'publisher_revision':1,'publication':record('wire:'+str(i),'injection.txt' if i==0 else 'wire'+str(i)+'.txt'),'ownership':record('wire-owner:'+str(i),'wire-owner'+str(i)+'.txt')} for i in range(2)]
     requests={}
     for kind,manifest in [('incident',sources),('disclosure',sources),('normal_injection',wire)]:
         consumer=d['contracts']['disclosure_consumer' if kind!='incident' else 'incident_consumer']['address']

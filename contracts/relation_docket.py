@@ -374,6 +374,7 @@ class RelationDocket(gl.Contract):
         for source in manifest:
             exact_fields(source, ["publisher_id", "publisher_revision", "publication", "ownership"])
             text(source.get("publisher_id"))
+            integer(source.get("publisher_revision"), 1, 4294967295)
             pub = registry.get_publisher(source["publisher_id"])
             require(pub["status"] == "ACTIVE" and source.get("publisher_revision") == pub["revision"], "Publisher revision unavailable")
             record(source.get("publication"))
@@ -487,6 +488,7 @@ class RelationDocket(gl.Contract):
         for i, source in enumerate(manifest):
             exact_fields(source, ["publisher_id", "publisher_revision", "publication", "ownership"])
             text(source["publisher_id"])
+            integer(source.get("publisher_revision"), 1, 4294967295)
             old = batch["manifest"][i]
             publication = source["publication"]
             if publication != old["publication"]:
