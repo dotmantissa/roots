@@ -49,14 +49,15 @@ try{
  await page.goto(origin,{waitUntil:'domcontentloaded'});await page.locator('.account-button').waitFor({timeout:60000});
  if(!evidence.steps.accept?.verified){
   await applications();await page.getByRole('button',{name:'Connect authorized email wallet',exact:true}).first().click();
-  await page.getByLabel('Authority action', {exact:true}).selectOption('accept_owner');
+  await page.getByLabel('Authority action').selectOption('accept_owner');
   await submit('accept',()=>page.getByRole('button',{name:'Submit authority change',exact:true}).click(),true);
  }
  await page.getByRole('link',{name:'Evidence desk',exact:true}).click();
+ await waitRecords(r=>inputs.sources.every(source=>(r.publishers||[]).some(p=>p.publisher_id===source.publisher_id&&p.status==='ACTIVE')));
  if(!evidence.request_id){
   await page.getByRole('button',{name:'Open source batch',exact:true}).click();const dialog=page.getByRole('dialog');
-  await dialog.getByLabel('Batch name',{exact:true}).fill('Controlled email-to-admission v2');await dialog.getByLabel('Exact claim',{exact:true}).fill(evidence.claim);await dialog.getByLabel('Intended decision',{exact:true}).fill(evidence.consequence);
-  for(let i=0;i<3;i++){const row=dialog.locator('.source-input').nth(i);await row.getByLabel('Publication URL',{exact:true}).fill(inputs.sources[i].publication.url);await row.getByLabel('Registered publisher',{exact:true}).selectOption(inputs.sources[i].publisher_id);await row.getByRole('button',{name:'Capture record',exact:true}).click();await row.getByRole('button',{name:'Captured',exact:true}).waitFor({timeout:45000});}
+  await dialog.getByLabel('Batch name').fill('Controlled email-to-admission v2');await dialog.getByLabel('Exact claim').fill(evidence.claim);await dialog.getByLabel('Intended decision').fill(evidence.consequence);
+  for(let i=0;i<3;i++){const row=dialog.locator('.source-input').nth(i);await row.getByLabel('Publication URL').fill(inputs.sources[i].publication.url);await row.getByLabel('Registered publisher').selectOption(inputs.sources[i].publisher_id);await row.getByRole('button',{name:'Capture record',exact:true}).click();await row.getByRole('button',{name:'Captured',exact:true}).waitFor({timeout:45000});}
   await submit('open',()=>dialog.getByRole('button',{name:'Open source batch',exact:true}).click(),true);
  }
  await waitRecords(r=>r.batches.some(b=>b.request_id===evidence.request_id));
@@ -76,15 +77,15 @@ try{
  await waitRecords(r=>r.batches.find(b=>b.request_id===evidence.request_id)?.status==='SEALED');
  await applications();
  if(!evidence.steps.configure?.verified){
-  await page.getByRole('button',{name:'Review a batch',exact:true}).first().click();const dialog=page.getByRole('dialog');await dialog.getByLabel('Registered batch',{exact:true}).selectOption(evidence.request_id);
-  assert.equal(await dialog.getByLabel('Exact committed claim',{exact:true}).inputValue(),evidence.claim);assert.equal(await dialog.getByLabel('Exact intended decision',{exact:true}).inputValue(),evidence.consequence);
+  await page.getByRole('button',{name:'Review a batch',exact:true}).first().click();const dialog=page.getByRole('dialog');await dialog.getByLabel('Registered batch').selectOption(evidence.request_id);
+  assert.equal(await dialog.getByLabel('Exact committed claim').inputValue(),evidence.claim);assert.equal(await dialog.getByLabel('Exact intended decision').inputValue(),evidence.consequence);
   await dialog.getByRole('checkbox').check();await submit('configure',()=>dialog.getByRole('button',{name:'Submit application request',exact:true}).click(),true);
  }
  await page.getByRole('link',{name:'Evidence desk',exact:true}).click();await page.locator('.batch-row').filter({hasText:'Controlled email-to-admission v2'}).click();
  if(!evidence.steps.deliver?.verified)await submit('deliver',()=>page.getByRole('button',{name:'Deliver certificate',exact:true}).click());
  await applications();
  if(!evidence.steps.admit?.verified){
-  await page.getByRole('button',{name:'Review a batch',exact:true}).first().click();const dialog=page.getByRole('dialog');await dialog.getByLabel('Registered batch',{exact:true}).selectOption(evidence.request_id);await dialog.getByLabel('Application action',{exact:true}).selectOption('admit');await submit('admit',()=>dialog.getByRole('button',{name:'Submit application request',exact:true}).click(),true);
+  await page.getByRole('button',{name:'Review a batch',exact:true}).first().click();const dialog=page.getByRole('dialog');await dialog.getByLabel('Registered batch').selectOption(evidence.request_id);await dialog.getByLabel('Application action').selectOption('admit');await submit('admit',()=>dialog.getByRole('button',{name:'Submit application request',exact:true}).click(),true);
  }
  await page.screenshot({path:'evidence/email-admission-v2.png',fullPage:true});console.log('Complete authentic email capture → opening → consensus → owner approval → delivered acknowledgement → admission verified.');
 }finally{await fs.writeFile('.runtime/email-browser-v2-state.json',JSON.stringify(await context.storageState()),{mode:0o600});await browser.close();}
