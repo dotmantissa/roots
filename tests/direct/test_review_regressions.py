@@ -192,3 +192,17 @@ def test_expiry_changes_views_and_refuses_delivery_and_unique_delivery_is_bounde
     direct_vm.sender=direct_owner
     with direct_vm.expect_revert('stale'):
         c.deliver_certificate('delivery','batch1:1',addr(direct_bob))
+
+
+def test_validator_verifies_exact_utf8_citation_preimages(direct_deploy,monkeypatch):
+    c=direct_deploy('contracts/relation_docket.py','0x'+'1'*40);m=module_of(c)
+    records=[rec(f'r{i}','é Separately measured by this organization.') for i in range(4)]
+    packet=[{'record':r,'untrusted_text':'é Separately measured by this organization.'} for r in records]
+    proposal=m.canonical_decision({'relation':'INDEPENDENT','rule_id':'R_INDEPENDENT_PROCESS','witness_ids':[[r['record_id'],'whole'] for r in records]},packet)
+    monkeypatch.setattr(m,'fetch_packet',lambda r:packet)
+    seen=[]
+    monkeypatch.setattr(m.gl.nondet,'exec_prompt',lambda prompt,**kw:seen.append(prompt) or {'supported':True})
+    assert m.verify_pair_proposal(records,proposal)
+    assert 'exact_cited_quotes' in seen[0] and 'é Separately measured' in seen[0]
+    proposal['witnesses'][0]['end']=1
+    assert not m.verify_pair_proposal(records,proposal)
