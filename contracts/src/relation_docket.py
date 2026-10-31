@@ -94,9 +94,9 @@ class RelationDocket(gl.Contract):
         self.reserved_capacity = u32(0)
         self.pending_owner = ""
 
-    def _remember(self, operation_id, binding):
+    def _remember(self, operation_id, binding, domain="operation"):
         require(int(self.operation_count) < MAX_OPERATIONS, "Operation capacity reached")
-        self.operations[operation_id] = binding
+        self.operations[canon([domain, operation_id])] = binding
         self.operation_count = u32(int(self.operation_count) + 1)
 
     @gl.public.write
@@ -159,8 +159,9 @@ class RelationDocket(gl.Contract):
         require(digest(manifest) == request["manifest_digest"], "Manifest digest mismatch")
         key = request["request_id"]
         binding = digest([request, manifest])
-        if key in self.operations:
-            require(self.operations[key] == binding, "Conflicting request reuse")
+        operation_key = canon(["request", key])
+        if operation_key in self.operations:
+            require(self.operations[operation_key] == binding, "Conflicting request reuse")
             return
         principal = str(Address(request["owner"]))
         used = int(self.requester_used[principal]) if principal in self.requester_used else 0
@@ -183,7 +184,7 @@ class RelationDocket(gl.Contract):
         batch = dict(request)
         batch.update({"batch_digest":batch_commitment(request), "manifest":manifest, "status":"PROVISIONAL", "pairs":{}, "attempts":{}, "attempt_ledger":{}, "pending_attempts":{}, "freshness_scope":"REGISTERED_CUSTODIAN_REVISIONS_AND_DEADLINE", "selected_subset":[], "supported_origin_ids":[], "non_merge_witnesses":[], "superseded_by":"", "unresolved":True, "coverage":False, "certificate_id":"", "prior_certificates":[]})
         self.batches[key] = canon(batch)
-        self._remember(key, binding)
+        self._remember(key, binding, "request")
         self.requester_used[principal] = u32(used + 1)
         self.batch_ids.append(key)
         self.count = u32(int(self.count) + 1)
@@ -206,8 +207,9 @@ class RelationDocket(gl.Contract):
         batch = self.get_batch(request_id)
         require(gl.message.sender_address == Address(batch["owner"]) or str(gl.message.sender_address) in batch["parties"], "Registered party required")
         binding = digest(["reserve_assessment", request_id, generation, left, right])
-        if operation_id in self.operations:
-            require(self.operations[operation_id] == binding, "Conflicting operation reuse")
+        operation_key = canon(["operation", operation_id])
+        if operation_key in self.operations:
+            require(self.operations[operation_key] == binding, "Conflicting operation reuse")
             return
         require(batch["status"] in ["PROVISIONAL", "UNRESOLVED"] and self.is_current(request_id, generation), "Batch revision frozen or locked")
         deadline_ok(batch["deadline"])
@@ -251,8 +253,9 @@ class RelationDocket(gl.Contract):
         batch = self.get_batch(request_id)
         require(gl.message.sender_address == Address(batch["owner"]) or str(gl.message.sender_address) in batch["parties"], "Registered party required")
         binding = digest(["appeal_relation", request_id, generation, left, right])
-        if operation_id in self.operations:
-            require(self.operations[operation_id] == binding, "Conflicting operation reuse")
+        operation_key = canon(["operation", operation_id])
+        if operation_key in self.operations:
+            require(self.operations[operation_key] == binding, "Conflicting operation reuse")
             return
         require(batch["generation"] == generation, "Stale generation")
         deadline_ok(batch["deadline"])
@@ -273,8 +276,9 @@ class RelationDocket(gl.Contract):
         manifest = json.loads(manifest_json)
         deadline_ok(deadline)
         binding = digest([request_id, manifest, deadline])
-        if operation_id in self.operations:
-            require(self.operations[operation_id] == binding, "Conflicting operation reuse")
+        operation_key = canon(["operation", operation_id])
+        if operation_key in self.operations:
+            require(self.operations[operation_key] == binding, "Conflicting operation reuse")
             return
         require(isinstance(manifest, list) and len(manifest) == len(batch["manifest"]), "Source count changed")
         require(manifest != batch["manifest"], "Material evidence revision required")

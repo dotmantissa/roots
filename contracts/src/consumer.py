@@ -52,8 +52,9 @@ class CONSUMER_NAME(gl.Contract):
         require(config["consumer"] == str(gl.message.contract_address), "Consumer address mismatch")
         key = config["request_id"]
         binding = digest(config)
-        if operation_id in self.acknowledgements:
-            require(self.acknowledgements[operation_id] == binding, "Conflicting configuration reuse")
+        operation_key = canon(["configuration", operation_id])
+        if operation_key in self.acknowledgements:
+            require(self.acknowledgements[operation_key] == binding, "Conflicting configuration reuse")
             require(self.configurations[key] == canon(config), "Configuration superseded")
             # Re-emit identical subscription after a failed finalized child.
             gl.get_contract_at(self.hub).emit(on="finalized").subscribe(operation_id, str(gl.message.contract_address), key, binding)
@@ -72,7 +73,7 @@ class CONSUMER_NAME(gl.Contract):
         require(len(self.configurations) < 1024 or key in self.configurations, "Consumer configuration capacity reached")
         self.configurations[key] = canon(config)
         self.relevance_approvals[key] = binding
-        self._remember(operation_id, binding)
+        self._remember(operation_key, binding)
         # Configuration changes freeze the prior receipt immediately, before subscription finality.
         gl.get_contract_at(self.hub).emit(on="finalized").subscribe(operation_id, str(gl.message.contract_address), key, binding)
 
@@ -96,12 +97,13 @@ class CONSUMER_NAME(gl.Contract):
         require(generation >= last, "Reordered stale callback")
         op = payload["operation_id"]
         binding = digest(payload)
-        if op in self.acknowledgements:
-            require(self.acknowledgements[op] == binding, "Conflicting callback reuse")
+        acknowledgement_key = canon(["delivery", op])
+        if acknowledgement_key in self.acknowledgements:
+            require(self.acknowledgements[acknowledgement_key] == binding, "Conflicting callback reuse")
         else:
             self.receipts[key] = canon(payload)
             self.generations[key] = u32(generation)
-            self._remember(op, binding)
+            self._remember(acknowledgement_key, binding)
         gl.get_contract_at(self.hub).emit(on="finalized").acknowledge_revision(op, payload["certificate_id"], generation)
 
     @gl.public.write

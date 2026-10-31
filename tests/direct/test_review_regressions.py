@@ -206,3 +206,35 @@ def test_validator_verifies_exact_utf8_citation_preimages(direct_deploy,monkeypa
     assert 'exact_cited_quotes' in seen[0] and 'é Separately measured' in seen[0]
     proposal['witnesses'][0]['end']=1
     assert not m.verify_pair_proposal(records,proposal)
+
+
+def test_operation_ids_cannot_poison_request_namespace(reserved_docket,direct_owner,direct_bob):
+    c,m,sources=reserved_docket
+    c.reserve_assessment('future_request','batch1',1,0,1)
+    second=request(direct_owner,direct_bob,3);second['request_id']='future_request'
+    c.open_batch(canonical(second),canonical(sources))
+    assert c.get_batch('future_request')['generation']==1
+
+
+def test_subscription_operation_cannot_overwrite_request_binding(direct_deploy,direct_vm,direct_owner,direct_bob,refs):
+    from test_hub_consumers import certificate
+    c=direct_deploy('contracts/certificate_hub.py',addr(direct_bob));m=module_of(c)
+    batch=certificate(direct_owner,direct_bob)
+    refs(m,SimpleNamespace(get_batch=lambda *a:batch))
+    direct_vm.sender=direct_bob
+    op=addr(direct_bob)+':batch1';config=m.digest(m.configuration_value(batch))
+    c.subscribe(op,addr(direct_bob),'batch1',config)
+    c.subscribe(op,addr(direct_bob),'batch1',config)
+    assert c.get_subscription(addr(direct_bob),'batch1')==config
+
+
+@pytest.mark.parametrize('file',['incident_consumer','disclosure_consumer'])
+def test_delivery_id_cannot_collide_with_configuration_id(file,direct_deploy,direct_vm,direct_owner,direct_bob,refs):
+    from test_hub_consumers import certificate
+    c=direct_deploy(f'contracts/{file}.py',addr(direct_bob),addr(direct_owner));m=module_of(c)
+    cert=certificate(direct_owner,str(m.gl.message.contract_address));config=m.configuration_value(cert)
+    refs(m,SimpleNamespace(get_batch=lambda *a:cert,get_certificate=lambda *a:cert,is_active=lambda *a:True,get_subscription=lambda *a:m.digest(config)))
+    c.configure('same-public-id',canonical(config),True)
+    direct_vm.sender=direct_bob
+    c.receive_certificate(canonical(dict(cert,configuration_digest=m.digest(config),operation_id='same-public-id')))
+    assert c.get_state('batch1')['receipt']['operation_id']=='same-public-id'

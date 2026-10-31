@@ -226,18 +226,19 @@ class CertificateHub(gl.Contract):
         expected = digest(configuration_value(batch))
         require(expected == configuration_digest, "Subscription configuration mismatch")
         binding = digest([consumer,request_id,configuration_digest])
-        if operation_id in self.subscriptions:
-            require(self.subscriptions[operation_id] == binding, "Conflicting operation reuse")
+        operation_key = canon(["operation", operation_id])
+        if operation_key in self.subscriptions:
+            require(self.subscriptions[operation_key] == binding, "Conflicting operation reuse")
             return
         require(len(self.subscription_ids) < 8192, "Subscription capacity reached")
         # One retained subscription operation per configuration commitment.
-        config_key = "config:" + configuration_digest
+        config_key = canon(["configuration", configuration_digest])
         if config_key in self.subscriptions:
             require(self.subscriptions[config_key] == binding, "Conflicting subscription binding")
             return
         self.subscriptions[config_key] = binding
-        self.subscriptions[operation_id] = binding
-        self.subscriptions[consumer + ":" + request_id] = configuration_digest
+        self.subscriptions[operation_key] = binding
+        self.subscriptions[canon(["request", consumer, request_id])] = configuration_digest
         self.subscription_ids.append(operation_id)
 
     @gl.public.write
@@ -273,7 +274,7 @@ class CertificateHub(gl.Contract):
         require(gl.message.sender_address == Address(cert["owner"]) or gl.message.sender_address == Address(authority["owner"]), "Request or consumer owner delivery required")
         require(cert["consumer"] == consumer, "Consumer mismatch")
         require(self.is_active(certificate_id), "Certificate stale or quarantined")
-        key = consumer + ":" + cert["request_id"]
+        key = canon(["request", consumer, cert["request_id"]])
         require(key in self.subscriptions, "Consumer has not subscribed")
         config = digest(configuration_value(cert))
         require(self.subscriptions[key] == config, "Consumer configuration stale")
@@ -339,7 +340,7 @@ class CertificateHub(gl.Contract):
 
     @gl.public.view
     def get_subscription(self, consumer: str, request_id: str) -> str:
-        key = consumer + ":" + request_id
+        key = canon(["request", consumer, request_id])
         return self.subscriptions[key] if key in self.subscriptions else ""
 
     @gl.public.view
